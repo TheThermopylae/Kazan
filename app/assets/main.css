@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'peyda-medium';
+    src: url('../../public/fonts/woff/PeydaWebFaNum-Medium.woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'peyda-bold';
+    src: url('../../public/fonts/woff/PeydaWebFaNum-Bold.woff');
+    font-display: swap;
+}
+
+body {
+    background-color: var(--body-bg);
+    transition: all 150ms;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'peyda-medium';
+    --font-bold: 'peyda-bold';
+    --text-2sm: 10px;
+
+    --radius-10 : 10px;
+
+    --color-primary: #0057FF;
+    --color-maindark : #231F20;
+    --color-lables : #333333;
+    --color-darkbg : #0E0E12;
+    --color-textlight : #595959;
+}
+
+@utility container {
+    margin: auto;
+    padding-inline: 1rem;
+
+    @variant sm {
+        padding-inline: 2rem;
+    }
+}
+
+* {
+    outline: none;
+}
+
+h2{
+    @apply text-lables dark:text-white
+}
+
+.flex-center {
+    @apply flex justify-center items-center
+}
+
+.primary{
+    @apply bg-primary text-white
+}
+
+.p-toast {
+    @apply !w-11/12 !max-w-[350px]
+}
+
+.p-toast-message {
+    box-shadow: none !important;
+}
+
+:root {
+    --body-bg: #F7F7F7
+}
+
+:root[class="dark"] {
+    --body-bg: #0E0E12
+}
