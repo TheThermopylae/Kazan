@@ -4,5 +4,5 @@
     <slot />
   </main>
   <FooterDesSection />
-  <!-- <FooterTheFooter /> -->
+  <FooterTheFooter />
 </template>

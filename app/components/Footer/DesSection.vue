@@ -1,6 +1,6 @@
 <template>
   <section class="container mt-20 relative">
-    <p class="overflow-hidden" :class="{ 'h-32': !showAll }">
+    <p class="overflow-hidden" :class="{ 'h-32': !showAll, 'mb-5': showAll }">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium
       nulla odit, qui minus autem dicta quasi nemo molestias quod expedita
       pariatur enim quidem consequuntur ipsum eaque odio inventore, non magni
@@ -58,10 +58,10 @@
     </p>
     <div
       v-if="!showAll"
-      class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent flex justify-center items-end pb-2"
+      class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white dark:from-maindark to-transparent flex justify-center items-end pb-2"
     >
       <button
-        class="px-4 py-2 bg-[#EEF4FF] text-[#0088FF] rounded-full flex items-center gap-2 cursor-pointer"
+        class="px-4 py-2 bg-[#EEF4FF] dark:bg-[#252525] text-[#0088FF] rounded-full flex items-center gap-2 cursor-pointer"
         @click="showAll = true"
       >
         بیشتر

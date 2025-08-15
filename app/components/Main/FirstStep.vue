@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-secdark rounded-2xl p-5 flex flex-col items-center gap-6 my-10"
+    class="bg-white dark:bg-secdark rounded-2xl p-5 flex flex-col items-center gap-6 my-10"
   >
     <p class="font-bold text-2xl">
       اولین قدم برای سرمایه‌گذاری در بازار رمزارزها را بردار!
