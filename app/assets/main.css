@@ -24,13 +24,14 @@ body {
     --font-bold: 'peyda-bold';
     --text-2sm: 10px;
 
-    --radius-10 : 10px;
+    --radius-10: 10px;
 
     --color-primary: #0057FF;
-    --color-maindark : #231F20;
-    --color-lables : #333333;
-    --color-darkbg : #0E0E12;
-    --color-textlight : #595959;
+    --color-maindark: #231F20;
+    --color-secdark: #252525;
+    --color-lables: #333333;
+    --color-darkbg: #0E0E12;
+    --color-textlight: #595959;
 }
 
 @utility container {
@@ -46,7 +47,7 @@ body {
     outline: none;
 }
 
-h2{
+h2 {
     @apply text-lables dark:text-white
 }
 
@@ -54,7 +55,7 @@ h2{
     @apply flex justify-center items-center
 }
 
-.primary{
+.primary {
     @apply bg-primary text-white
 }
 

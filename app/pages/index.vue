@@ -9,6 +9,9 @@
     <MainWhyKazan />
     <MainBuyCrypto />
     <MainHowBuy />
+    <MainBottomOptionsSection />
+    <MainFirstStep />
+    <MainBlogSection />
   </div>
 </template>
 

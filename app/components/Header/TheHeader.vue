@@ -4,10 +4,10 @@
     :class="{ 'h-16 shadow': scrolled, 'h-20': !scrolled }"
   >
     <div class="flex items-center gap-10">
-      <div class="flex items-center gap-4 font-bold text-sm">
+      <NuxtLink to="/" class="flex items-center gap-4 font-bold text-sm">
         <NuxtImg src="/logo.svg" class="size-[27px]"></NuxtImg>
         <h3>صرافی <span class="text-primary">کازان</span></h3>
-      </div>
+      </NuxtLink>
       <div class="flex gap-6">
         <Button
           type="button"
@@ -169,7 +169,6 @@
 
 <script setup>
 let scrolled = ref(false)
-let isDark = ref(null)
 
 onMounted(() => {
   window.addEventListener('scroll', () => {

@@ -3,9 +3,9 @@
     <h2 class="text-center text-[64px] mb-10">نظرات شما</h2>
     <swiper
       :slidesPerView="2.5"
-      :spaceBetween="50"
+      :spaceBetween="200"
       :centeredSlides="true"
-      class="mySwiper !py-10"
+      class="mySwiper !py-20"
     >
       <swiper-slide v-for="item in 10">
         <article
@@ -53,6 +53,6 @@ import 'swiper/css'
 }
 :deep(.swiper-slide-active) {
   transition: all 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 </style>
