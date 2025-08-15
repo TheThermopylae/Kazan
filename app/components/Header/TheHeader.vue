@@ -147,7 +147,7 @@
       </button>
       <button
         class="!hidden flex-center bg-maindark text-white size-10 rounded-full cursor-pointer dark:!flex"
-        @click="switchDark"
+        @click="switchLight"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -168,6 +168,16 @@
 </template>
 
 <script setup>
+let scrolled = ref(false)
+let isDark = ref(null)
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > 100) scrolled.value = true
+    else scrolled.value = false
+  })
+})
+
 const menuBuy = ref()
 const menuPrice = ref()
 const menuOther = ref()
@@ -222,14 +232,12 @@ const toggleOther = event => {
 }
 
 function switchDark () {
-  document.documentElement.classList.toggle('dark')
+  localStorage.setItem('dark', JSON.stringify(true))
+  document.documentElement.classList.add('dark')
 }
 
-let scrolled = ref(false)
-onMounted(() => {
-  window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > 100) scrolled.value = true
-    else scrolled.value = false
-  })
-})
+function switchLight () {
+  localStorage.removeItem('dark')
+  document.documentElement.classList.remove('dark')
+}
 </script>

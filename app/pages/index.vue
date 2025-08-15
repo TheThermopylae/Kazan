@@ -11,3 +11,9 @@
     <MainHowBuy />
   </div>
 </template>
+
+<script setup>
+useHead({
+  title : '| صفحه اصلی'
+})
+</script>

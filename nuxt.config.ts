@@ -50,7 +50,6 @@ const MyPreset = definePreset(Aura, {
 })
 
 export default defineNuxtConfig({
-  ssr: false,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/main.css', 'primeicons/primeicons.css'],
@@ -59,9 +58,9 @@ export default defineNuxtConfig({
       bodyAttrs: {
         dir: 'rtl'
       },
-      // link: [
-      //   { rel: 'icon', href: '/logo.png' }
-      // ]
+      link: [
+        { rel: 'icon', href: '/logo.svg' }
+      ]
     },
   },
   vite: {

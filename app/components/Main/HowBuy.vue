@@ -1,8 +1,8 @@
 <template>
-  <section class="my-10">
-    <p class="text-lg font-bold mb-6">چگونه روبل روسیه بخریم؟</p>
+  <section class="mt-20 mb-10">
+    <p class="text-lg font-bold">چگونه روبل روسیه بخریم؟</p>
     <div class="flex items-center justify-between">
-      <img src="/main/questions.svg" alt="questions" class="w-1/2" />
+      <NuxtImg src="/main/questions.svg" alt="questions" class="w-1/2" />
       <div class="flex-grow">
         <h3 class="text-2xl font-bold mb-6">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
@@ -71,7 +71,7 @@
           </button>
         </div>
       </div>
-      <img src="/main/receipt.svg" alt="receipt" class="w-1/2" />
+      <NuxtImg src="/main/receipt.svg" alt="receipt" class="w-1/2" />
     </div>
   </section>
 </template>
