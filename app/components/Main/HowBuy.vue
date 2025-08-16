@@ -4,10 +4,10 @@
     <div class="flex items-center justify-between">
       <NuxtImg src="/main/questions.svg" alt="questions" class="w-1/2" />
       <div class="flex-grow">
-        <h3 class="text-2xl font-bold mb-6">
+        <h3 class="text-xl font-bold mb-6">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
         </h3>
-        <ul class="w-fit">
+        <ul class="w-fit text-sm">
           <li class="mb-3">
             راهی مطمئن برای ورودی مطمئن به بازارهای بدون مرز جهانی
           </li>
@@ -43,8 +43,8 @@
     </div>
     <div class="flex justify-between mt-10 relative">
       <div class="flex-grow">
-        <h3 class="text-2xl font-bold mb-6">دریافت رسید</h3>
-        <ul class="w-fit">
+        <h3 class="text-xl font-bold mb-6">دریافت رسید</h3>
+        <ul class="w-fit text-sm">
           <li class="mb-3">
             راهی مطمئن برای ورودی مطمئن به بازارهای بدون مرز جهانی
           </li>

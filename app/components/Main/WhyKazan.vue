@@ -1,6 +1,6 @@
 <template>
   <section class="my-10">
-    <h2 class="text-lg font-bold mb-6">چرا کازان</h2>
+    <h2 class="text-lg font-bold mb-6">چرا کازان؟</h2>
     <div class="grid grid-cols-3 gap-5">
       <article
         class="flex flex-col items-center rounded-2xl bg-[#252525] border border-[#343434] py-6 col-span-2"
@@ -24,7 +24,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold text-white">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-[#EAE8F0] text-xs">
+        <p class="text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
@@ -71,7 +71,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight text-xs">
+        <p class="text-textlight dark:text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
@@ -118,7 +118,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight text-xs">
+        <p class="text-textlight dark:text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
@@ -165,7 +165,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight text-xs">
+        <p class="text-textlight dark:text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
@@ -212,7 +212,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight text-xs">
+        <p class="text-textlight dark:text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
@@ -259,7 +259,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight text-xs">
+        <p class="text-textlight dark:text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
@@ -286,7 +286,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold text-white">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-[#EAE8F0] text-xs">
+        <p class="text-textdark text-xs">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>

@@ -4,13 +4,13 @@
   <div class="container">
     <MainOptionsSection />
   </div>
-  <MainYourComments />
   <div class="container">
     <MainWhyKazan />
     <MainBuyCrypto />
     <MainHowBuy />
     <MainBottomOptionsSection />
     <MainFirstStep />
+    <MainYourComments />
     <MainBlogSection />
   </div>
 </template>

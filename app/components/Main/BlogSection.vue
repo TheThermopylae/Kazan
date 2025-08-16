@@ -1,11 +1,11 @@
 <template>
-  <section class="grid grid-cols-3 gap-5">
+  <section class="grid grid-cols-3 gap-5 w-4/5 m-auto">
     <article class="p-5 rounded-[22px] bg-white dark:bg-secdark" v-for="item in 3">
       <NuxtImg
         :src="`/main/img${item}.svg`"
         class="w-full rounded-[20px] mb-20"
       ></NuxtImg>
-      <p class="mb-10">
+      <p class="mb-10 text-sm">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای

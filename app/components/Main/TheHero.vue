@@ -2,8 +2,8 @@
   <section class="mt-5 bg-primary text-white">
     <div class="container flex justify-between items-center gap-10">
       <div class="flex flex-col justify-between h-full gap-6">
-        <h1 class="font-bold text-[40px]">خرید و فروش روبل روسیه</h1>
-        <p class="leading-8">
+        <h1 class="font-bold text-3xl">خرید و فروش روبل روسیه</h1>
+        <p class="leading-8 text-sm">
           قیمت روبل در سایت صرافی کازان با بکارگیری از دیتاسنتر چندین سایت معتبر
           بانکی و معاملات کف بازار مشخص و به صورت 24 ساعته آپدیت می شود. <br>خرید و
           فروش روبل روسیه یکی از دغدغه‌های اصلی ایرانیان مقیم روسیه است. صرافی
@@ -12,7 +12,7 @@
           میلیون‌ها روبل را به متقاضیان عرضه می‌کنیم. سرعت و امنیت در تبادل ارز،
           شفافیت و واریز آنی از ویژگی‌های صرافی کازان است
         </p>
-        <div class="border rounded-full w-fit pr-4">
+        <div class="border rounded-full w-fit pr-4 text-sm">
           <input
             type="text"
             placeholder="شماره موبایلتان را وارد کنید"

@@ -1,11 +1,19 @@
 <template>
   <section class="mt-32 mb-10">
-    <h2 class="text-center text-[64px] mb-10">نظرات شما</h2>
+    <h2 class="text-center text-4xl mb-10">نظرات کاربران</h2>
     <swiper
-      :slidesPerView="2.5"
-      :spaceBetween="200"
-      :centeredSlides="true"
-      class="mySwiper !py-20"
+      :breakpoints="{
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 100
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 100
+        }
+      }"
+      class="mySwiper !py-20 !px-1"
+      :centered-slides="true"
     >
       <swiper-slide v-for="item in 10">
         <article
@@ -26,12 +34,12 @@
             </svg>
           </div>
           <div
-            class="my-10 flex justify-center items-center gap-3 font-bold text-xl"
+            class="my-10 flex justify-center items-center gap-3 font-bold text-lg"
           >
             <img src="/main/profile.svg" alt="profile" />
             امیر برزگر
           </div>
-          <p>
+          <p class="text-sm">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
