@@ -258,7 +258,7 @@
     </div>
     <div class="flex justify-between items-center px-4 text-sm font-bold">
       <p class="text-[#999999]">تمامی محتوا متعلق به صرافی کازان میباشد.</p>
-      <div class="flex gap-3 items-center text-[#33323B]">
+      <div class="flex gap-3 items-center text-[#33323B] dark:text-textdark">
         <p>+7(919)7774661</p>
         <p>Kazanexchange@gmail.com</p>
         <NuxtLink
