@@ -2,7 +2,7 @@
   <section
     class="bg-white dark:bg-secdark rounded-2xl p-5 flex flex-col items-center gap-6 my-10"
   >
-    <p class="font-bold text-xl">
+    <p class="font-bold text-sm text-center md:text-xl">
       اولین قدم برای سرمایه‌گذاری در بازار رمزارزها را بردار!
     </p>
     <NuxtLink to="/" class="flex items-center gap-2 primary rounded-full p-3 text-sm">

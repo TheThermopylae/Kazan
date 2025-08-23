@@ -1,7 +1,7 @@
 <template>
   <section class="mt-20 bg-white dark:bg-maindark rounded-10 p-4">
     <h2 class="text-lg mb-4">خرید آنی ارزها</h2>
-    <div class="grid grid-cols-9 gap-2">
+    <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2">
       <article class="text-sm flex flex-col items-center gap-2 rounded-lg border dark:bg-[#2B2B2B] border-[#F0F0F0] dark:border-[#33323B] py-4" v-for="item in 9">
         <svg
           width="32"

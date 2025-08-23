@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-3 gap-5 w-4/5 m-auto">
+  <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 xl:w-4/5 m-auto">
     <article class="p-5 rounded-[22px] bg-white dark:bg-secdark" v-for="item in 3">
       <NuxtImg
         :src="`/main/img${item}.svg`"

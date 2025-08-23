@@ -1,13 +1,21 @@
 <template>
-  <section class="mt-20 mb-10">
-    <p class="text-lg font-bold">چگونه روبل روسیه بخریم؟</p>
-    <div class="flex items-center justify-between">
-      <NuxtImg src="/main/questions.svg" alt="questions" class="w-1/2" />
+  <section class="mt-10 lg:mt-20 mb-10">
+    <p
+      class="text-sm lg:text-lg font-bold text-center lg:text-right mb-8 lg:m-0"
+    >
+      چگونه روبل روسیه بخریم؟
+    </p>
+    <div class="md:flex items-center justify-between">
+      <NuxtImg
+        src="/main/questions.svg"
+        alt="questions"
+        class="md:w-1/2 block m-auto mb-8 md:m-0"
+      />
       <div class="flex-grow">
-        <h3 class="text-xl font-bold mb-6">
+        <h3 class="text-sm md:text-[16px] lg:text-xl font-bold mb-6">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
         </h3>
-        <ul class="w-fit text-sm">
+        <ul class="w-fit text-xs md:text-sm">
           <li class="mb-3">
             راهی مطمئن برای ورودی مطمئن به بازارهای بدون مرز جهانی
           </li>
@@ -19,7 +27,7 @@
           <li class="flex justify-end">
             <NuxtLink
               to="/"
-              class="primary text-sm flex items-center w-fit p-2 gap-3 rounded-tl-[50px] rounded-tr-lg rounded-br-[20px] rounded-bl-[50px]"
+              class="primary text-sm md:text-sm flex items-center w-fit p-2 gap-3 rounded-tl-[50px] rounded-tr-lg rounded-br-[20px] rounded-bl-[50px]"
             >
               <svg
                 width="15"
@@ -41,10 +49,12 @@
         </ul>
       </div>
     </div>
-    <div class="flex justify-between mt-10 relative">
+    <div class="md:flex justify-between mt-10 relative">
       <div class="flex-grow">
-        <h3 class="text-xl font-bold mb-6">دریافت رسید</h3>
-        <ul class="w-fit text-sm">
+        <h3 class="text-sm md:text-[16px] lg:text-xl font-bold mb-6">
+          دریافت رسید
+        </h3>
+        <ul class="w-fit text-xs md:text-sm">
           <li class="mb-3">
             راهی مطمئن برای ورودی مطمئن به بازارهای بدون مرز جهانی
           </li>
@@ -54,24 +64,36 @@
           </li>
           <li>تراکنش‌های سریع با کمترین کارمزد</li>
         </ul>
-        <div class="absolute bottom-10 flex gap-5">
+        <div class="absolute bottom-10 hidden md:flex gap-5">
           <button
-            class="size-[42px] rounded-full primary flex-center cursor-pointer"
+            v-for="item in 4"
+            class="size-8 lg:size-[42px] text-xs rounded-full flex-center cursor-pointer"
+            :class="{ primary: currentTab == item }"
+            @click="currentTab = item"
           >
-            1
-          </button>
-          <button class="size-[42px] rounded-full flex-center cursor-pointer">
-            2
-          </button>
-          <button class="size-[42px] rounded-full flex-center cursor-pointer">
-            3
-          </button>
-          <button class="size-[42px] rounded-full flex-center cursor-pointer">
-            4
+            {{ item }}
           </button>
         </div>
       </div>
-      <NuxtImg src="/main/receipt.svg" alt="receipt" class="w-1/2" />
+      <NuxtImg
+        src="/main/receipt.svg"
+        alt="receipt"
+        class="md:w-1/2 block m-auto mb-8 md:m-0"
+      />
+      <div class="flex md:hidden justify-center gap-5 relative bottom-5">
+        <button
+          v-for="item in 4"
+          class="size-8 lg:size-[42px] text-xs rounded-full flex-center cursor-pointer"
+          :class="{ primary: currentTab == item }"
+          @click="currentTab = item"
+        >
+          {{ item }}
+        </button>
+      </div>
     </div>
   </section>
 </template>
+
+<script setup>
+let currentTab = ref(1)
+</script>

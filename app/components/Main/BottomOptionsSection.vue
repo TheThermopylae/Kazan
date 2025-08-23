@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-3 gap-3">
+  <section class="grid md:grid-cols-3 gap-3">
     <article
       v-for="item in 3"
       class="bg-white dark:bg-maindark rounded-2xl border border-[#F0F0F0] dark:border-[#2B2B2B] p-5 pb-7"
