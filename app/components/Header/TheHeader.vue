@@ -63,10 +63,8 @@
         </button>
       </div>
     </div>
-    <div class="lg:hidden">
       <button
-        to="/"
-        class="bg-primary rounded-full px-3 py-2 text-white flex items-center gap-2"
+        class="bg-primary rounded-full p-3 text-white flex items-center gap-2 text-xs"
         @click="showFormFunc"
       >
         ورود یا ثبت نام
@@ -85,7 +83,6 @@
           />
         </svg>
       </button>
-    </div>
     <AuthMobileForm :showForm="showForm" />
     <AuthMonitorForm :showForm="showForm" />
   </header>

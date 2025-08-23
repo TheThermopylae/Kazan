@@ -24,7 +24,7 @@
                 </svg>
             </div>
         </div>
-        <button class="text-primary flex gap-2 items-center text-sm mt-3 cursor-pointer">
+        <button class="text-primary flex gap-2 items-center text-sm mt-3 cursor-pointer" @click="$emit('changePassword')">
            فراموشی رمز عبور
         </button>
     </div>
@@ -33,7 +33,7 @@
     </div>
 </template>
 <script setup>
-let emit = defineEmits(["toStepThree"])
+let emit = defineEmits(["toStepThree","changePassword"])
 
 let showPass = ref(false)
 </script>
