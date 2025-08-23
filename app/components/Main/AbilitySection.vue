@@ -1,8 +1,10 @@
 <template>
   <section
-    class="bg-white dark:bg-maindark shadow-md relative right-1/2 translate-x-1/2 rounded-2xl py-6 w-2/3 -translate-y-1/2 flex justify-around"
+    class="bg-white dark:bg-maindark shadow-md relative right-1/2 translate-x-1/2 rounded-2xl p-6 xl:w-2/3 xl:-translate-y-1/2 grid grid-cols-2 lg:grid-cols-4 gap-3 text-sm mt-3 xl:m-0"
   >
-    <div class="text-[#333] dark:text-white flex items-center gap-2">
+    <div
+      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="25px"
@@ -16,7 +18,9 @@
       </svg>
       ابزارهای پیشرفته
     </div>
-    <div class="text-[#333] dark:text-white flex items-center gap-2">
+    <div
+      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="25px"
@@ -65,7 +69,9 @@
       </svg>
       خرید آسان
     </div>
-    <div class="text-[#333] dark:text-white flex items-center gap-2">
+    <div
+      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="25px"
@@ -90,7 +96,9 @@
       </svg>
       کارمزد پایین
     </div>
-    <div class="text-[#333] dark:text-white flex items-center gap-2">
+    <div
+      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="25px"

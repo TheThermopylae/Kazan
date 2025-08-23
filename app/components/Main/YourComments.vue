@@ -3,6 +3,14 @@
     <h2 class="text-center text-4xl mb-10">نظرات کاربران</h2>
     <swiper
       :breakpoints="{
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 50
+        },
         1024: {
           slidesPerView: 2,
           spaceBetween: 100
@@ -12,12 +20,12 @@
           spaceBetween: 100
         }
       }"
-      class="mySwiper !py-20 !px-1"
+      class="mySwiper !py-20 !px-3"
       :centered-slides="true"
     >
       <swiper-slide v-for="item in 10">
         <article
-          class="bg-white dark:bg-maindark pt-8 pb-10 px-12 rounded-[20px] border border-[#99999978]"
+          class="bg-white dark:bg-maindark pt-8 pb-10 px-12 rounded-[20px] border border-[#99999978] w-full"
         >
           <div class="flex justify-center gap-2">
             <svg
@@ -61,6 +69,20 @@ import 'swiper/css'
 }
 :deep(.swiper-slide-active) {
   transition: all 0.3s;
-  transform: scale(1.3);
+}
+@media only screen and (min-width: 760px) {
+  :deep(.swiper-slide-active) {
+    transform: scale(1.1);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  :deep(.swiper-slide-active) {
+    transform: scale(1.2);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  :deep(.swiper-slide-active) {
+    transform: scale(1.25);
+  }
 }
 </style>

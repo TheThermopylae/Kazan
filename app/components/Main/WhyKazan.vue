@@ -1,9 +1,9 @@
 <template>
   <section class="my-10">
     <h2 class="text-lg font-bold mb-6">چرا کازان؟</h2>
-    <div class="grid grid-cols-3 gap-5">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
       <article
-        class="flex flex-col items-center rounded-2xl bg-[#252525] border border-[#343434] py-6 col-span-2"
+        class="flex flex-col items-center rounded-2xl bg-[#252525] border border-[#343434] py-6 px-2 md:col-span-2"
       >
         <svg
           width="32"
@@ -24,13 +24,13 @@
           />
         </svg>
         <h4 class="mb-4 font-bold text-white">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textdark text-xs">
+        <p class="text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 shadow"
+        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 px-2 shadow"
       >
         <svg
           width="30"
@@ -71,13 +71,13 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight dark:text-textdark text-xs">
+        <p class="text-textlight dark:text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 shadow"
+        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 px-2 shadow"
       >
         <svg
           width="30"
@@ -118,13 +118,13 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight dark:text-textdark text-xs">
+        <p class="text-textlight dark:text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 shadow"
+        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 px-2 shadow"
       >
         <svg
           width="30"
@@ -165,13 +165,13 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight dark:text-textdark text-xs">
+        <p class="text-textlight dark:text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 shadow"
+        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 px-2 shadow"
       >
         <svg
           width="30"
@@ -212,13 +212,13 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight dark:text-textdark text-xs">
+        <p class="text-textlight dark:text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 shadow"
+        class="flex flex-col items-center rounded-2xl bg-white dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 px-2 shadow"
       >
         <svg
           width="30"
@@ -259,13 +259,13 @@
           />
         </svg>
         <h4 class="mb-4 font-bold">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textlight dark:text-textdark text-xs">
+        <p class="text-textlight dark:text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-[#252525] border border-[#343434] py-6 col-span-2"
+        class="flex flex-col items-center rounded-2xl bg-[#252525] border border-[#343434] py-6 px-2 lg:col-span-2"
       >
         <svg
           width="32"
@@ -286,7 +286,7 @@
           />
         </svg>
         <h4 class="mb-4 font-bold text-white">معاملات سریع و بدون کارمزد</h4>
-        <p class="text-textdark text-xs">
+        <p class="text-textdark text-xs text-center">
           به‌صورت ۲۴ ساعته ارزهای فیات و دیجیتال را بدون کارمزد خرید و فروش
           کنید.
         </p>

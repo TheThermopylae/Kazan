@@ -1,7 +1,7 @@
 <template>
   <section class="my-10">
     <h2 class="text-lg font-bold mb-6">امکانات کازان</h2>
-    <div class="grid grid-cols-4 gap-5">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
       <article
         class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark transition"
       >

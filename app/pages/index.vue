@@ -1,7 +1,7 @@
 <template>
   <MainTheHero />
-  <MainAbilitySection />
   <div class="container">
+    <MainAbilitySection />
     <MainOptionsSection />
   </div>
   <div class="container">
@@ -9,14 +9,16 @@
     <MainBuyCrypto />
     <MainHowBuy />
     <MainBottomOptionsSection />
+  </div>
+  <MainYourComments />
+  <div class="container">
     <MainFirstStep />
-    <MainYourComments />
     <MainBlogSection />
   </div>
 </template>
 
 <script setup>
 useHead({
-  title : '| صفحه اصلی'
+  title: '| صفحه اصلی'
 })
 </script>

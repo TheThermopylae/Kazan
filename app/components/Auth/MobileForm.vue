@@ -8,9 +8,7 @@
         <AuthInsertData v-if="step == 1" @toStepTwo="step = 2" />
         <AuthInsertPass v-else-if="step == 2" @toStepThree="step = 3" />
         <AuthInsertOtp v-else-if="step == 3" @toStepOne="step = 1" />
-        <AuthForgetPassword v-else-if="step == 'forget'" @change-pass="step = 'forget'" />
-        <p class="text-center text-[#00000666] text-xs mb-4" v-if="step != 3"> لورم ایپسوم متن ساختگی با تولید سادگی
-            نامفهوم</p>
+        <p class="text-center text-[#00000666] text-xs mb-4" v-if="step != 3"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
     </Drawer>
 </template>
 
