@@ -64,7 +64,7 @@
       </div>
     </div>
       <button
-        class="bg-primary rounded-full p-3 text-white flex items-center gap-2 text-xs"
+        class="bg-primary rounded-full p-3 text-white flex items-center gap-2 lg:hidden"
         @click="showFormFunc"
       >
         ورود یا ثبت نام
