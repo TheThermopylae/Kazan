@@ -41,7 +41,7 @@
                 صرافی کازان را خوانده و می‌پذیرم.
             </p>
         </div>
-        <Button label="ثبت و ادامه" pt:root="!w-full" @click="$emit('passwordChanged')" />
+        <Button label="ثبت و ادامه" pt:root="!w-full !text-white" @click="$emit('passwordChanged')" />
     </div>
 </template>
 <script setup>

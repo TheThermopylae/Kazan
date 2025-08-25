@@ -1,6 +1,6 @@
 <template>
     <Drawer v-model:visible="showForm" position="bottom" style="height: auto" @after-hide="step = 1"
-        pt:root="!rounded-t-10 !text-black lg:!hidden" pt:header="!p-1 !border-b !border-[#F0F0F0]"
+        pt:root="!rounded-t-10 !text-black lg:!hidden !bg-white" pt:header="!p-1 !border-b !border-[#F0F0F0]"
         pt:content="!px-0 !pb-0">
         <template #header>
             <h4 class="absolute left-1/2 -translate-x-1/2 top-3 text-sm">ورود و ثبت نام</h4>

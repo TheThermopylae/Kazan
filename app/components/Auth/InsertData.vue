@@ -1,12 +1,12 @@
 <template>
     <div class="border-b border-[#F0F0F0] px-2 pb-3 lg:px-4">
-        <p class="text-center font-bold text-lg mt-3 mb-5">به صرافی کازان خوش آمدید</p>
+        <p class="text-center font-bold md:text-lg mt-3 mb-5">به صرافی کازان خوش آمدید</p>
         <div class="text-xs">
         <label for="email-phone" class="text-xs">شماره موبایل یا ایمیل</label>
             <input type="text" id="email-phone" class="bg-[#EFEFEF] block w-full mt-2 rounded-10 p-3"
                 placeholder="شماره موبایل یا ایمیل خود را وارد کنید">
         </div>
-        <button class="text-primary flex gap-2 items-center text-sm mt-3 cursor-pointer" @click="showCode = !showCode">
+        <button class="text-primary flex gap-2 items-center text-xs mt-3 cursor-pointer" @click="showCode = !showCode">
             کد دعوت اختیاری
             <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="transition-all" :class="{ 'rotate-180': showCode }">
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="px-2 py-3 lg:px-4">
-        <Button label="ثبت و ادامه" pt:root="!w-full" @click="$emit('toStepTwo')" />
+        <Button label="ثبت و ادامه" pt:root="!text-sm !w-full !text-white" @click="$emit('toStepTwo')" />
     </div>
 </template>
 <script setup>
