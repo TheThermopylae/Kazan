@@ -6,7 +6,7 @@
       <h3>صرافی <span class="text-primary">کازان</span></h3>
     </NuxtLink>
     <div class="hidden lg:flex gap-8">
-      <Button type="button" label="خرید ارز" @mouseenter="toggleBuy" @mouseleave="toggleBuy" aria-haspopup="true"
+      <Button type="button" label="خرید ارز" @click="toggleBuy" aria-haspopup="true"
         aria-controls="overlay_menu" unstyled pt:root="flex items-center gap-3 flex-row-reverse cursor-pointer">
         <template #icon>
           <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@
         </template>
       </Button>
       <Menu ref="menuBuy" id="overlay_menu" :model="itemsBuy" :popup="true" pt:submenuLabel="!hidden" />
-      <Button type="button" label="قیمت ارز" @mouseenter="togglePrice" @mouseleave="togglePrice" aria-haspopup="true"
+      <Button type="button" label="قیمت ارز" @click="togglePrice" aria-haspopup="true"
         aria-controls="overlay_menu" unstyled pt:root="flex items-center gap-3 flex-row-reverse cursor-pointer">
         <template #icon>
           <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@
       </Button>
       <Menu ref="menuPrice" id="overlay_menu" :model="itemsPrice" :popup="true" pt:submenuLabel="!hidden" />
       <NuxtLink to="/">راهنمای کامل</NuxtLink>
-      <Button type="button" label="سایر" @mouseenter="toggleOther" @mouseleave="toggleOther" aria-haspopup="true"
+      <Button type="button" label="سایر" @click="toggleOther" aria-haspopup="true"
         aria-controls="overlay_menu" unstyled pt:root="flex items-center gap-3 flex-row-reverse cursor-pointer">
         <template #icon>
           <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">

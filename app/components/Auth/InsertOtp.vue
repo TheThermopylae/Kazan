@@ -10,13 +10,16 @@
         <p class="mt-2 text-xs text-[#3B3B3B]">56 ثانیه تا ارسال مجدد کد</p>
     </div>
     <div class="px-2 py-3 lg:px-4">
-        <Button label="ثبت و ادامه" pt:root="!text-sm !w-full !text-white" @click="$emit('toStepTwo')" />
+        <Button label="ثبت و ادامه" pt:root="!text-sm !w-full !text-white" @click="finishAuth" />
     </div>
 </template>
 <script setup>
 let emit = defineEmits(["toStepOne"])
-
 let value = ref(null)
+
+function finishAuth() {
+    localStorage.setItem('auth', JSON.stringify(true))
+}
 </script>
 <style scoped>
 :deep(.p-inputotp-input) {
