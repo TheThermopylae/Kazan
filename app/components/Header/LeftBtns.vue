@@ -226,7 +226,7 @@
 </template>
 
 <script setup>
-let userLogged = ref(false)
+let userLogged = ref(true)
 
 function switchDark () {
   localStorage.setItem('dark', JSON.stringify(true))
@@ -449,7 +449,7 @@ const toggleAccount = event => {
   accountMenu.value.toggle(event)
 }
 
-onMounted(() => {
-  userLogged.value = JSON.parse(localStorage.getItem('auth'))
-})
+// onMounted(() => {
+//   userLogged.value = JSON.parse(localStorage.getItem('auth'))
+// })
 </script>
