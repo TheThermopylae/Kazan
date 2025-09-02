@@ -223,7 +223,7 @@
 
 <script setup>
 let userLogged = ref(true)
-let showAuth = ref(true)
+let showAuth = ref(false)
 
 function switchDark () {
   localStorage.setItem('dark', JSON.stringify(true))
