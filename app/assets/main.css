@@ -60,6 +60,32 @@ h2 {
     @apply bg-primary text-white
 }
 
+.vpd-icon-btn {
+    border-radius: 0 10px 10px 0 !important;
+    background: #0057FF !important;
+    width: 40px !important;
+}
+
+.vpd-header {
+    background: #0057FF !important;
+}
+
+.vpd-day-effect {
+    background: #0057FF !important;
+}
+
+.vpd-actions button {
+    color: #0057FF !important;
+}
+
+.form-control {
+    background: #EFEFEF;
+    border: none !important;
+    border-radius: 10px 0 0 10px;
+    height: 40px !important;
+}
+
+/* primevue */
 .p-toast {
     @apply !w-11/12 !max-w-[350px]
 }
@@ -69,7 +95,11 @@ h2 {
 }
 
 :root {
-    --body-bg: #F7F7F7
+    --body-bg: #F7F7F7;
+    --p-progressspinner-color-one: black;
+    --p-progressspinner-color-two: black;
+    --p-progressspinner-color-three: black;
+    --p-progressspinner-color-four: black;
 }
 
 :root[class="dark"] {

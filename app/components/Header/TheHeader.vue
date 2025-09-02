@@ -27,8 +27,8 @@
         />
       </svg>
     </button>
-    <AuthMobileForm :showForm="showForm" />
-    <AuthMonitorForm :showForm="showForm" />
+    <AccountMobileForm :showForm="showForm" />
+    <AccountMonitorForm :showForm="showForm" />
   </header>
 </template>
 

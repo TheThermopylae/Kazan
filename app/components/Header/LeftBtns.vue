@@ -193,12 +193,6 @@
           </svg>
         </NuxtLink>
       </template>
-      <template #item v-for="item in notifItems">
-        <div class="p-2">
-          <h4 class="text-lg font-bold mb-1">{{ item[0] }}</h4>
-          <p class="text-sm">{{ item[1] }}</p>
-        </div>
-      </template>
     </Menu>
     <Menu
       ref="notifMenu"
@@ -222,11 +216,14 @@
         </div>
       </template>
     </Menu>
+    <AuthMobileCompleteAuth />
+    <AuthMonitorCompleteAuth />
   </div>
 </template>
 
 <script setup>
 let userLogged = ref(true)
+let showAuth = ref(true)
 
 function switchDark () {
   localStorage.setItem('dark', JSON.stringify(true))
@@ -430,8 +427,11 @@ const accountItems = ref([
   {
     items: [
       {
-        label: 'دارایی ها',
-        icon: 'pi pi-wallet'
+        label: 'احراز هویت',
+        icon: 'pi pi-id-card',
+        command: () => {
+          showAuth.value = true
+        }
       },
       {
         label: 'دارایی ها',
@@ -448,6 +448,8 @@ const accountItems = ref([
 const toggleAccount = event => {
   accountMenu.value.toggle(event)
 }
+
+provide('showAuth', showAuth)
 
 // onMounted(() => {
 //   userLogged.value = JSON.parse(localStorage.getItem('auth'))
