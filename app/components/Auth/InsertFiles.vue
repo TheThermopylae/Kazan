@@ -3,7 +3,7 @@
     <div class="grid grid-cols-2 gap-3 mb-3.5">
       <div>
         <AuthUploadCard @selectedFile="selectedCard" v-if="!showCard" />
-        <div v-else class="relative text-sm">
+        <div v-else class="relative text-sm text-black">
           <NuxtImg
             :src="showCard"
             class="h-[130px] rounded w-full contrast-25"
@@ -57,7 +57,7 @@
       </div>
       <div>
         <AuthUploadPass @selectedFile="selectedPass" v-if="!showPass" />
-        <div v-else class="relative text-sm">
+        <div v-else class="relative text-sm text-black">
           <NuxtImg
             :src="showPass"
             class="h-[130px] rounded w-full contrast-25"
@@ -110,7 +110,7 @@
         </div>
       </div>
     </div>
-    <section class="bg-[#F2F8FF] rounded-10 p-3 text-xs flex flex-col gap-3">
+    <section class="bg-[#F2F8FF] dark:bg-secdark rounded-10 p-3 text-xs flex flex-col gap-3">
       <div
         class="flex gap-3 items-center text-primary font-bold"
         v-for="item in infos"
@@ -146,15 +146,17 @@
       </div>
     </section>
   </div>
-  <div class="px-3 py-3 lg:px-4 border-t border-[#F0F0F0] mt-3">
+  <div class="px-3 py-3 lg:px-4 border-t border-[#F0F0F0] dark:border-secdark mt-3">
     <Button
       label="ثبت و ادامه"
       pt:root="!text-sm !w-full !text-white"
-      @click="$emit('toStepThree')"
+      @click="$emit('toStepComplete')"
     />
   </div>
 </template>
 <script setup>
+let emit = defineEmits(['toStepComplete'])
+
 let showCard = ref(null)
 let showPass = ref(null)
 

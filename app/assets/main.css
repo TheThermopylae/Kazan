@@ -61,9 +61,7 @@ h2 {
 }
 
 .vpd-icon-btn {
-    border-radius: 0 10px 10px 0 !important;
-    background: #0057FF !important;
-    width: 40px !important;
+    @apply !w-[40px] !bg-primary !rounded-tr-10 !rounded-br-10
 }
 
 .vpd-header {
@@ -72,6 +70,15 @@ h2 {
 
 .vpd-day-effect {
     background: #0057FF !important;
+    color: white !important;
+}
+
+.vpd-day {
+    @apply dark:!text-black
+}
+
+.vpd-month-label{
+    @apply dark:!text-black
 }
 
 .vpd-actions button {
@@ -79,10 +86,7 @@ h2 {
 }
 
 .form-control {
-    background: #EFEFEF;
-    border: none !important;
-    border-radius: 10px 0 0 10px;
-    height: 40px !important;
+    @apply bg-[#EFEFEF] dark:bg-secdark !border-none !rounded-tl-10 rounded-bl-10 !h-[40px];
 }
 
 /* primevue */

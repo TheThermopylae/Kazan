@@ -1,14 +1,11 @@
 <template>
-  <div class="border-b border-[#F0F0F0] px-3 lg:px-4">
-    <p class="text-center font-bold md:text-lg mt-3 mb-5">
-      به صرافی کازان خوش آمدید
-    </p>
+  <div class="border-b border-[#F0F0F0] dark:border-secdark px-3 pb-3 lg:px-4">
     <div class="text-xs">
       <label for="email-phone" class="text-xs">نام</label>
       <input
         type="text"
         id="email-phone"
-        class="bg-[#EFEFEF] block w-full mt-2 rounded-10 p-3"
+        class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="نام را وارد کنید"
       />
     </div>
@@ -17,7 +14,7 @@
       <input
         type="text"
         id="email-phone"
-        class="bg-[#EFEFEF] block w-full mt-2 rounded-10 p-3"
+        class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="نام خانوادگی را وارد کنید"
       />
     </div>
@@ -26,7 +23,7 @@
       <input
         type="number"
         id="email-phone"
-        class="bg-[#EFEFEF] block w-full mt-2 rounded-10 p-3"
+        class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="کد ملی را وارد کنید"
       />
     </div>

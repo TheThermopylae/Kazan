@@ -6,7 +6,7 @@
       class="block m-auto w-2/5"
     />
   </div>
-  <div class="py-3 lg:px-4 border-t border-[#F0F0F0] mt-3">
+  <div class="py-3 lg:px-4 border-t border-[#F0F0F0] dark:border-secdark mt-3">
     <Button
       disabled
       label="ثبت و ادامه"
@@ -14,4 +14,3 @@
     />
   </div>
 </template>
-<script setup></script>

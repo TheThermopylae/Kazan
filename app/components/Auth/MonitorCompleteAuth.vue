@@ -3,8 +3,8 @@
     v-model:visible="showAuth"
     style="height: auto"
     @after-hide="step = 1"
-    pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white !overflow-auto"
-    pt:header="!p-1 !border-b !border-[#F0F0F0]"
+    pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white dark:!bg-maindark dark:!text-white !overflow-auto"
+    pt:header="!p-1 !border-b !border-[#F0F0F0] dark:!border-secdark"
     pt:content="!px-0 !pb-0"
   >
     <template #header>
@@ -60,14 +60,14 @@
       <div class="flex items-center gap-3">
         <span
           class="text-sm block size-6 flex-center text-white rounded-md"
-          :class="{ 'bg-[#D7DADF]': step == 1, 'bg-primary': step == 2 }"
+          :class="{ 'bg-[#D7DADF] dark:text-black': step == 1, 'bg-primary': step == 2 }"
           >2</span
         >
         آپلود مدارک
       </div>
     </section>
     <AuthInsertData v-if="step == 1" @toStepTwo="step = 2" />
-    <AuthInsertFiles v-if="step == 2" @toStepThree="step = 'complete'" />
+    <AuthInsertFiles v-if="step == 2" @toStepComplete="step = 'complete'" />
     <AuthCompleteAuth v-if="step == 'complete'" />
   </Dialog>
 </template>
