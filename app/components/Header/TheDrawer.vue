@@ -202,8 +202,6 @@ let visible = ref(false)
 }
 :deep(.p-accordionheader) {
   background: none !important;
-}
-:deep(*) {
-  transition: all 150ms !important;
+  transition: all 0s !important;
 }
 </style>

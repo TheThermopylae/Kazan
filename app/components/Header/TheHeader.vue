@@ -32,7 +32,7 @@
 
 <script setup>
 let scrolled = ref(false)
-let showForm = ref(true)
+let showForm = ref(false)
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
