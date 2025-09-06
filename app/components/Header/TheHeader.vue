@@ -4,9 +4,7 @@
     :class="{ 'h-16 shadow': scrolled, 'h-20': !scrolled }"
   >
     <HeaderMenuList />
-    <ClientOnly>
-      <HeaderLeftBtns @showFormFuncEmit="showFormFunc" />
-    </ClientOnly>
+    <HeaderLeftBtns @showLogForm="showFormFunc" />
     <button
       class="bg-primary rounded-full p-3 text-white flex items-center gap-2 lg:hidden"
       @click="showFormFunc"
@@ -34,7 +32,7 @@
 
 <script setup>
 let scrolled = ref(false)
-let showForm = ref(false)
+let showForm = ref(true)
 
 onMounted(() => {
   window.addEventListener('scroll', () => {

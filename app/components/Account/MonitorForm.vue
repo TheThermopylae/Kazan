@@ -3,8 +3,8 @@
     v-model:visible="showForm"
     style="height: auto"
     @after-hide="step = 1"
-    pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white"
-    pt:header="!p-1 !border-b !border-[#F0F0F0]"
+    pt:root="!rounded-t-10 !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white dark:!bg-maindark"
+    pt:header="!p-1 !border-b !border-[#F0F0F0] dark:!border-secdark"
     pt:content="!px-0 !pb-0"
   >
     <template #header>
@@ -16,7 +16,7 @@
     <AccountInsertPass v-else-if="step == 2" @toStepThree="step = 3" />
     <AccountInsertOtp v-else-if="step == 3" @toStepOne="step = 1" />
     <p
-      class="text-center text-[#00000666] text-2sm md:text-xs mb-4"
+      class="text-center text-[#00000666] dark:text-textdark text-2sm md:text-xs mb-4"
       v-if="step != 3"
     >
       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم

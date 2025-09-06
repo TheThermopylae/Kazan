@@ -105,6 +105,7 @@
 </template>
 
 <script setup>
+
 const menuBuy = ref()
 const menuPrice = ref()
 const menuOther = ref()
