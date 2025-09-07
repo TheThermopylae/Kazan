@@ -5,8 +5,14 @@
 </template>
 
 <script setup>
+import Lenis from 'lenis'
+
+new Lenis({
+  autoRaf: true
+})
+
 useHead({
-  titleTemplate : 'صرافی کازان %s'
+  titleTemplate: 'صرافی کازان %s'
 })
 
 onMounted(() => {
