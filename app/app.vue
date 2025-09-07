@@ -7,10 +7,6 @@
 <script setup>
 import Lenis from 'lenis'
 
-new Lenis({
-  autoRaf: true
-})
-
 useHead({
   titleTemplate: 'صرافی کازان %s'
 })
@@ -18,5 +14,9 @@ useHead({
 onMounted(() => {
   if (JSON.parse(localStorage.getItem('dark')))
     document.documentElement.classList.add('dark')
+
+  new Lenis({
+    autoRaf: true
+  })
 })
 </script>
