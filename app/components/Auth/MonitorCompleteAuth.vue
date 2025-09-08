@@ -3,7 +3,7 @@
     v-model:visible="showAuth"
     style="height: auto"
     @after-hide="step = 1"
-    pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white dark:!bg-maindark dark:!text-white !overflow-auto"
+    pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white dark:!bg-maindark dark:!text-white !overflow-auto !border-none"
     pt:header="!p-1 !border-b !border-[#F0F0F0] dark:!border-secdark"
     pt:content="!px-0 !pb-0"
   >
@@ -60,7 +60,10 @@
       <div class="flex items-center gap-3">
         <span
           class="text-sm block size-6 flex-center text-white rounded-md"
-          :class="{ 'bg-[#D7DADF] dark:text-black': step == 1, 'bg-primary': step == 2 }"
+          :class="{
+            'bg-[#D7DADF] dark:text-black': step == 1,
+            'bg-primary': step == 2
+          }"
           >2</span
         >
         آپلود مدارک

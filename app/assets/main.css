@@ -77,7 +77,7 @@ h2 {
     @apply dark:!text-black
 }
 
-.vpd-month-label{
+.vpd-month-label {
     @apply dark:!text-black
 }
 
@@ -85,8 +85,16 @@ h2 {
     color: #0057FF !important;
 }
 
+.vpd-actions button:nth-child(3) {
+    display: none;
+}
+
 .form-control {
     @apply bg-[#EFEFEF] dark:bg-secdark !border-none !rounded-tl-10 rounded-bl-10 !h-[40px];
+}
+
+.vpd-content {
+    border-radius: 10px !important;
 }
 
 /* primevue */
@@ -106,6 +114,6 @@ h2 {
     --p-progressspinner-color-four: black;
 }
 
-:root[class="dark"] {
+:root.dark {
     --body-bg: #0E0E12
 }

@@ -4,7 +4,7 @@
     position="bottom"
     style="height: auto"
     @after-hide="step = 1"
-    pt:root="!rounded-t-10 !text-black lg:!hidden !bg-white dark:!bg-maindark"
+    pt:root="!rounded-t-10 !text-black lg:!hidden !bg-white dark:!bg-maindark !border-none"
     pt:header="!p-1 !border-b !border-[#F0F0F0]"
     pt:content="!px-0 !pb-0"
   >

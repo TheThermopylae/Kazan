@@ -29,11 +29,7 @@
     </div>
     <div class="text-xs">
       <label for="email-phone" class="text-xs mb-2 block">تاریخ تولد</label>
-      <date-picker-ir
-        v-model="date"
-        format="YYYY-MM-DD"
-        display-format="jYYYY-jMM-jDD"
-      />
+      <date-picker-ir v-model="date" max="1404/12/29" simple />
     </div>
   </div>
   <div class="px-2 py-3 lg:px-4">
