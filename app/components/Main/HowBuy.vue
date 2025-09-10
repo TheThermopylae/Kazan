@@ -1,7 +1,7 @@
 <template>
   <section class="mt-10 lg:mt-20 mb-10">
     <p
-      class="text-sm lg:text-lg font-bold text-center lg:text-right mb-8 lg:m-0"
+      class="text-sm lg:text-lg font-kalameh text-center lg:text-right mb-8 lg:m-0"
     >
       چگونه روبل روسیه بخریم؟
     </p>

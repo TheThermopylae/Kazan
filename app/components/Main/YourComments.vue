@@ -42,7 +42,7 @@
             </svg>
           </div>
           <div
-            class="my-10 flex justify-center items-center gap-3 font-bold text-lg"
+            class="my-10 flex justify-center items-center gap-3 font-kalameh text-lg"
           >
             <img src="/main/profile.svg" alt="profile" />
             امیر برزگر

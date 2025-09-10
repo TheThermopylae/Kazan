@@ -6,7 +6,7 @@
       <div
         class="flex flex-col justify-between h-full gap-5 xl:gap-6 text-center lg:text-right"
       >
-        <h1 class="font-bold text-xl xl:text-3xl">خرید و فروش روبل روسیه</h1>
+        <h1 class="text-xl xl:text-3xl">خرید و فروش روبل روسیه</h1>
         <p class="leading-8 text-sm hidden lg:block">
           قیمت روبل در سایت صرافی کازان با بکارگیری از دیتاسنتر چندین سایت معتبر
           بانکی و معاملات کف بازار مشخص و به صورت 24 ساعته آپدیت می شود.

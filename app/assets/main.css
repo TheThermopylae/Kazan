@@ -1,14 +1,32 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'peyda-medium';
-    src: url('../../public/fonts/woff/PeydaWebFaNum-Medium.woff');
+    font-family: 'iransans-medium';
+    src: url('../../public/fonts/woff/IRANSansX-Medium.woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'peyda-bold';
-    src: url('../../public/fonts/woff/PeydaWebFaNum-Bold.woff');
+    font-family: 'iransans-bold';
+    src: url('../../public/fonts/woff/IRANSansX-Bold.woff');
+    font-display: swap;
+}
+/* 
+@font-face {
+    font-family: 'iransans-medium';
+    src: url('../../public/fonts/woff2/IRANSansX-Medium.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iransans-bold';
+    src: url('../../public/fonts/woff2/IRANSansX-Bold.woff2');
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'kalameh-bold';
+    src: url('../../public/fonts/woff/KalamehWeb-Bold.woff');
     font-display: swap;
 }
 
@@ -20,8 +38,9 @@ body {
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'peyda-medium';
-    --font-bold: 'peyda-bold';
+    --font-sans: 'iransans-medium';
+    --font-bold: 'iransans-bold';
+    --font-kalameh: 'kalameh-bold';
     --text-2sm: 10px;
 
     --radius-10: 10px;
@@ -48,8 +67,12 @@ body {
     outline: none;
 }
 
+h1,h3,h4,h5,h6{
+    @apply !font-kalameh
+}
+
 h2 {
-    @apply text-lables dark:text-white
+    @apply text-lables dark:text-white !font-kalameh
 }
 
 .flex-center {
