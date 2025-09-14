@@ -1,5 +1,5 @@
 <template>
-  <MainTheHero />
+  <MainHeroTheHero />
   <div class="container">
     <MainAbilitySection />
     <MainOptionsSection />

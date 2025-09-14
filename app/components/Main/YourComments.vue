@@ -25,7 +25,7 @@
     >
       <swiper-slide v-for="item in 10">
         <article
-          class="bg-white dark:bg-maindark pt-8 pb-10 px-12 rounded-[20px] border border-[#99999978] w-full"
+          class="bg-white dark:bg-maindark pt-8 pb-10 px-12 rounded-[20px] border border-[#99999978] w-full shadow-md"
         >
           <div class="flex justify-center gap-2">
             <svg

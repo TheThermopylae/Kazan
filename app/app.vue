@@ -20,3 +20,19 @@ onMounted(() => {
   })
 })
 </script>
+
+<!-- <Select
+  v-model="selectetType"
+  :options="status"
+  placeholder="وضعیت خط"
+  class="w-full"
+  :pt="{
+    option: ({ context }) => ({
+      class: context.selected ? '!bg-black !text-white !rounded-xl' : ''
+    }),
+    root: '!p-5 !bg-[#F8F8F8] !text-xs !rounded-2xl !mt-3',
+    label: '!p-0',
+    dropdownIcon: '!text-black',
+    overlay: '!bg-[#F8F8F8] !text-xs !rounded-2xl !border-none'
+  }"
+/> -->
