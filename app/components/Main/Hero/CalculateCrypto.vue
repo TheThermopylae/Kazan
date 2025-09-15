@@ -30,13 +30,31 @@
       >
     </div>
     <div class="p-5">
-      <MainHeroBuyCrypto v-if="type == 'buy'" />
-      <MainHeroSellCrypto v-if="type == 'sell'" />
-      <MainHeroExchangeCrypto v-if="type == 'exchange'" />
+      <MainHeroBuyCrypto
+        @showError="
+          showToast('warn', 'اخطار', 'باید تمامی مقادیر را وارد کنید!')
+        "
+        v-if="type == 'buy'"
+      />
+      <MainHeroSellCrypto
+        @showError="
+          showToast('warn', 'اخطار', 'باید تمامی مقادیر را وارد کنید!')
+        "
+        v-if="type == 'sell'"
+      />
+      <MainHeroExchangeCrypto
+        @showError="
+          showToast('warn', 'اخطار', 'باید تمامی مقادیر را وارد کنید!')
+        "
+        v-if="type == 'exchange'"
+      />
     </div>
+    <Toast />
   </div>
 </template>
 
 <script setup>
+let { showToast } = useToastComp()
+
 let type = ref('buy')
 </script>

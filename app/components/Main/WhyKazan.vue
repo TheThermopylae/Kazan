@@ -107,7 +107,7 @@
         </p>
       </article>
       <article
-        class="flex flex-col items-center rounded-2xl bg-gradient-to-l from-[#FFCC00] to-[#FF9D00] dark:bg-[#252525] border border-[#F0F0F0] dark:border-[#343434] py-6 px-2 shadow"
+        class="flex flex-col items-center rounded-2xl bg-gradient-to-l from-[#FFCC00] to-[#FF9D00] dark:bg-[#252525] dark:border-[#343434] py-6 px-2 shadow"
       >
         <svg
           width="30"

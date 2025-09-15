@@ -21,4 +21,5 @@
       <MainHeroCalculateCrypto />
     </div>
   </section>
+  <Toast />
 </template>

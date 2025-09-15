@@ -8,7 +8,7 @@
           option: ({ context }) => ({
             class: context.selected ? '!bg-transparent !text-primary' : ''
           }),
-          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] !items-center',
+          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] !items-center !shadow-none',
           label: '!py-0 !text-sm'
         }"
         v-model="selectedFrom"
@@ -77,7 +77,7 @@
           option: ({ context }) => ({
             class: context.selected ? '!bg-transparent !text-primary' : ''
           }),
-          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] !items-center',
+          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] !items-center !shadow-none',
           label: '!py-0 !text-sm'
         }"
         v-model="selectedTo"
@@ -126,17 +126,16 @@
       1 {{ selectedTo.name }} = 111.46 {{ selectedFrom.name }}
     </p>
     <button
-      class="bg-[#039874] text-white rounded-lg w-full p-3.5 text-xs cursor-pointer"
+      class="bg-[#039874] text-white rounded-lg w-full p-3.5 text-xs cursor-pointer hover:opacity-90 transition"
       @click="buyCryptoFunc"
     >
-      شروع فروش
+      شروع خرید
     </button>
-    <Toast />
   </div>
 </template>
 
 <script setup>
-let { showToast } = useToastComp()
+let emit = defineEmits(['showError'])
 
 const selectedFrom = ref({ name: 'RUB' })
 const selectedTo = ref({ name: 'BTC' })
@@ -168,9 +167,7 @@ function changeCrypto () {
 }
 
 function buyCryptoFunc () {
-  if (!fromValue.value || !toValue.value)
-    showToast('warn', 'اخطار', 'باید مقادیر را وارد کنید')
-  else showToast('خرید با موفقیت انجام شد')
+  if (!fromValue.value || !toValue.value) emit('showError')
 }
 </script>
 
