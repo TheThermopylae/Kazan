@@ -2,7 +2,7 @@
   <div class="hidden lg:flex items-center gap-3">
     <button
       to="/"
-      class="bg-primary rounded-full px-3 py-2 text-white hidden lg:flex items-center gap-2 cursor-pointer"
+      class="bg-primary rounded-lg px-3 py-2 text-white hidden lg:flex items-center gap-2 cursor-pointer text-sm"
       @click="$emit('showFormFuncEmit')"
       v-if="!userLogged"
     >
@@ -22,7 +22,29 @@
         />
       </svg>
     </button>
-    <div v-else class="flex gap-3">
+    <NuxtLink
+      to="/"
+      v-else
+      class="border border-primary rounded-lg px-3 py-2 text-primary hidden lg:flex items-center gap-2 cursor-pointer text-sm hover:bg-primary hover:text-white transition"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="21px"
+        height="21px"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="m19.632 7.106l-6.466-4.018a2.23 2.23 0 0 0-2.359 0L4.341 7.106A2.23 2.23 0 0 0 3.33 9.33l1.669 10.016a2.225 2.225 0 0 0 2.226 1.858H9.76v-3.65a1.56 1.56 0 0 1 1.558-1.558h1.335a1.56 1.56 0 0 1 1.558 1.558v3.695h2.56a2.226 2.226 0 0 0 2.226-1.859l1.669-10.015a2.23 2.23 0 0 0-1.035-2.27M7.535 10.878h8.903"
+        />
+      </svg>
+      داشبورد
+    </NuxtLink>
+    <!-- <div v-else class="flex gap-3">
       <Button
         unstyled
         type="button"
@@ -111,7 +133,7 @@
           </svg>
         </template>
       </Button>
-    </div>
+    </div> -->
     <HeaderSwitchTheme />
     <Menu
       ref="walletMenu"

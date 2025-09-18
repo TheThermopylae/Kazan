@@ -154,10 +154,12 @@
     <div
       class="lg:flex justify-between items-center px-4 text-sm mt-10 lg:mt-5"
     >
-      <p class="text-center text-[#999999]">تمامی محتوا متعلق به صرافی کازان میباشد.</p>
-      <div class="hidden lg:flex gap-3 items-center text-[#33323B] dark:text-textdark font-bold">
-        <p>+7(919)7774661</p>
-        <p>Kazanexchange@gmail.com</p>
+      <p class="text-center text-[#999999]">
+        تمامی محتوا متعلق به صرافی کازان میباشد.
+      </p>
+      <div
+        class="hidden lg:flex gap-3 items-center text-[#33323B] dark:text-textdark font-bold"
+      >
         <NuxtLink
           to="/"
           class="primary rounded-full p-3 flex items-center gap-2"

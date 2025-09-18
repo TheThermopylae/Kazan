@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-white text-black rounded-10 w-[415px] hidden lg:block">
-    <div class="grid grid-cols-3 text-[#252525] text-sm">
+  <div
+    class="bg-white dark:bg-darkbg text-black dark:text-white rounded-10 w-full max-w-[415px] block"
+  >
+    <div class="grid grid-cols-3 text-[#252525] dark:text-white text-sm">
       <span
         class="text-center border-b py-3 cursor-pointer"
         :class="{

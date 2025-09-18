@@ -8,7 +8,7 @@
           option: ({ context }) => ({
             class: context.selected ? '!bg-transparent !text-primary' : ''
           }),
-          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] !items-center !shadow-none',
+          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] dark:!border-secdark !items-center !shadow-none dark:!bg-darkbg',
           label: '!py-0 !text-sm'
         }"
         v-model="selectedFrom"
@@ -49,7 +49,7 @@
         :key="selectedFrom.name + '-input'"
         type="text"
         :placeholder="'مقدار به ' + selectedFrom.name"
-        class="border border-[#D2D2D2] px-3 py-3.5 rounded-l-[5px]"
+        class="border border-[#D2D2D2] dark:border-secdark dark:bg-darkbg px-3 py-3.5 rounded-l-[5px]"
         v-model="fromValue"
       />
     </div>
@@ -77,7 +77,7 @@
           option: ({ context }) => ({
             class: context.selected ? '!bg-transparent !text-primary' : ''
           }),
-          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] !items-center !shadow-none',
+          root: '!rounded-l-none !rounded-r-[5px] !border-[#D2D2D2] dark:!border-secdark !items-center !shadow-none dark:!bg-darkbg',
           label: '!py-0 !text-sm'
         }"
         v-model="selectedTo"
@@ -118,11 +118,11 @@
         :key="selectedTo.name + '-input'"
         type="text"
         :placeholder="'مقدار به ' + selectedTo.name"
-        class="border border-[#D2D2D2] px-3 py-3.5 rounded-l-[5px]"
+        class="border border-[#D2D2D2] dark:border-secdark dark:bg-darkbg px-3 py-3.5 rounded-l-[5px]"
         v-model="toValue"
       />
     </div>
-    <p class="text-center text-2sm my-3 text-secdark">
+    <p class="text-center text-2sm my-3 text-secdark dark:text-textdark">
       1 {{ selectedTo.name }} = 111.46 {{ selectedFrom.name }}
     </p>
     <button
