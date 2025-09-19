@@ -1,7 +1,7 @@
 <template>
   <section class="mt-10 lg:mt-20 mb-10">
     <p
-      class="text-sm lg:text-lg font-kalameh text-center lg:text-right mb-8 lg:m-0"
+      class="text-sm lg:text-lg font-bold text-center lg:text-right mb-8 lg:m-0"
     >
       چگونه روبل روسیه بخریم؟
     </p>
@@ -13,39 +13,21 @@
       />
       <div class="flex-grow">
         <h3 class="text-sm md:text-[16px] lg:text-xl font-bold mb-6">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+          راهی مطمئن برای مدیریت دارایی‌های بین‌المللی
         </h3>
         <ul class="w-fit text-xs md:text-sm">
           <li class="mb-3">
-            راهی مطمئن برای ورودی مطمئن به بازارهای بدون مرز جهانی
+            دسترسی آسان به روبل، یوان، پوند و دیگر ارزهای معتبر جهانی
           </li>
-          <li class="mb-3">شفافیت و غیرمتمرکز بودن بازار رمزارزها</li>
+          <li class="mb-3">حفظ ارزش سرمایه در برابر تورم و نوسان‌های تومانی</li>
           <li class="mb-3">
-            حفظ ارزش دارایی در برابر تورم و بحران‌های اقتصادی
+            انتقال سریع به حساب بانکی در هر کشور با کنترل کامل روی دارایی
           </li>
-          <li>تراکنش‌های سریع با کمترین کارمزد</li>
-          <li class="flex justify-end">
-            <NuxtLink
-              to="/"
-              class="primary text-sm md:text-sm flex items-center w-fit p-2 gap-3 rounded-tl-[50px] rounded-tr-lg rounded-br-[20px] rounded-bl-[50px]"
-            >
-              <svg
-                width="15"
-                height="14"
-                viewBox="0 0 15 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.6852 9.79577L13.75 0.945401C13.745 0.896474 13.7206 0.850141 13.6852 0.814781M4.70423 0.814781L13.5546 0.75C13.6035 0.755032 13.6499 0.77942 13.6852 0.814781M13.6852 0.814781L1.25 13.25"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
-              </svg>
-              ورود یا ثبت نام
-            </NuxtLink>
+          <li class="mb-3">
+            حواله‌های تجاری یا پرداخت‌های بین‌المللی با حفظ ارزش دارایی
           </li>
+          <li class="mb-3">تراکنش‌ها شفاف، مطمئن و بدون کارمزد</li>
+          <li>ذخیره ارز برای شهریه دانشگاه</li>
         </ul>
       </div>
     </div>
@@ -76,9 +58,9 @@
         </div>
       </div>
       <NuxtImg
-        src="/main/receipt.svg"
-        alt="receipt"
-        class="md:w-1/2 block m-auto mb-8 md:m-0"
+        src="/main/bank.svg"
+        alt="bank"
+        class="md:w-1/3 block m-auto mb-8 md:m-0"
       />
       <div class="flex md:hidden justify-center gap-5 relative bottom-5">
         <button

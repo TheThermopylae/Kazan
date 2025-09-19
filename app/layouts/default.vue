@@ -1,6 +1,6 @@
 <template>
   <HeaderTheHeader />
-  <main class="mt-20">
+  <main class="mt-16 lg:mt-20">
     <slot />
   </main>
   <FooterDesSection />

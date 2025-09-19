@@ -1,9 +1,9 @@
 <template>
   <section
-    class="bg-white dark:bg-maindark shadow-md relative right-1/2 translate-x-1/2 rounded-2xl p-6 xl:w-2/3 xl:-translate-y-1/2 grid grid-cols-2 lg:grid-cols-4 gap-3 text-sm mt-3 xl:m-0"
+    class="bg-white dark:bg-maindark shadow-md relative right-1/2 translate-x-1/2 rounded-2xl p-6 xl:w-2/3 xl:-translate-y-1/2 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm mt-3 xl:m-0"
   >
     <div
-      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+      class="text-[#333] dark:text-white flex items-center md:justify-center gap-2"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
       ابزارهای پیشرفته
     </div>
     <div
-      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+      class="text-[#333] dark:text-white flex items-center md:justify-center gap-2 pr-10 md:pr-0"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@
       خرید آسان
     </div>
     <div
-      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+      class="text-[#333] dark:text-white flex items-center md:justify-center gap-2"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
       کارمزد پایین
     </div>
     <div
-      class="text-[#333] dark:text-white flex items-center justify-center gap-2"
+      class="text-[#333] dark:text-white flex items-center md:justify-center gap-2 pr-10 md:pr-0"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

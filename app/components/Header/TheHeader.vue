@@ -6,7 +6,7 @@
     <HeaderMenuList />
     <HeaderLeftBtns @showLogForm="showFormFunc" />
     <button
-      class="bg-primary rounded-full p-3 text-white flex items-center gap-2 lg:hidden"
+      class="bg-primary rounded-lg p-3 text-white flex items-center gap-2 lg:hidden text-sm"
       @click="showFormFunc"
     >
       ورود یا ثبت نام

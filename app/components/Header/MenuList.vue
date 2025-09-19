@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center gap-4 lg:gap-10">
     <HeaderTheDrawer />
-    <NuxtLink to="/" class="flex items-center gap-4 font-bold text-sm">
+    <NuxtLink to="/" class="flex items-center gap-2 font-bold text-sm">
       <NuxtImg src="/logo.svg" class="size-[27px]"></NuxtImg>
       <h3>صرافی <span class="text-primary">کازان</span></h3>
     </NuxtLink>
