@@ -1,5 +1,5 @@
 <template>
-  <section class="col-span-2 bg-white p-3">
+  <section class="xl:col-span-2 bg-white p-3 flex justify-between items-center">
     <div
       class="w-3/5 border-l border-[#F5F6F7] pl-3 h-full flex flex-col justify-between"
     >
@@ -171,6 +171,7 @@
         </NuxtLink>
       </div>
     </div>
+    <UserPanelHomeDoughnutChart />
   </section>
 </template>
 

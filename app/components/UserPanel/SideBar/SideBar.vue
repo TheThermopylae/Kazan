@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-1/6 bg-white rounded text-xs hidden lg:block">
+  <aside class="w-1/6 bg-white rounded text-xs hidden lg:block sticky top-20">
     <ul>
       <li>
         <NuxtLink
@@ -20,7 +20,7 @@
               <path stroke-linecap="round" d="M12 15v3" />
             </g>
           </svg>
-          نمای کلی
+          خانه
         </NuxtLink>
       </li>
       <li>
