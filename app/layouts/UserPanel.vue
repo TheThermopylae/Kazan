@@ -1,7 +1,11 @@
 <template>
-    <UserPanelHeaderTheHeader />
-    <main class="container">
-        <UserPanelSideBar />
+  <ClientOnly>
+    <HeaderTheHeader />
+    <main class="mt-28 lg:container flex gap-5 items-start">
+      <UserPanelSideBar />
+      <div class="flex-grow min-w-0">
         <slot />
+      </div>
     </main>
+  </ClientOnly>
 </template>
