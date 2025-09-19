@@ -11,6 +11,7 @@
     src: url('../../public/fonts/woff/IRANSansX-Bold.woff');
     font-display: swap;
 }
+
 /* 
 @font-face {
     font-family: 'iransans-medium';
@@ -46,6 +47,7 @@ body {
     --radius-10: 10px;
 
     --color-primary: #0057FF;
+    --color-secondary: #00000666;
     --color-maindark: #231F20;
     --color-secdark: #252525;
     --color-lables: #333333;
@@ -61,18 +63,30 @@ body {
     @variant sm {
         padding-inline: 2rem;
     }
+
+    @variant lg {
+        padding-inline: 4rem;
+    }
+
+    @variant xl {
+        padding-inline: 5rem;
+    }
+
+    @variant 2xl {
+        padding-inline: 6rem;
+    }
 }
 
 * {
     outline: none;
 }
 
-h1,h3,h4,h5,h6{
+/* h1,h3,h4,h5,h6{
     @apply !font-kalameh
-}
+} */
 
 h2 {
-    @apply text-lables dark:text-white !font-kalameh
+    @apply text-lables dark:text-white
 }
 
 .flex-center {
