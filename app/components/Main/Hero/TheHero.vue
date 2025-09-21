@@ -10,7 +10,7 @@
         <p class="leading-8 text-sm mb-10">
           در پلتفرم کازان تنها با سه کلیک، سریع و آسان معامله کنید.
         </p>
-        <NuxtLink to="/" class="primary p-3 text-sm rounded-md"
+        <NuxtLink to="/app" class="primary p-3 text-sm rounded-md"
           >شروع معامله آسان</NuxtLink
         >
       </div>

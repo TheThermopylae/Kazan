@@ -1,12 +1,14 @@
 <template>
   <section>
-    <div class="flex justify-between items-center p-5 rounded bg-white mb-3">
+    <div
+      class="flex justify-between items-center p-5 rounded bg-white dark:bg-maindark mb-3"
+    >
       <h2 class="font-bold">بازارهای معاملاتی</h2>
       <div class="flex items-center gap-5">
         <div class="relative">
           <input
             type="text"
-            class="bg-[#EDEDED] rounded-lg w-[280px] p-2 pr-10 text-sm placheholder:text-sm"
+            class="bg-[#EDEDED] dark:bg-secdark rounded-lg w-[280px] p-2 pr-10 text-sm placheholder:text-sm"
             placeholder="جستجو"
           />
           <svg
@@ -35,6 +37,6 @@
         <NuxtLink to="/" class="text-primary text-sm">همه</NuxtLink>
       </div>
     </div>
-    <UserPanelHomeMarketTable />
+    <AppMarketTable />
   </section>
 </template>

@@ -12,12 +12,12 @@
       </StepList>
     </Stepper>
     <div class="flex mt-3 gap-2">
-      <div class="bg-[#E5F2FF] w-[40%] rounded p-3">
+      <div class="bg-[#E5F2FF] dark:bg-secdark w-[40%] rounded p-3">
         <h4 class="font-bold mb-1">تکمیل ثبت نام</h4>
         <p class="text-sm">در کمتر از 1 دقیق ثبت نام خود را تکمیل کنید</p>
-        <Button label="تکمیل ثبت نام" pt:root="!text-sm !mt-5" />
+        <Button label="تکمیل ثبت نام" pt:root="!text-sm !mt-5 !text-white" />
       </div>
-      <div class="bg-white rounded p-3 flex-grow relative">
+      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative">
         <h4 class="font-bold mb-1">واریز به کیف پول</h4>
         <svg
           class="text-gray-400 absolute bottom-3"
@@ -32,7 +32,7 @@
           />
         </svg>
       </div>
-      <div class="bg-white rounded p-3 flex-grow relative">
+      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative">
         <h4 class="font-bold mb-1">اولین معامله</h4>
         <svg
           class="text-gray-400 absolute bottom-3"

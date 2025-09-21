@@ -1,33 +1,33 @@
 <template>
   <section>
-    <div class="bg-white rounded p-3">
+    <div class="bg-white dark:bg-maindark rounded p-3">
       <div class="flex justify-between items-center">
         <h2>لورم ایپسوم متن</h2>
-        <div class="bg-[#ECECEC] rounded-full text-xs p-1 flex">
+        <div class="bg-[#ECECEC] dark:bg-secdark rounded-full text-xs p-1 flex">
           <button
             class="px-2 py-1.5 rounded-full cursor-pointer transition"
-            :class="{ 'bg-white shadow': value == 0 }"
+            :class="{ 'bg-white dark:bg-maindark shadow': value == 0 }"
             @click="value = 0"
           >
             تومان
           </button>
           <button
             class="px-2 py-1.5 rounded-full cursor-pointer transition"
-            :class="{ 'bg-white shadow': value == 1 }"
+            :class="{ 'bg-white dark:bg-maindark shadow': value == 1 }"
             @click="value = 1"
           >
             روبل
           </button>
         </div>
       </div>
-      <div class="bg-[#F5F6F7] rounded p-2 my-5">
-        <div class="flex justify-between text-xs text-[#00000666]">
+      <div
+        class="bg-[#F5F6F7] dark:bg-secdark rounded p-2 my-5 text-[#00000666] dark:text-white"
+      >
+        <div class="flex justify-between text-xs">
           <h3>لورم ایپسوم متن</h3>
           ثابت
         </div>
-        <div
-          class="flex justify-between items-center text-xs text-[#00000666] mt-2.5"
-        >
+        <div class="flex justify-between items-center text-xs mt-2.5">
           <span class="primary px-1.5 py-1 rounded-full">سطح 1</span>
           %0.35
         </div>
@@ -36,7 +36,7 @@
         <p>لورم ایپسوم متن ساختگی با</p>
         0
       </div>
-      <p class="text-sm text-[#00000666]">
+      <p class="text-sm text-[#00000666] dark:text-white">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است
       </p>
@@ -46,7 +46,7 @@
     </div>
     <NuxtLink
       to="/"
-      class="bg-white rounded p-3 mt-1.5 flex items-center justify-between text-sm"
+      class="bg-white dark:bg-maindark rounded p-3 mt-1.5 flex items-center justify-between text-sm"
     >
       <div class="flex items-center gap-2">
         <svg
@@ -62,17 +62,14 @@
         لورم ایپسوم متن ساختگی با تولید سادگی
       </div>
       <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 1024 1024"
       >
         <path
-          d="M14.5 6L8.5594 11.8586C8.4802 11.9367 8.4802 12.0633 8.5594 12.1414L14.5 18"
-          stroke="#252525"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          fill="currentColor"
+          d="M609.408 149.376L277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0a30.59 30.59 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.59 30.59 0 0 0 0-42.688a29.12 29.12 0 0 0-41.728 0"
         />
       </svg>
     </NuxtLink>

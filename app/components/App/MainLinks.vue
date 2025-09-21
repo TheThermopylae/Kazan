@@ -1,5 +1,5 @@
 <template>
-  <section class="hidden lg:block bg-white rounded p-5 px-10 my-5">
+  <section class="hidden lg:block bg-white dark:bg-maindark rounded p-5 px-10 my-5">
     <ul class="flex justify-between">
       <li>
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-2sm">

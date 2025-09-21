@@ -5,7 +5,7 @@
 <script setup>
 definePageMeta({
   layout: 'user-panel',
-  redirect: '/user-panel/home'
+  redirect: '/user-panel/state'
 })
 
 useHead({

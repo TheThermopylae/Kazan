@@ -1,44 +1,43 @@
 <template>
-  <section class="xl:col-span-2 bg-white p-3 flex justify-between items-center">
+  <section
+    class="xl:col-span-2 bg-white dark:bg-maindark p-3 flex justify-between items-center rounded"
+  >
     <div
-      class="w-3/5 border-l border-[#F5F6F7] pl-3 h-full flex flex-col justify-between"
+      class="w-3/5 border-l border-[#F5F6F7] dark:border-secdark pl-3 h-full flex flex-col justify-between"
     >
       <div>
         <div class="flex justify-between items-center mb-3">
           <h3 class="flex items-center gap-3">
             ارزش دارایی کیف پول اصلی
             <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="1.24em"
+              height="1em"
+              viewBox="0 0 16 13"
             >
               <path
-                d="M12 18C16.679 18 19.966 14.9333 21.4597 13.1848C21.7295 12.869 21.8644 12.7112 21.9532 12.4084C22.0156 12.1955 22.0156 11.8045 21.9532 11.5916C21.8644 11.2888 21.7295 11.131 21.4597 10.8152C19.966 9.06674 16.679 6 12 6C7.32099 6 4.03405 9.06674 2.54027 10.8152C2.27051 11.131 2.13564 11.2888 2.04683 11.5916C1.98439 11.8045 1.98439 12.1955 2.04683 12.4084C2.13564 12.7112 2.27051 12.869 2.54027 13.1848C4.03405 14.9333 7.32099 18 12 18Z"
-                stroke="#282930"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                fill="currentColor"
+                d="M8 11.5c-1.56 0-3.07-.61-4.5-1.8c-1.17-.99-1.99-2.13-2.37-2.73a.87.87 0 0 1 0-.93c.38-.6 1.2-1.75 2.37-2.73c2.84-2.39 6.15-2.39 8.99 0c1.17.99 1.99 2.13 2.37 2.73c.18.29.18.64 0 .93c-.38.6-1.2 1.75-2.37 2.73c-1.42 1.2-2.93 1.8-4.5 1.8Zm-5.97-5c.37.57 1.1 1.57 2.12 2.43c2.47 2.08 5.23 2.08 7.7 0c1.02-.86 1.75-1.87 2.12-2.43c-.37-.57-1.1-1.57-2.12-2.43c-2.47-2.08-5.23-2.08-7.7 0c-1.02.86-1.75 1.87-2.12 2.43"
               />
               <path
-                d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
-                stroke="#282930"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                fill="currentColor"
+                d="M8 9a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5m0-4c-.83 0-1.5.67-1.5 1.5S7.17 8 8 8s1.5-.67 1.5-1.5S8.83 5 8 5"
               />
             </svg>
           </h3>
-          <div class="bg-[#ECECEC] rounded-full text-xs p-1 flex">
+          <div
+            class="bg-[#ECECEC] dark:bg-secdark rounded-full text-xs p-1 flex"
+          >
             <button
               class="px-2 py-1.5 rounded-full cursor-pointer transition"
-              :class="{ 'bg-white shadow': value == 0 }"
+              :class="{ 'bg-white dark:bg-maindark shadow': value == 0 }"
               @click="value = 0"
             >
               تومان
             </button>
             <button
               class="px-2 py-1.5 rounded-full cursor-pointer transition"
-              :class="{ 'bg-white shadow': value == 1 }"
+              :class="{ 'bg-white dark:bg-maindark shadow': value == 1 }"
               @click="value = 1"
             >
               روبل
@@ -47,53 +46,62 @@
         </div>
         <div>
           <p><span class="text-[32px]">0</span> تومان</p>
-          <p class="text-secondary text-sm mt-1">
-            <span class="text-black">0</span> تومان (تغییرات ۲۴ ساعت گذشته)
+          <p class="text-secondary dark:text-white text-sm mt-1">
+            <span class="text-black dark:text-white">0</span> تومان (تغییرات ۲۴
+            ساعت گذشته)
           </p>
         </div>
       </div>
       <div class="flex justify-between">
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
-          <div class="size-16 bg-[#F5F6F7] rounded-full flex-center">
+          <div
+            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+          >
             <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 9 16"
             >
               <path
-                d="M5.5 10L11.8586 3.54765C11.8976 3.51588 11.9488 3.5 12 3.5M18.5 10L12.1414 3.54765C12.1024 3.51588 12.0512 3.5 12 3.5M12 3.5V21.5"
-                stroke="#252525"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                fill="currentColor"
+                d="M4.5 14c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"
+              />
+              <path
+                fill="currentColor"
+                d="M8 7.5a.47.47 0 0 1-.35-.15L4.5 4.2L1.35 7.35c-.2.2-.51.2-.71 0s-.2-.51 0-.71l3.5-3.5c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15"
               />
             </svg>
           </div>
           برداشت
         </NuxtLink>
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
-          <div class="size-16 bg-[#F5F6F7] rounded-full flex-center">
+          <div
+            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+          >
             <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 9 16"
               class="rotate-180"
             >
               <path
-                d="M5.5 10L11.8586 3.54765C11.8976 3.51588 11.9488 3.5 12 3.5M18.5 10L12.1414 3.54765C12.1024 3.51588 12.0512 3.5 12 3.5M12 3.5V21.5"
-                stroke="#252525"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                fill="currentColor"
+                d="M4.5 14c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"
+              />
+              <path
+                fill="currentColor"
+                d="M8 7.5a.47.47 0 0 1-.35-.15L4.5 4.2L1.35 7.35c-.2.2-.51.2-.71 0s-.2-.51 0-.71l3.5-3.5c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15"
               />
             </svg>
           </div>
           واریز
         </NuxtLink>
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
-          <div class="size-16 bg-[#F5F6F7] rounded-full flex-center">
+          <div
+            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+          >
             <svg
               width="20"
               height="21"
@@ -134,36 +142,42 @@
           معامله
         </NuxtLink>
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
-          <div class="size-16 bg-[#F5F6F7] rounded-full flex-center">
+          <div
+            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+          >
             <svg
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
             >
               <path
-                d="M9 18.5C6.9 18.5 5.04167 17.8627 3.425 16.588C1.80833 15.3133 0.758333 13.684 0.275 11.7C0.208333 11.45 0.258333 11.221 0.425 11.013C0.591667 10.805 0.816667 10.684 1.1 10.65C1.36667 10.6167 1.60833 10.6667 1.825 10.8C2.04167 10.9333 2.19167 11.1333 2.275 11.4C2.675 12.9 3.5 14.125 4.75 15.075C6 16.025 7.41667 16.5 9 16.5C10.95 16.5 12.6043 15.821 13.963 14.463C15.3217 13.105 16.0007 11.4507 16 9.5C15.9993 7.54933 15.3203 5.89533 13.963 4.538C12.6057 3.18067 10.9513 2.50133 9 2.5C7.85 2.5 6.775 2.76667 5.775 3.3C4.775 3.83333 3.93333 4.56667 3.25 5.5H5C5.28333 5.5 5.521 5.596 5.713 5.788C5.905 5.98 6.00067 6.21733 6 6.5C5.99933 6.78267 5.90333 7.02033 5.712 7.213C5.52067 7.40567 5.28333 7.50133 5 7.5H1C0.716667 7.5 0.479333 7.404 0.288 7.212C0.0966668 7.02 0.000666667 6.78267 0 6.5V2.5C0 2.21667 0.0960001 1.97933 0.288 1.788C0.48 1.59667 0.717333 1.50067 1 1.5C1.28267 1.49933 1.52033 1.59533 1.713 1.788C1.90567 1.98067 2.00133 2.218 2 2.5V3.85C2.85 2.78333 3.88767 1.95833 5.113 1.375C6.33833 0.791667 7.634 0.5 9 0.5C10.25 0.5 11.421 0.737667 12.513 1.213C13.605 1.68833 14.555 2.32967 15.363 3.137C16.171 3.94433 16.8127 4.89433 17.288 5.987C17.7633 7.07967 18.0007 8.25067 18 9.5C17.9993 10.7493 17.762 11.9203 17.288 13.013C16.814 14.1057 16.1723 15.0557 15.363 15.863C14.5537 16.6703 13.6037 17.312 12.513 17.788C11.4223 18.264 10.2513 18.5013 9 18.5ZM10 9.1L12.5 11.6C12.6833 11.7833 12.775 12.0167 12.775 12.3C12.775 12.5833 12.6833 12.8167 12.5 13C12.3167 13.1833 12.0833 13.275 11.8 13.275C11.5167 13.275 11.2833 13.1833 11.1 13L8.3 10.2C8.2 10.1 8.125 9.98767 8.075 9.863C8.025 9.73833 8 9.609 8 9.475V5.5C8 5.21667 8.096 4.97933 8.288 4.788C8.48 4.59667 8.71733 4.50067 9 4.5C9.28267 4.49933 9.52033 4.59533 9.713 4.788C9.90567 4.98067 10.0013 5.218 10 5.5V9.1Z"
-                fill="#252525"
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M5.079 5.069c3.795-3.79 9.965-3.75 13.783.069c3.82 3.82 3.86 9.993.064 13.788s-9.968 3.756-13.788-.064a9.81 9.81 0 0 1-2.798-8.28a.75.75 0 1 1 1.487.203a8.31 8.31 0 0 0 2.371 7.017c3.245 3.244 8.468 3.263 11.668.064c3.199-3.2 3.18-8.423-.064-11.668c-3.243-3.242-8.463-3.263-11.663-.068l.748.003a.75.75 0 1 1-.007 1.5l-2.546-.012a.75.75 0 0 1-.746-.747L3.575 4.33a.75.75 0 1 1 1.5-.008zm6.92 2.18a.75.75 0 0 1 .75.75v3.69l2.281 2.28a.75.75 0 1 1-1.06 1.061l-2.72-2.72V8a.75.75 0 0 1 .75-.75"
+                clip-rule="evenodd"
               />
             </svg>
           </div>
           تاریخچه
         </NuxtLink>
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
-          <div class="size-16 bg-[#F5F6F7] rounded-full flex-center">
+          <div
+            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+          >
             <svg
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
             >
               <path
-                d="M22.5 9.5V7.5C22.5 5.84315 21.1569 4.5 19.5 4.5H5.5C3.84315 4.5 2.5 5.84315 2.5 7.5V9.5M22.5 9.5V17.5C22.5 19.1569 21.1569 20.5 19.5 20.5H5.5C3.84315 20.5 2.5 19.1569 2.5 17.5V9.5M22.5 9.5H2.5M6 17H8.5M11.5 17H16.5"
-                stroke="#252525"
-                stroke-width="1.5"
+                fill="none"
+                stroke="currentColor"
                 stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M3 9v-.8c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C4.52 5 5.08 5 6.2 5h11.6c1.12 0 1.68 0 2.107.218c.377.192.683.497.875.874c.218.427.218.987.218 2.105V9M3 9h18M3 9v6.8c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h11.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.986.218-2.104V9M6 15h4"
               />
             </svg>
           </div>
@@ -171,7 +185,7 @@
         </NuxtLink>
       </div>
     </div>
-    <UserPanelHomeDoughnutChart />
+    <AppDoughnutChart />
   </section>
 </template>
 
