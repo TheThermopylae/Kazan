@@ -5,17 +5,14 @@
       <NuxtImg src="/logo.svg" class="size-[27px]"></NuxtImg>
       <h3>صرافی <span class="text-primary">کازان</span></h3>
     </NuxtLink>
-    <div class="hidden lg:flex gap-8">
-      <Button
-        type="button"
-        label="خرید ارز"
-        @click="toggleBuy"
-        aria-haspopup="true"
-        aria-controls="overlay_menu"
-        unstyled
-        pt:root="flex items-center gap-3 flex-row-reverse cursor-pointer"
-      >
-        <template #icon>
+    <div class="hidden lg:flex gap-8 items-center">
+      <div class="dropdown dropdown-hover">
+        <div
+          tabindex="0"
+          role="button"
+          class="cursor-pointer flex items-center gap-3 h-18"
+        >
+          خرید ارز
           <svg
             width="10"
             height="8"
@@ -28,25 +25,45 @@
               fill="#999999"
             />
           </svg>
-        </template>
-      </Button>
-      <Menu
-        ref="menuBuy"
-        id="overlay_menu"
-        :model="itemsBuy"
-        :popup="true"
-        pt:submenuLabel="!hidden"
-      />
-      <Button
-        type="button"
-        label="قیمت ارز"
-        @click="togglePrice"
-        aria-haspopup="true"
-        aria-controls="overlay_menu"
-        unstyled
-        pt:root="flex items-center gap-3 flex-row-reverse cursor-pointer"
-      >
-        <template #icon>
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[750px] p-2 shadow-sm grid grid-cols-4 gap-2"
+        >
+          <li v-for="item in 15">
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              <NuxtImg src="/crypto/RUB.svg" class="size-5" />
+              خرید روبل
+              <span class="text-textlight">RUB</span>
+            </NuxtLink>
+          </li>
+          <li class="flex justify-center">
+            <NuxtLink to="/" class="text-primary p-3 flex items-center gap-3"
+              >خرید ارز های دیجیتال
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M609.408 149.376L277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0a30.59 30.59 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.59 30.59 0 0 0 0-42.688a29.12 29.12 0 0 0-41.728 0"
+                /></svg
+            ></NuxtLink>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover">
+        <div
+          tabindex="0"
+          role="button"
+          class="cursor-pointer flex items-center gap-3 h-18"
+        >
+          قیمت ارز
           <svg
             width="10"
             height="8"
@@ -59,26 +76,46 @@
               fill="#999999"
             />
           </svg>
-        </template>
-      </Button>
-      <Menu
-        ref="menuPrice"
-        id="overlay_menu"
-        :model="itemsPrice"
-        :popup="true"
-        pt:submenuLabel="!hidden"
-      />
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[750px] p-2 shadow-sm grid grid-cols-4 gap-2"
+        >
+          <li v-for="item in 15">
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              <NuxtImg src="/crypto/RUB.svg" class="size-5" />
+              قیمت روبل
+              <span class="text-textlight">RUB</span>
+            </NuxtLink>
+          </li>
+          <li class="flex justify-center">
+            <NuxtLink to="/" class="text-primary p-3 flex items-center gap-3"
+              >خرید ارز های دیجیتال
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M609.408 149.376L277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0a30.59 30.59 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.59 30.59 0 0 0 0-42.688a29.12 29.12 0 0 0-41.728 0"
+                /></svg
+            ></NuxtLink>
+          </li>
+        </ul>
+      </div>
       <NuxtLink to="/">راهنمای کامل</NuxtLink>
-      <Button
-        type="button"
-        label="سایر"
-        @click="toggleOther"
-        aria-haspopup="true"
-        aria-controls="overlay_menu"
-        unstyled
-        pt:root="flex items-center gap-3 flex-row-reverse cursor-pointer"
-      >
-        <template #icon>
+      <div class="dropdown dropdown-hover">
+        <div
+          tabindex="0"
+          role="button"
+          class="cursor-pointer flex items-center gap-3 h-18"
+        >
+          قیمت ارز
           <svg
             width="10"
             height="8"
@@ -91,15 +128,61 @@
               fill="#999999"
             />
           </svg>
-        </template>
-      </Button>
-      <Menu
-        ref="menuOther"
-        id="overlay_menu"
-        :model="itemsOther"
-        :popup="true"
-        pt:submenuLabel="!hidden"
-      />
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-52 p-2 shadow-sm"
+        >
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              تحلیل ارز دیجیتال
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              ماشین حساب ارز دیجیتال
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              دعوت از دوستان
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              مستندات API
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              راهنما
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              بلاگ
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

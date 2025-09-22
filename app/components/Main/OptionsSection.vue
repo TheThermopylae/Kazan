@@ -5,7 +5,7 @@
     </h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
       <article
-        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark transition"
+        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark hover:-translate-y-1 transition"
       >
         <svg
           width="32"
@@ -55,7 +55,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
         >
           بیشتر
           <svg
@@ -75,7 +75,7 @@
         </NuxtLink>
       </article>
       <article
-        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark transition"
+        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark hover:-translate-y-1 transition"
       >
         <svg
           width="32"
@@ -135,7 +135,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
         >
           بیشتر
           <svg
@@ -155,7 +155,7 @@
         </NuxtLink>
       </article>
       <article
-        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark transition"
+        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark hover:-translate-y-1 transition"
       >
         <svg
           width="32"
@@ -227,7 +227,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
         >
           بیشتر
           <svg
@@ -247,7 +247,7 @@
         </NuxtLink>
       </article>
       <article
-        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark transition"
+        class="group flex flex-col items-center justify-between rounded-10 p-5 hover:bg-white dark:hover:bg-maindark hover:-translate-y-1 transition"
       >
         <svg
           width="32"
@@ -294,7 +294,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
         >
           بیشتر
           <svg

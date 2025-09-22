@@ -1,6 +1,6 @@
 <template>
   <section class="mt-32 mb-10">
-    <h2 class="text-center text-4xl mb-10">نظرات کاربران</h2>
+    <h2 class="text-center text-4xl lg:mb-10">نظرات کاربران</h2>
     <swiper
       :breakpoints="{
         200: {
@@ -20,7 +20,7 @@
           spaceBetween: 100
         }
       }"
-      class="mySwiper !py-20 !px-3"
+      class="mySwiper !py-5 lg:!py-20 !px-3"
       :centered-slides="true"
     >
       <swiper-slide v-for="item in 10">

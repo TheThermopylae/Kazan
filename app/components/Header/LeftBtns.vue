@@ -23,7 +23,7 @@
       </svg>
     </button>
     <NuxtLink
-      to="/user-panel"
+      to="/myaccount"
       v-else
       class="border border-primary rounded-lg px-3 py-2 text-primary hidden lg:flex items-center gap-2 cursor-pointer text-sm hover:bg-primary hover:text-white transition"
     >

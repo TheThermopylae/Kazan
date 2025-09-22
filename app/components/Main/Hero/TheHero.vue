@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-5 py-5 lg:py-32">
+  <section class="py-5 lg:py-32">
     <div
       class="container flex flex-col lg:flex-row justify-between items-center gap-10"
     >

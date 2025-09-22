@@ -9,7 +9,7 @@
       <NuxtImg
         src="/main/questions.svg"
         alt="questions"
-        class="md:w-1/2 block m-auto mb-8 md:m-0"
+        class="md:w-1/2 block m-auto mb-8 md:m-0 relative"
       />
       <div class="flex-grow">
         <h3 class="text-sm md:text-[16px] lg:text-xl font-bold mb-6">
@@ -33,10 +33,31 @@
     </div>
     <div class="md:flex justify-between mt-10 relative">
       <div class="flex-grow">
-        <h3 class="text-sm md:text-[16px] lg:text-xl font-bold mb-6">
+        <h3
+          class="text-sm md:text-[16px] lg:text-xl font-bold mb-6"
+          v-if="currentTab == 1"
+        >
           دریافت رسید
         </h3>
-        <ul class="w-fit text-xs md:text-sm">
+        <h3
+          class="text-sm md:text-[16px] lg:text-xl font-bold mb-6"
+          v-else-if="currentTab == 2"
+        >
+          ورود به بازار ارزهای بانکی و دیجیتال و ثبت سفارش
+        </h3>
+        <h3
+          class="text-sm md:text-[16px] lg:text-xl font-bold mb-6"
+          v-else-if="currentTab == 3"
+        >
+          مدیریت کیف پول و دریافت وجه
+        </h3>
+        <h3
+          class="text-sm md:text-[16px] lg:text-xl font-bold mb-6"
+          v-else-if="currentTab == 4"
+        >
+          تکمیل مراحل احراز هویت (KYC)
+        </h3>
+        <ul class="w-fit text-xs md:text-sm" v-if="currentTab == 1">
           <li class="mb-3">
             راهی مطمئن برای ورودی مطمئن به بازارهای بدون مرز جهانی
           </li>
@@ -46,6 +67,20 @@
           </li>
           <li>تراکنش‌های سریع با کمترین کارمزد</li>
         </ul>
+        <p v-else-if="currentTab == 2" class="md:w-2/5 text-xs md:text-sm">
+          برای خرید و فروش ارزهای بانکی از جمله روبل روسیه، یوان چین و یورو، یا
+          ارزهای دیجیتال مانند بیت‌کوین و تتر کافی است به بازار اختصاصی هر ارز
+          وارد شوید و سفارش خود را ثبت کنید.
+        </p>
+        <p v-else-if="currentTab == 3" class="md:w-2/5 text-xs md:text-sm">
+          با کیف پول اختصاصی صرافی کازان می‌توانید سرمایه خود را به‌صورت امن
+          نگهداری کرده، برای سرمایه‌گذاری یا ترید استفاده کنید یا موجودی خود را
+          به کارت بانکی و ولت شخصی منتقل کنید
+        </p>
+        <p v-else-if="currentTab == 4" class="md:w-2/5 text-xs md:text-sm">
+          انجام مراحل احراز هویت پیشرفته، دسترسی کامل به تمام امکانات پلتفرم‌ را
+          برای شما فراهم می‌کند.
+        </p>
         <div class="absolute bottom-10 hidden md:flex gap-5">
           <button
             v-for="item in 4"
@@ -58,9 +93,28 @@
         </div>
       </div>
       <NuxtImg
+        v-show="currentTab == 1"
         src="/main/bank.svg"
         alt="bank"
-        class="md:w-1/3 block m-auto mb-8 md:m-0"
+        class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+      />
+      <NuxtImg
+        v-show="currentTab == 2"
+        src="/main/Enter-To-Market.svg"
+        alt="market"
+        class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+      />
+      <NuxtImg
+        v-show="currentTab == 3"
+        src="/main/Manage-Wallet.svg"
+        alt="wallet"
+        class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+      />
+      <NuxtImg
+        v-show="currentTab == 4"
+        src="/main/KYC.svg"
+        alt="kyc"
+        class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
       />
       <div class="flex md:hidden justify-center gap-5 relative bottom-5">
         <button

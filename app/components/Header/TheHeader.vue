@@ -1,7 +1,6 @@
 <template>
   <header
-    class="px-3 flex justify-between items-center fixed w-full top-0 bg-white dark:bg-darkbg transition-all z-50 duration-300"
-    :class="{ 'h-16 shadow': scrolled, 'h-18': !scrolled }"
+    class="px-3 flex justify-between items-center fixed w-full top-0 bg-white dark:bg-darkbg transition-all z-50 duration-300 shadow h-16"
   >
     <HeaderMenuList />
     <HeaderLeftBtns @showLogForm="showFormFunc" />

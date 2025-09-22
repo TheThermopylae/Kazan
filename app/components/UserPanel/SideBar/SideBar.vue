@@ -1,11 +1,13 @@
 <template>
-  <aside class="w-1/6 bg-white rounded text-xs hidden lg:block sticky top-20">
+  <aside
+    class="w-1/6 bg-white dark:bg-maindark rounded text-xs hidden lg:block sticky top-20"
+  >
     <ul>
       <li>
         <NuxtLink
-          to="/user-panel/state"
-          class="flex items-center gap-3 p-3 border-r-4 border-white transition"
-          active-class="bg-[#E5F2FF] !border-primary"
+          to="/myaccount/state"
+          class="flex items-center gap-3 p-3 border-r-4 border-white dark:border-maindark transition rounded-t"
+          active-class="bg-[#E5F2FF] !border-primary dark:bg-[#0E2A4A]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,9 +33,9 @@
       </li>
       <li>
         <NuxtLink
-          to="/user-panel/wallet"
-          class="flex items-center gap-3 p-3 rounded-b border-r-4 border-white transition"
-          active-class="bg-[#E5F2FF] !border-primary"
+          to="/myaccount/wallet"
+          class="flex items-center gap-3 p-3 rounded-b border-r-4 border-white dark:border-maindark transition"
+          active-class="bg-[#E5F2FF] !border-primary dark:bg-[#0E2A4A]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

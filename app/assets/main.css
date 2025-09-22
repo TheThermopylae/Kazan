@@ -1,4 +1,7 @@
 @import "tailwindcss";
+ @plugin "daisyui" {
+   themes: light --default;
+ }
 
 @font-face {
     font-family: 'iransans-medium';
@@ -33,6 +36,7 @@
 
 body {
     background-color: var(--body-bg);
+    color: var(--body-text);
     transition: all 150ms;
 }
 
@@ -152,5 +156,6 @@ h2 {
 }
 
 :root.dark {
-    --body-bg: #0E0E12
+    --body-bg: #0E0E12;
+    --body-text : white
 }
