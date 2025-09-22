@@ -52,7 +52,7 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-between">
+      <div class="flex justify-center gap-8">
         <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
           <div
             class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"

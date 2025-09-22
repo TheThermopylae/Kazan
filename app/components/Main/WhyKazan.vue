@@ -3,7 +3,7 @@
     <h2 class="text-lg font-bold mb-6">چرا کازان؟</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
       <article
-        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-[#252525] border border-[#343434] py-6 px-4 md:col-span-2"
+        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-[#252525] py-6 px-4 md:col-span-2"
       >
         <svg
           width="32"
@@ -42,7 +42,7 @@
         </div>
       </article>
       <article
-        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white py-6 px-4"
+        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white dark:bg-secdark py-6 px-4"
       >
         <svg
           width="30"
@@ -74,7 +74,7 @@
         </div>
       </article>
       <article
-        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white py-6 px-4"
+        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white dark:bg-secdark py-6 px-4"
       >
         <svg
           width="30"
@@ -167,7 +167,7 @@
         </div>
       </article>
       <article
-        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white py-6 px-4"
+        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white dark:bg-secdark py-6 px-4"
       >
         <svg
           width="26"
@@ -213,7 +213,7 @@
         </div>
       </article>
       <article
-        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white py-6 px-4"
+        class="shadow hover:shadow-lg hover:-translate-y-1 transition flex md:flex-col md:items-center gap-3 md:gap-0 rounded-2xl bg-white dark:bg-secdark py-6 px-4"
       >
         <svg
           width="28"

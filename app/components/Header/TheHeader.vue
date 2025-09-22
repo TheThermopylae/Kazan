@@ -30,15 +30,7 @@
 </template>
 
 <script setup>
-let scrolled = ref(false)
 let showForm = ref(false)
-
-onMounted(() => {
-  window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > 100) scrolled.value = true
-    else scrolled.value = false
-  })
-})
 
 function showFormFunc () {
   showForm.value = true

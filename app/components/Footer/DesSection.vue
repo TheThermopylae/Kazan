@@ -1,5 +1,5 @@
 <template>
-  <section class="container mt-20 relative" v-if="route.path != '/app'">
+  <section class="container mt-20 relative" v-if="!route.path.startsWith('/app')">
     <p class="overflow-hidden" :class="{ 'h-32': !showAll, 'mb-5': showAll }">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium
       nulla odit, qui minus autem dicta quasi nemo molestias quod expedita

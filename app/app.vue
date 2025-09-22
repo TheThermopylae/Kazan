@@ -3,8 +3,7 @@
     <NuxtPage />
   </NuxtLayout>
   <button
-    to="/"
-    class="primary rounded-lg px-5 flex items-center justify-between gap-2 fixed bottom-3 left-3 z-10 text-xs cursor-pointer w-[150px] h-[32px]"
+    class="primary rounded-lg px-5 hidden lg:flex items-center justify-between gap-2 fixed bottom-3 left-3 z-10 text-xs cursor-pointer w-[150px] h-[32px]"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

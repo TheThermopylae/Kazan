@@ -1,10 +1,10 @@
 <template>
   <Accordion>
     <AccordionPanel :value="item" v-for="item in [0, 1, 2]">
-      <AccordionHeader pt:root="!bg-[#F2F8FF] !text-[#535160] !font-medium"
+      <AccordionHeader pt:root="!bg-transparent !text-[#535160] dark:!text-white !font-medium"
         >Header {{ item + 1 }}</AccordionHeader
       >
-      <AccordionContent pt:root="!bg-blue-500 !text-2sm !p-0">
+      <AccordionContent>
         <p class="m-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -21,6 +21,6 @@
 
 <style>
 .p-accordioncontent-content {
-  background: #f2f8ff !important;
+  background: transparent !important;
 }
 </style>

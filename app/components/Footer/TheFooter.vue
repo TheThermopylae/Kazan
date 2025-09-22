@@ -159,9 +159,7 @@
       </p>
       <div
         class="hidden lg:flex gap-3 items-center text-[#33323B] dark:text-textdark font-bold"
-      >
-  
-      </div>
+      ></div>
     </div>
   </footer>
 </template>

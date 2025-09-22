@@ -2,7 +2,7 @@
   <Drawer
     v-model:visible="visible"
     position="full"
-    pt:header="!border-b border-[#F1F1F1] dark:border-secdark !pb-2"
+    pt:header="!border-b border-[#F1F1F1] dark:border-secdark !pb-2 ltr-dir"
     pt:content="!px-0"
   >
     <template #header>
@@ -72,7 +72,7 @@
                   v-for="item in 10"
                   :key="item"
                 >
-                  <NuxtImg src="RUB.svg" class="size-6" />
+                  <NuxtImg src="/crypto/RUB.svg" class="size-6" />
                   روبل
                 </li>
               </ul>
@@ -133,13 +133,29 @@
                   v-for="item in 10"
                   :key="item"
                 >
-                  <NuxtImg src="RUB.svg" class="size-6" />
+                  <NuxtImg src="/crypto/RUB.svg" class="size-6" />
                   روبل
                 </li>
               </ul>
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
+      </li>
+      <li class="pb-3 border-b border-[#f1f1f1] dark:border-secdark px-5 mb-3">
+        <NuxtLink to="/" class="flex items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9 22a1 1 0 0 1-1-1v-3H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6.1l-3.7 3.71c-.2.19-.45.29-.7.29zm1-6v3.08L13.08 16H20V4H4v12zm7-5h-2V9h2zm-4 0h-2V9h2zm-4 0H7V9h2z"
+            />
+          </svg>
+          چت با پشتیبانی
+        </NuxtLink>
       </li>
       <li
         class="pb-3 border-b border-[#f1f1f1] dark:border-secdark !px-5 mb-3 flex justify-between"

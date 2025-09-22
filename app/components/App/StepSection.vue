@@ -1,6 +1,6 @@
 <template>
   <section class="hidden lg:block">
-    <p class="mb-3">
+    <p class="mb-3 pt-3 font-bold">
       برای شروع سرمایه‌گذاری و تبادل پول بین ایران و کشورهای دیگر، گام به گام به
       جلو برو!
     </p>
@@ -17,7 +17,7 @@
         <p class="text-sm">در کمتر از 1 دقیق ثبت نام خود را تکمیل کنید</p>
         <Button label="تکمیل ثبت نام" pt:root="!text-sm !mt-5 !text-white" />
       </div>
-      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative">
+      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative opacity-50">
         <h4 class="font-bold mb-1">واریز به کیف پول</h4>
         <svg
           class="text-gray-400 absolute bottom-3"
@@ -32,7 +32,7 @@
           />
         </svg>
       </div>
-      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative">
+      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative opacity-50">
         <h4 class="font-bold mb-1">اولین معامله</h4>
         <svg
           class="text-gray-400 absolute bottom-3"

@@ -74,11 +74,11 @@ body {
     }
 
     @variant xl {
-        padding-inline: 6rem;
+        padding-inline: 5rem;
     }
 
     @variant 2xl {
-        padding-inline: 7rem;
+        padding-inline: 10rem;
     }
 }
 
@@ -150,6 +150,10 @@ h2 {
 
 .p-toast-message {
     box-shadow: none !important;
+}
+
+.ltr-dir{
+    direction : ltr !important
 }
 
 :root {
