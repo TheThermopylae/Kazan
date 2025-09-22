@@ -73,11 +73,11 @@ body {
     }
 
     @variant xl {
-        padding-inline: 5rem;
+        padding-inline: 6rem;
     }
 
     @variant 2xl {
-        padding-inline: 6rem;
+        padding-inline: 7rem;
     }
 }
 
