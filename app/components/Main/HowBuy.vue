@@ -10,6 +10,8 @@
         src="/main/questions.svg"
         alt="questions"
         class="md:w-1/2 block m-auto mb-8 md:m-0 relative"
+        quality="80"
+        format="webp"
       />
       <div class="flex-grow">
         <h3 class="text-sm md:text-[16px] lg:text-xl font-bold mb-6">
@@ -97,24 +99,32 @@
         src="/main/bank.svg"
         alt="bank"
         class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+        quality="80"
+        format="webp"
       />
       <NuxtImg
         v-show="currentTab == 2"
         src="/main/Enter-To-Market.svg"
         alt="market"
         class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+        quality="80"
+        format="webp"
       />
       <NuxtImg
         v-show="currentTab == 3"
         src="/main/Manage-Wallet.svg"
         alt="wallet"
         class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+        quality="80"
+        format="webp"
       />
       <NuxtImg
         v-show="currentTab == 4"
         src="/main/KYC.svg"
         alt="kyc"
         class="size-[250px] md:size-[400px] block m-auto mb-8 md:m-0 mt-5 md:mt-0"
+        quality="80"
+        format="webp"
       />
       <div class="flex md:hidden justify-center gap-5 relative bottom-5">
         <button

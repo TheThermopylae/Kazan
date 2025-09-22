@@ -51,7 +51,4 @@ export default defineNuxtConfig({
       }
     }
   },
-  image: {
-    quality: 80
-  }
 })
