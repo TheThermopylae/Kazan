@@ -16,14 +16,8 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide>
-      <div class="h-[155px] w-full bg-primary rounded"></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="h-[155px] w-full bg-primary rounded"></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="h-[155px] w-full bg-primary rounded"></div>
+    <swiper-slide v-for="item in 3">
+      <NuxtImg src="/app/banner.jpg" class="rounded-md" />
     </swiper-slide>
   </swiper>
 </template>
