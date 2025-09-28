@@ -1,12 +1,12 @@
 <template>
   <Dialog
-    v-model:visible="showAuth"
+    v-model:visible="showData"
+    modal
     style="height: auto"
     @after-hide="step = 1"
     pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white dark:!bg-maindark dark:!text-white !overflow-auto !border-none"
     pt:header="!p-1 !border-b !border-[#F0F0F0] dark:!border-secdark"
     pt:content="!px-0 !pb-0"
-    modal
   >
     <template #header>
       <h4 class="absolute left-1/2 -translate-x-1/2 top-3 text-xs md:text-sm">
@@ -18,7 +18,7 @@
         class="font-bold lg:text-xl mt-3 mb-1.5"
         v-text="
           step != 'complete'
-            ? 'احراز هویت پایه خود را تکمیل کنید'
+            ? 'افزودن کارت بانکی'
             : 'عالی بود! یک قدم تا پیوستن به ما.'
         "
       />
@@ -35,13 +35,13 @@
       class="flex justify-center items-center gap-3 my-8"
       v-if="step != 'complete'"
     >
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 text-sm">
         <span
-          class="text-sm block size-6 flex-center text-white rounded-md"
-          :class="{ 'bg-primary': step == 1, 'bg-[#00D018]': step == 2 }"
+          class="block size-6 flex-center text-white rounded-md"
+          :class="{ 'bg-[#00D018]': step == 1, 'bg-primary': step == 2 }"
           >1</span
         >
-        اطلاعات فردی
+        مشخصات کارت بانکی
       </div>
       <svg
         width="24"
@@ -58,26 +58,26 @@
           stroke-linejoin="round"
         />
       </svg>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 text-sm">
         <span
-          class="text-sm block size-6 flex-center text-white rounded-md"
+          class="block size-6 flex-center text-white rounded-md"
           :class="{
-            'bg-[#D7DADF] dark:text-black': step == 1,
+            'bg-[#00D018] dark:text-black': step == 1,
             'bg-primary': step == 2
           }"
           >2</span
         >
-        آپلود مدارک
+        مشخصات صاحب کارت
       </div>
     </section>
-    <AuthInsertData v-if="step == 1" @toStepTwo="step = 2" />
-    <AuthInsertFiles v-if="step == 2" @toStepComplete="step = 'complete'" />
-    <AuthCompleteAuth v-if="step == 'complete'" />
+    <DataInsertData v-if="step == 1" @toStepTwo="step = 2" />
+    <DataInsertFiles v-if="step == 2" @toStepComplete="step = 'complete'" />
+    <DataCompleteAuth v-if="step == 'complete'" />
   </Dialog>
 </template>
 
 <script setup>
-let showAuth = inject('showAuth')
+let showData = inject('showData')
 
 let step = ref(1)
 </script>

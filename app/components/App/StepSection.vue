@@ -15,9 +15,15 @@
       <div class="bg-[#E5F2FF] dark:bg-secdark w-[40%] rounded p-3">
         <h4 class="font-bold mb-1">تکمیل ثبت نام</h4>
         <p class="text-sm">در کمتر از 1 دقیق ثبت نام خود را تکمیل کنید</p>
-        <Button label="تکمیل ثبت نام" pt:root="!text-sm !mt-5 !text-white" />
+        <Button
+          label="تکمیل ثبت نام"
+          pt:root="!text-sm !mt-5 !text-white"
+          @click="showAuth = true"
+        />
       </div>
-      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative opacity-50">
+      <div
+        class="bg-white dark:bg-maindark rounded p-3 flex-grow relative opacity-50"
+      >
         <h4 class="font-bold mb-1">واریز به کیف پول</h4>
         <svg
           class="text-gray-400 absolute bottom-3"
@@ -31,8 +37,15 @@
             d="M17 9V7c0-2.8-2.2-5-5-5S7 4.2 7 7v2c-1.7 0-3 1.3-3 3v7c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3v-7c0-1.7-1.3-3-3-3M9 7c0-1.7 1.3-3 3-3s3 1.3 3 3v2H9z"
           />
         </svg>
+        <Button
+          label="تکمیل ثبت نام"
+          pt:root="!text-sm !mt-5 !text-white"
+          @click="showData = true"
+        />
       </div>
-      <div class="bg-white dark:bg-maindark rounded p-3 flex-grow relative opacity-50">
+      <div
+        class="bg-white dark:bg-maindark rounded p-3 flex-grow relative opacity-50"
+      >
         <h4 class="font-bold mb-1">اولین معامله</h4>
         <svg
           class="text-gray-400 absolute bottom-3"
@@ -48,5 +61,17 @@
         </svg>
       </div>
     </div>
+    <AuthMobileCompleteAuth />
+    <AuthMonitorCompleteAuth />
+    <DataMobileData />
+    <DataMonitorData />
   </section>
 </template>
+
+<script setup>
+let showAuth = ref(false)
+let showData = ref(false)
+
+provide('showAuth', showAuth)
+provide('showData', showData)
+</script>

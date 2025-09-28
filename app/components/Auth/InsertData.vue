@@ -23,8 +23,10 @@
       <input
         type="number"
         id="email-phone"
-        class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
+        class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3 border border-[#EFEFEF]"
+        :class="{ 'border-red-500': validNationalId === false }"
         placeholder="کد ملی را وارد کنید"
+        v-model="codeMeli"
       />
     </div>
     <div class="text-xs">
@@ -41,7 +43,15 @@
   </div>
 </template>
 <script setup>
+import { verifyIranianNationalId } from '@persian-tools/persian-tools'
+let emit = defineEmits(['toStepTwo'])
+
+let codeMeli = ref('')
 let date = ref('')
 
-let emit = defineEmits(['toStepTwo'])
+let validNationalId = ref('')
+
+watch(codeMeli, () => {
+  validNationalId.value = verifyIranianNationalId(codeMeli.value)
+})
 </script>

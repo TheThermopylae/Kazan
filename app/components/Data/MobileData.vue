@@ -1,12 +1,12 @@
 <template>
-  <Dialog
-    v-model:visible="showAuth"
+  <Drawer
+    v-model:visible="showData"
+    position="bottom"
     style="height: auto"
     @after-hide="step = 1"
-    pt:root="!rounded-t-10 !text-black !w-3/4 !max-w-[480px] !hidden lg:!block !bg-white dark:!bg-maindark dark:!text-white !overflow-auto !border-none"
-    pt:header="!p-1 !border-b !border-[#F0F0F0] dark:!border-secdark"
+    pt:root="!rounded-t-10 !text-black lg:!hidden !bg-white dark:!bg-maindark !border-none"
+    pt:header="!p-1 !border-b !border-[#F0F0F0]"
     pt:content="!px-0 !pb-0"
-    modal
   >
     <template #header>
       <h4 class="absolute left-1/2 -translate-x-1/2 top-3 text-xs md:text-sm">
@@ -61,23 +61,20 @@
       <div class="flex items-center gap-3">
         <span
           class="text-sm block size-6 flex-center text-white rounded-md"
-          :class="{
-            'bg-[#D7DADF] dark:text-black': step == 1,
-            'bg-primary': step == 2
-          }"
+          :class="{ 'bg-[#D7DADF]': step == 1, 'bg-primary': step == 2 }"
           >2</span
         >
         آپلود مدارک
       </div>
     </section>
     <AuthInsertData v-if="step == 1" @toStepTwo="step = 2" />
-    <AuthInsertFiles v-if="step == 2" @toStepComplete="step = 'complete'" />
+    <AuthInsertFiles v-if="step == 2" @toStepThree="step = 'complete'" />
     <AuthCompleteAuth v-if="step == 'complete'" />
-  </Dialog>
+  </Drawer>
 </template>
 
 <script setup>
-let showAuth = inject('showAuth')
+let showData = inject('showData')
 
 let step = ref(1)
 </script>

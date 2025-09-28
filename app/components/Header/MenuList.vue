@@ -12,7 +12,7 @@
           role="button"
           class="cursor-pointer flex items-center gap-3 h-18"
         >
-          خرید ارز
+          معامله
           <svg
             width="10"
             height="8"
@@ -28,7 +28,182 @@
         </div>
         <ul
           tabindex="0"
-          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[750px] p-2 shadow-sm grid grid-cols-4 gap-2"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[300px] p-2 shadow-sm"
+        >
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-2 flex items-center dark:hover:bg-secdark text-sm"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.3002 13.6111H10.2814C9.8642 13.6111 9.5859 13.1743 9.75711 12.7881L14.3002 3.18816C14.4859 2.76935 14.8964 2.5 15.3489 2.5H19.9672C20.4022 2.5 20.6797 2.97143 20.4734 3.36021L17.3615 9.22594C17.1552 9.61472 17.4327 10.0862 17.8677 10.0862H21.4239C21.9119 10.0862 22.178 10.6643 21.8649 11.0442L12.4918 22.4147C12.3246 22.6175 12.0065 22.4264 12.1012 22.18L14.8358 14.4068C14.9829 14.0242 14.7049 13.6111 14.3002 13.6111Z"
+                  stroke="#252525"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M3 4.72217H9.70588M3 20.2777H9.14706M4.67647 9.16661H7.47059M3 15.8333H6.91177"
+                  stroke="#0057FF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div>
+                خرید و فروش آنی
+                <p class="text-xs mt-1">خرید و فروش آنی بیش از 30 ارز</p>
+              </div>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-2 flex items-center dark:hover:bg-secdark text-sm"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 12.5C21 17.214 21 19.571 19.682 21.035C18.364 22.499 16.242 22.5 12 22.5C7.758 22.5 5.636 22.5 4.318 21.035C3 19.572 3 17.214 3 12.5C3 7.786 3 5.429 4.318 3.964C5.636 2.499 7.758 2.5 12 2.5C16.242 2.5 18.364 2.5 19.682 3.964C20.558 4.938 20.852 6.307 20.95 8.5"
+                  stroke="#252525"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M7 8.5C7 8.035 7 7.803 7.051 7.612C7.11919 7.35787 7.25303 7.12614 7.43909 6.94009C7.62514 6.75403 7.85687 6.62019 8.111 6.552C8.304 6.5 8.536 6.5 9 6.5H15C15.465 6.5 15.697 6.5 15.888 6.551C16.1421 6.61919 16.3739 6.75303 16.5599 6.93909C16.746 7.12514 16.8798 7.35687 16.948 7.611C17 7.804 17 8.036 17 8.5C17 8.964 17 9.197 16.949 9.388C16.8808 9.64213 16.747 9.87386 16.5609 10.0599C16.3749 10.246 16.1431 10.3798 15.889 10.448C15.697 10.5 15.464 10.5 15 10.5H9C8.535 10.5 8.303 10.5 8.112 10.449C7.85787 10.3808 7.62614 10.247 7.44009 10.0609C7.25403 9.87486 7.12019 9.64313 7.052 9.389C7 9.196 7 8.964 7 8.5Z"
+                  stroke="#0057FF"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8 13C8.27614 13 8.5 13.2239 8.5 13.5C8.5 13.7761 8.27614 14 8 14C7.72386 14 7.5 13.7761 7.5 13.5C7.5 13.2239 7.72386 13 8 13Z"
+                  stroke="#0057FF"
+                />
+                <path
+                  d="M8 17C8.27614 17 8.5 17.2239 8.5 17.5C8.5 17.7761 8.27614 18 8 18C7.72386 18 7.5 17.7761 7.5 17.5C7.5 17.2239 7.72386 17 8 17Z"
+                  stroke="#0057FF"
+                />
+                <path
+                  d="M12 13C12.2761 13 12.5 13.2239 12.5 13.5C12.5 13.7761 12.2761 14 12 14C11.7239 14 11.5 13.7761 11.5 13.5C11.5 13.2239 11.7239 13 12 13Z"
+                  stroke="#0057FF"
+                />
+                <path
+                  d="M12 17C12.2761 17 12.5 17.2239 12.5 17.5C12.5 17.7761 12.2761 18 12 18C11.7239 18 11.5 17.7761 11.5 17.5C11.5 17.2239 11.7239 17 12 17Z"
+                  stroke="#0057FF"
+                />
+                <path
+                  d="M16 13C16.2761 13 16.5 13.2239 16.5 13.5C16.5 13.7761 16.2761 14 16 14C15.7239 14 15.5 13.7761 15.5 13.5C15.5 13.2239 15.7239 13 16 13Z"
+                  stroke="#0057FF"
+                />
+                <path
+                  d="M16 17C16.2761 17 16.5 17.2239 16.5 17.5C16.5 17.7761 16.2761 18 16 18C15.7239 18 15.5 17.7761 15.5 17.5C15.5 17.2239 15.7239 17 16 17Z"
+                  stroke="#0057FF"
+                />
+              </svg>
+
+              <div>
+                ماشین حساب ارز دیجیتال و بین المللی
+                <p class="text-xs mt-1">
+                  تخمین ارزش دارایی و تبدیل ارزها به یکدیگر
+                </p>
+              </div>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-2 flex items-center dark:hover:bg-secdark text-sm"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.125 21V15M18 15V13.5M18 22.5V21M16.125 18H19.875M19.875 18C20.496 18 21 18.504 21 19.125V19.875C21 20.496 20.496 21 19.875 21H15M19.875 18C20.496 18 21 17.496 21 16.875V16.125C21 15.504 20.496 15 19.875 15H15M11 5.5C13.828 5.5 16.243 5.5 17.121 6.299C17.999 7.098 18 7.929 18 10.5L16 9.5M12 20.5C9.172 20.5 6.757 20.5 5.879 19.701C5.001 18.902 5 18.071 5 15.5L7 16.5"
+                  stroke="#252525"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.5 3.75C4.12 3.75 3 4.59 3 5.625C3 6.66 4.12 7.5 5.5 7.5C6.88 7.5 8 8.34 8 9.375C8 10.41 6.88 11.25 5.5 11.25M5.5 3.75C6.589 3.75 7.515 4.272 7.858 5M5.5 3.75V2.5M5.5 11.25C4.411 11.25 3.485 10.728 3.142 10M5.5 11.25V12.5"
+                  stroke="#0057FF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div>
+                تبدیل
+                <p class="text-xs mt-1">راحت ترین راه تبدیل دارایی</p>
+              </div>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/"
+              class="p-2 flex items-center dark:hover:bg-secdark text-sm"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 8.5V12.5L14.5 15"
+                  stroke="#0057FF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.338 7.37102L3.588 7.37402C3.58879 7.57172 3.66761 7.76112 3.80731 7.90101C3.94701 8.0409 4.1363 8.11997 4.334 8.12102L4.338 7.37102ZM6.88 8.13302C6.97849 8.13348 7.07611 8.11454 7.16728 8.07727C7.25845 8.04001 7.34139 7.98515 7.41136 7.91583C7.48132 7.84651 7.53695 7.76409 7.57507 7.67327C7.61319 7.58245 7.63304 7.48501 7.6335 7.38652C7.63396 7.28803 7.61502 7.19041 7.57775 7.09924C7.54048 7.00807 7.48562 6.92514 7.41631 6.85517C7.34699 6.7852 7.26456 6.72957 7.17375 6.69145C7.08293 6.65334 6.98549 6.63348 6.887 6.63302L6.88 8.13302ZM5.075 4.82102C5.07394 4.62211 4.9939 4.43177 4.8525 4.29186C4.7111 4.15196 4.51991 4.07396 4.321 4.07502C4.12209 4.07608 3.93174 4.15612 3.79184 4.29752C3.65194 4.43892 3.57394 4.63011 3.575 4.82902L5.075 4.82102ZM3.75 12.5C3.75 12.3011 3.67098 12.1103 3.53033 11.9697C3.38968 11.829 3.19891 11.75 3 11.75C2.80109 11.75 2.61032 11.829 2.46967 11.9697C2.32902 12.1103 2.25 12.3011 2.25 12.5H3.75ZM16.875 20.945C16.9639 20.8977 17.0423 20.833 17.1056 20.7547C17.1689 20.6764 17.2158 20.5862 17.2435 20.4894C17.2712 20.3926 17.2792 20.2912 17.2668 20.1913C17.2545 20.0914 17.2222 19.995 17.1719 19.9078C17.1215 19.8206 17.0541 19.7445 16.9737 19.6839C16.8933 19.6234 16.8015 19.5796 16.7038 19.5553C16.6061 19.5309 16.5045 19.5265 16.4051 19.5423C16.3056 19.558 16.2104 19.5937 16.125 19.647L16.875 20.945ZM19.147 16.625C19.0936 16.7104 19.058 16.8056 19.0423 16.9051C19.0265 17.0045 19.0309 17.1061 19.0553 17.2038C19.0796 17.3015 19.1233 17.3933 19.1839 17.4737C19.2445 17.5541 19.3206 17.6215 19.4078 17.6719C19.495 17.7223 19.5914 17.7546 19.6913 17.7669C19.7912 17.7792 19.8926 17.7713 19.9894 17.7435C20.0862 17.7158 20.1764 17.6689 20.2547 17.6056C20.333 17.5423 20.3977 17.4639 20.445 17.375L19.147 16.625ZM5.14 5.57002C4.99864 5.71006 4.9187 5.90051 4.91776 6.09949C4.91682 6.29846 4.99497 6.48966 5.135 6.63102C5.27503 6.77238 5.46549 6.85233 5.66446 6.85326C5.86344 6.8542 6.05464 6.77606 6.196 6.63602L5.14 5.57002ZM18.862 5.63702C15.042 1.81702 8.869 1.77902 5.074 5.57402L6.134 6.63302C9.334 3.43402 14.557 3.45302 17.802 6.69802L18.862 5.63702ZM5.074 5.57402L3.808 6.84002L4.868 7.90002L6.135 6.63502L5.074 5.57402ZM4.334 8.12102L6.88 8.13302L6.887 6.63302L4.342 6.62102L4.334 8.12102ZM5.088 7.36702L5.075 4.82102L3.575 4.82902L3.588 7.37402L5.088 7.36702ZM12 4.25002C14.188 4.25002 16.2865 5.11922 17.8336 6.66639C19.3808 8.21357 20.25 10.312 20.25 12.5H21.75C21.75 9.91416 20.7228 7.43421 18.8943 5.60573C17.0658 3.77725 14.5859 2.75002 12 2.75002V4.25002ZM12 20.75C9.81196 20.75 7.71354 19.8808 6.16637 18.3337C4.61919 16.7865 3.75 14.6881 3.75 12.5H2.25C2.25 15.0859 3.27723 17.5658 5.10571 19.3943C6.93419 21.2228 9.41414 22.25 12 22.25V20.75ZM16.125 19.647C14.8715 20.3725 13.4483 20.7531 12 20.75V22.25C13.775 22.25 15.44 21.775 16.875 20.945L16.125 19.647ZM20.25 12.5C20.2531 13.9483 19.8725 15.3716 19.147 16.625L20.445 17.375C21.3025 15.8936 21.7527 14.2117 21.75 12.5H20.25ZM6.196 6.63602C7.73885 5.10408 9.82578 4.24679 12 4.25002V2.75002C9.43034 2.7466 6.96388 3.75987 5.14 5.57002L6.196 6.63602Z"
+                  fill="black"
+                />
+              </svg>
+              <div>
+                تاریخچه معاملات
+                <p class="text-xs mt-1">مشاهده سفارش های باز  . معاملات و ...</p>
+              </div>
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover">
+        <div
+          tabindex="0"
+          role="button"
+          class="cursor-pointer flex items-center gap-3 h-18"
+        >
+          خرید ارز بانکی
+          <svg
+            width="10"
+            height="8"
+            viewBox="0 0 10 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.15175 7.47309C4.10825 7.43071 3.92225 7.2707 3.76925 7.12165C2.807 6.24781 1.232 3.96822 0.75125 2.77509C0.674 2.59389 0.5105 2.13578 0.5 1.89101C0.5 1.65648 0.554 1.4329 0.6635 1.21956C0.8165 0.953605 1.05725 0.740258 1.3415 0.623356C1.53875 0.5481 2.129 0.431198 2.1395 0.431198C2.78525 0.314296 3.8345 0.25 4.994 0.25C6.09875 0.25 7.10525 0.314296 7.76075 0.41001C7.77125 0.420969 8.50475 0.537871 8.756 0.665733C9.215 0.900268 9.5 1.35838 9.5 1.84864V1.89101C9.48875 2.2103 9.20375 2.88176 9.19325 2.88176C8.71175 4.01059 7.214 6.23758 6.21875 7.13261C6.21875 7.13261 5.963 7.38468 5.80325 7.49428C5.57375 7.66525 5.2895 7.75 5.00525 7.75C4.688 7.75 4.3925 7.65429 4.15175 7.47309Z"
+              fill="#999999"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[880px] p-2 shadow-sm grid grid-cols-4 gap-2"
         >
           <li v-for="item in 15">
             <NuxtLink
@@ -36,7 +211,58 @@
               class="p-3 flex items-center dark:hover:bg-secdark"
             >
               <NuxtImg src="/crypto/RUB.svg" class="size-5" />
-              خرید روبل
+              قیمت روبل
+              <span class="text-textlight">RUB</span>
+            </NuxtLink>
+          </li>
+          <li class="flex justify-center">
+            <NuxtLink to="/" class="text-primary p-3 flex items-center gap-3"
+              >خرید ارز های دیجیتال
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M609.408 149.376L277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0a30.59 30.59 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.59 30.59 0 0 0 0-42.688a29.12 29.12 0 0 0-41.728 0"
+                /></svg
+            ></NuxtLink>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover">
+        <div
+          tabindex="0"
+          role="button"
+          class="cursor-pointer flex items-center gap-3 h-18"
+        >
+          خرید ارز دیجیتال
+          <svg
+            width="10"
+            height="8"
+            viewBox="0 0 10 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.15175 7.47309C4.10825 7.43071 3.92225 7.2707 3.76925 7.12165C2.807 6.24781 1.232 3.96822 0.75125 2.77509C0.674 2.59389 0.5105 2.13578 0.5 1.89101C0.5 1.65648 0.554 1.4329 0.6635 1.21956C0.8165 0.953605 1.05725 0.740258 1.3415 0.623356C1.53875 0.5481 2.129 0.431198 2.1395 0.431198C2.78525 0.314296 3.8345 0.25 4.994 0.25C6.09875 0.25 7.10525 0.314296 7.76075 0.41001C7.77125 0.420969 8.50475 0.537871 8.756 0.665733C9.215 0.900268 9.5 1.35838 9.5 1.84864V1.89101C9.48875 2.2103 9.20375 2.88176 9.19325 2.88176C8.71175 4.01059 7.214 6.23758 6.21875 7.13261C6.21875 7.13261 5.963 7.38468 5.80325 7.49428C5.57375 7.66525 5.2895 7.75 5.00525 7.75C4.688 7.75 4.3925 7.65429 4.15175 7.47309Z"
+              fill="#999999"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[880px] p-2 shadow-sm grid grid-cols-4 gap-2"
+        >
+          <li v-for="item in 15">
+            <NuxtLink
+              to="/"
+              class="p-3 flex items-center dark:hover:bg-secdark"
+            >
+              <NuxtImg src="/crypto/RUB.svg" class="size-5" />
+              قیمت روبل
               <span class="text-textlight">RUB</span>
             </NuxtLink>
           </li>
@@ -79,7 +305,7 @@
         </div>
         <ul
           tabindex="0"
-          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[750px] p-2 shadow-sm grid grid-cols-4 gap-2"
+          class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[880px] p-2 shadow-sm grid grid-cols-4 gap-2"
         >
           <li v-for="item in 15">
             <NuxtLink
@@ -115,7 +341,7 @@
           role="button"
           class="cursor-pointer flex items-center gap-3 h-18"
         >
-          قیمت ارز
+          سایر
           <svg
             width="10"
             height="8"
@@ -134,51 +360,44 @@
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-52 p-2 shadow-sm"
         >
           <li>
-            <NuxtLink
-              to="/"
-              class="p-3 flex items-center dark:hover:bg-secdark"
-            >
+            <NuxtLink to="/" class="p-3 items-center dark:hover:bg-secdark">
+              تحلیل ارز بین المللی
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/" class="p-3 items-center dark:hover:bg-secdark">
               تحلیل ارز دیجیتال
             </NuxtLink>
           </li>
+
           <li>
-            <NuxtLink
-              to="/"
-              class="p-3 flex items-center dark:hover:bg-secdark"
-            >
-              ماشین حساب ارز دیجیتال
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink
-              to="/"
-              class="p-3 flex items-center dark:hover:bg-secdark"
-            >
+            <NuxtLink to="/" class="p-3 items-center dark:hover:bg-secdark">
               دعوت از دوستان
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink
-              to="/"
-              class="p-3 flex items-center dark:hover:bg-secdark"
+            <a
+              class="p-3 items-center hover:bg-transparent cursor-default text-secondary"
             >
               مستندات API
-            </NuxtLink>
+              <span class="bg-secondary text-white rounded p-1 text-2sm w-fit"
+                >غیرفعال</span
+              >
+            </a>
           </li>
           <li>
-            <NuxtLink
-              to="/"
-              class="p-3 flex items-center dark:hover:bg-secdark"
-            >
+            <NuxtLink to="/" class="p-3 items-center dark:hover:bg-secdark">
               راهنما
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink
-              to="/"
-              class="p-3 flex items-center dark:hover:bg-secdark"
-            >
+            <NuxtLink to="/" class="p-3 items-center dark:hover:bg-secdark">
               بلاگ
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/" class="p-3 items-center dark:hover:bg-secdark">
+              تاریخچه معاملات
             </NuxtLink>
           </li>
         </ul>
@@ -186,58 +405,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-const menuBuy = ref()
-const menuPrice = ref()
-const menuOther = ref()
-
-const itemsBuy = ref([
-  {
-    items: [
-      {
-        label: 'Refresh'
-      },
-      {
-        label: 'Export'
-      }
-    ]
-  }
-])
-const itemsPrice = ref([
-  {
-    items: [
-      {
-        label: 'Refresh 2'
-      },
-      {
-        label: 'Export 2'
-      }
-    ]
-  }
-])
-const itemsOther = ref([
-  {
-    items: [
-      {
-        label: 'Refresh 3'
-      },
-      {
-        label: 'Export 3'
-      }
-    ]
-  }
-])
-
-const toggleBuy = event => {
-  menuBuy.value.toggle(event)
-}
-
-const togglePrice = event => {
-  menuPrice.value.toggle(event)
-}
-
-const toggleOther = event => {
-  menuOther.value.toggle(event)
-}
-</script>
