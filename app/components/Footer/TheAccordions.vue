@@ -1,7 +1,8 @@
 <template>
   <Accordion>
     <AccordionPanel :value="item" v-for="item in [0, 1, 2]">
-      <AccordionHeader pt:root="!bg-transparent !text-[#535160] dark:!text-white !font-medium"
+      <AccordionHeader
+        pt:root="!bg-transparent !text-[#535160] dark:!text-white !font-medium"
         >Header {{ item + 1 }}</AccordionHeader
       >
       <AccordionContent>

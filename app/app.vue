@@ -1,4 +1,5 @@
 <template>
+  <NuxtLoadingIndicator />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
@@ -42,6 +43,18 @@ onMounted(() => {
   })
 })
 </script>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 150ms ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
 
 <!-- <Select
   v-model="selectetType"

@@ -1,6 +1,7 @@
 <template>
   <UserPanelWalletStats />
   <UserPanelWalletGuideSection />
+  <UserPanelWalletYourProperty />
 </template>
 
 <script setup>

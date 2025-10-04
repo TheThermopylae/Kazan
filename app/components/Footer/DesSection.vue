@@ -1,60 +1,122 @@
 <template>
-  <section class="container mt-20 relative" v-if="!route.path.startsWith('/app')">
-    <p class="overflow-hidden" :class="{ 'h-32': !showAll, 'mb-5': showAll }">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium
-      nulla odit, qui minus autem dicta quasi nemo molestias quod expedita
-      pariatur enim quidem consequuntur ipsum eaque odio inventore, non magni
-      quaerat cumque similique! Voluptatibus quod officiis soluta autem deleniti
-      nihil quas architecto perferendis harum velit, rem distinctio beatae dolor
-      repellat error magni exercitationem nam tempora laborum deserunt itaque
-      atque voluptate similique vitae. Nihil deserunt voluptates hic laudantium,
-      nobis et magni eligendi vero! Suscipit deserunt ducimus voluptate est
-      maxime dolore amet atque voluptatum illum, porro quo id eum nisi enim
-      recusandae quos labore quaerat reiciendis ut incidunt ab adipisci eveniet
-      voluptates asperiores. Illo harum ducimus placeat, cum itaque excepturi
-      dolor quis debitis voluptatem sapiente, nesciunt obcaecati vel
-      reprehenderit expedita ea deserunt deleniti doloribus magnam explicabo
-      necessitatibus doloremque ipsum et quasi! Voluptatem sapiente velit
-      aperiam? Dignissimos quibusdam repellat exercitationem saepe explicabo
-      omnis velit minus commodi. Excepturi adipisci quas officia quod quam
-      distinctio enim in blanditiis consequatur, maxime veritatis commodi.
-      Vitae, tempore. Error, minus sit et incidunt iusto qui maiores, voluptatem
-      molestias natus nostrum pariatur nesciunt ratione aperiam unde consequatur
-      quam eaque sint odit dolores quae reprehenderit eum, quia asperiores hic.
-      Nobis, asperiores dignissimos facilis, ex blanditiis dolore obcaecati
-      impedit dolor ducimus nihil sequi aut culpa, eos magni explicabo. Vitae
-      accusantium nihil modi recusandae unde similique? Alias fugit cumque,
-      itaque, ratione quos quam id a, nam veritatis atque est sunt vero!
-      Quibusdam, tempora quos perferendis dignissimos molestias temporibus illo.
-      Exercitationem quasi esse veniam facilis. Omnis ex minus ratione labore
-      laudantium accusantium dolor, distinctio provident dolore voluptatem fugit
-      id eaque saepe ab quaerat nemo cum. Quam quas necessitatibus asperiores, a
-      cumque aperiam! Hic consequuntur, rerum culpa placeat cumque at! Dolores
-      veniam delectus, iure est nobis soluta quisquam nemo beatae alias quidem
-      voluptatum error exercitationem nostrum aliquam debitis minima nam dolorum
-      doloremque ipsa deleniti, labore voluptate. Hic repellendus, quis animi
-      officiis saepe, repellat adipisci recusandae molestias quas quisquam
-      architecto eum necessitatibus doloremque, modi vitae ab ut reiciendis
-      accusamus! Dolore laboriosam architecto consequatur iure vitae optio
-      veniam animi. Deleniti asperiores, earum dolore maxime, perspiciatis
-      consequuntur natus molestias accusantium excepturi maiores quod quisquam.
-      Laudantium, quasi. Voluptatibus commodi laboriosam quis, quam magnam harum
-      eum vitae voluptate accusamus, blanditiis, consectetur in ratione iste
-      magni natus dolores nulla aperiam incidunt! Itaque reiciendis ad dicta
-      facere natus perferendis atque soluta. Voluptatibus, rem! Placeat
-      doloremque ipsa praesentium voluptatem non ea nostrum minus. Voluptas
-      obcaecati quaerat illo dicta sapiente! Praesentium, incidunt qui inventore
-      quasi accusamus nostrum culpa molestias sed eaque dignissimos suscipit
-      neque, perferendis pariatur perspiciatis id non consequuntur quas
-      consectetur cum facere sit fuga nesciunt. Saepe rem voluptas debitis aut
-      corporis voluptatum, labore nulla in autem fugit beatae. In necessitatibus
-      adipisci rerum illum error fugiat nemo obcaecati voluptates iusto,
-      voluptas eius accusantium rem a sequi dolorum animi ipsum itaque cumque
-      quo architecto odio perferendis quae. In, reprehenderit quo. Odio ex et
-      asperiores labore. Optio sunt laboriosam dolorem, dicta possimus
-      necessitatibus laudantium architecto pariatur eum accusantium voluptatum
-      aspernatur assumenda doloribus iste explicabo nesciunt quisquam modi,
-      earum, amet nobis molestias ab alias! Odio.
+  <section
+    class="container mt-20 relative"
+    v-if="!route.path.startsWith('/app')"
+  >
+    <p
+      class="overflow-hidden text-justify"
+      :class="{ 'h-32': !showAll, 'mb-5': showAll }"
+    >
+      صرافی ارز دیجیتال چیست و چطور کار می‌کند؟ فعالیت در دنیای کریپتوکارنسی به
+      یک بستر امن، سریع و راحت نیاز دارد که انواع صرافی ارز دیجیتال این فضا را
+      برای تریدرها و سرمایه‌گذاران، فراهم می‌کنند. صرافی ارز دیجیتال،پلتفرمی است
+      که امکان معامله، مبادله و انجام انواع تراکنش‌های مالی با ارزهای دیجیتال را
+      در اختیار ما می‌گذارد. صرافی‌های ارز دیجیتال در دو دسته‌بندی اصلی یعنی
+      صرافی ارز دیجیتال متمرکز وصرافی ارز دیجیتال غیرمتمرکز قرار می‌گیرند. هر
+      کدام از این مدل‌ها، مزایای اختصاصی خود را دارند و افراد بر اساس نیاز و نوع
+      کار خود، باید یکی از آن‌ها را انتخاب کنند. صرافی متمرکز یک محیط امن، قابل
+      اطمینان و کامل برای انجام انواع تراکنش‌های مالی را فراهم می‌کند. در صرافی
+      متمرکز، یک فرد یا مجموعه به‌عنوان واسط، به تمام معامله‌ها نظارت دارد و به
+      همین خاطر، احتمال کلاهبرداری، سرقت و هر گونه خطر از دست رفتن سرمایه، به
+      کمترین میزان ممکن می‌رسد. پشتیبانی کامل و دقیق و امکان بررسی تمام
+      تراکنش‌های پیشین، بخشی از مهم‌ترین ویژگی‌های این نوع صرافی است. در طرف
+      مقابل، صرافی‌های غیر متمرکز (DEX) وجود دارند. این صرافی‌ها بدون نهاد واسط
+      فعالیت می‌کنند. در این صرافی‌ها، افراد می‌توانند به‌صورت کاملا همتا به
+      همتا (P2P) با هم معامله کنند و برای افراد حرفه‌ای، استفاده از این صرافی‌ها
+      مناسب‌تر است. تمام صرافی‌های ارز دیجیتال، صرف نظر از متمرکز یا غیرمتمرکز
+      بودن، در دسته صرافی آنلاین قرار می‌گیرند. بنابراین از هر نقطه دنیا و تنها
+      با اتصال به اینترنت، می‌توانید به آن‌ها دسترسی داشته باشید. چطور یک صرافی
+      رمزارز معتبر را تشخیص دهیم؟ با وجود نام‌های متنوع و کاربردهای گوناگون،
+      بدون شک انتخاب یک صرافی ارز دیجیتال اهمیت فراوانی دارد. برخی از مهم‌ترین
+      فاکتورهای انتخاب یک صرافی عبارتند از: مجوزهای صرافی امنیت و اعتبار دیدگاه
+      کاربران و مشتریان پشتیبانی و پاسخگویی مناسب امکانات و خدمات آیا صرافی‌های
+      ارز دیجیتال ایرانی با صرافی‌های خارجی تفاوت دارند؟ صرافی‌های ارز دیجیتال
+      بین‌المللی نسبت به صرافی‌های ارز دیجیتال ایرانی در بازه کوتاه‌تری
+      رمزارزهای نوظهور را در فهرست ارزهای قابل معامله خود قرار می‌دهند، حجم
+      معاملات بسیار بالاتری دارند و ممکن است امکانات معاملاتی بیشتری را نیز به
+      کاربران خود ارائه کنند. با این وجود، صرافی‌های ایرانی ارز دیجیتال نیز تلاش
+      کرده‌اند تا فاصله خود را با صرافی‌های خارجی کم‌تر کرده و امکانات مورد نیاز
+      کاربران ایرانی را تا حد ممکن فراهم کنند. همچنین سرمایه کاربران ایرانی در
+      صرافی‌های داخلی از امنیت بسیار بالاتری برخوردار است. با توجه به تحریم‌های
+      اقتصادی، اغلب صرافی‌های معتبر خارجی به کاربران ایرانی هیچ‌گونه خدماتی
+      ارائه نمی‌کنند. هر چند امکان استفاده از فیلترشکن برای دور زدن این
+      محدودیت‌ها وجود دارد، اما احتمال کشف شدن هویت ایرانی کاربران و مسدود شدن
+      حساب آن‌ها نیز بسیار بالا است. بنابراین اگر می‌خواهید امنیت سرمایه خود را
+      حفظ کنید، استفاده از یکی از بهترین صرافی‌های ارز دیجیتال ایرانی مثل والکس،
+      گزینه بسیار معقول‌تری برای شما است. چرا باید صرافی والکس را برای معاملاتم
+      انتخاب کنم؟ در میان صرافی‌های معتبر ایرانی، والکس توانسته با ویژگی‌های
+      خود، به یکی از بهترین صرافی‌های ایرانی برای کاربران داخلی تبدیل شود. والکس
+      با ارائه پیشرفته‌ترین امکانات، پلتفرمی کارآمد در سطح برترین صرافی‌های
+      معتبر جهانی ایجاد کرده است که امکان ترید کردن و انجام انواع تراکنش به
+      ساده‌ترین روش را برای همگان امکان‌پذیر می‌کند. برخی از مهم‌ترین امکانات
+      والکس شامل موارد زیر هستند: بازارهای معاملاتی پیشرفته در والکس امکان
+      فعالیت در بازار تومان و تتر وجود دارد. همه داده‌های مورد نیاز برای آغاز
+      فعالیت هم‌چون تغییرات جهانی قیمت‌ها و نوسانات، نمودارهای تحلیل ارز و هر
+      نوع اطلاعات مهم دیگر در این بخش در اختیار تریدرها قرار گرفته است. معامله
+      تعهدی با شورت و لانگ در معاملات تعهدی یا Margin Trading شما می‌توانید
+      هنگام معامله، اعتبار دریافت کنید؛ سپس در صورت تحلیل درست روند قیمت، تا چند
+      برابر در بازار نزولی یا صعودی سود کنید. نسبت اعتبار در بازار تعهدی والکس
+      تا ۱۰X برای کاربران فعال شده و شما می‌توانید تا ۱۰ برابر سود بیشتر کسب
+      کنید. امکان خرید و فروش آنی علاوه بر امکان معامله‌های همتا به همتا، والکس
+      امکان خرید و فروش آنی برای کوتاه‌کردن فرآیند انتظار خرید و فروش را نیز
+      ارائه کرده است. با استفاده از این قابلیت، تنها در کمتر از یک دقیقه
+      می‌توانید ارزهای خود را فروخته و سرمایه خود را به تومان یا دیگر ارزهای مد
+      نظرتان، تبدیل کنید. کاربران می‌توانند با استفاده از این امکان در والکس
+      خرید ارز دیجیتال خود را در کوتاه‌ترین زمان انجام دهند و با خیال آسوده
+      دارای دیجیتال خود را در کیف پول امن والکس نگهداری کنند. انواع بات‌های
+      معامله‌گر رایگان والکس با فراهم کردن بات‌های معامله‌گر ،امکان معامله
+      خودکار را برای کاربران خود فراهم کرده است. برخی از پرکاربردترین بات‌های
+      موجود در والکس شامل مارجین گرید، اسپات گرید، مارتینگل،اینفینیتی گرید و
+      اسمارت ریبالانس هستند. اعتبار معاملاتی ارائه وجه اعتباری به کاربران برای
+      آغاز فعالیت در بازارهای کریپتوکارنسی، یکی دیگر از مزیت‌های استفاده از
+      والکس است. همه می‌توانند از راه معامله‌ی ارزهای دیجیتال به سود برسند، اما
+      خیلی از افراد شاید نتوانند اعتبار کافی برای کسب سود مناسب، وارد معاملات
+      خود کنند. والکس با بررسی نیازهای معامله‌گران، محصولی با عنواناعتبار
+      معاملاتیارائه کرده که به کمک آن، می‌توان از طرح‌های گوناگون برای
+      به‌دست‌آوردن اعتبار ارز دیجیتال و در نتیجه سود بیشتر، استفاده کرد. اعتبار
+      معاملاتی در واقع تسهیل‌گر کسب سود در دنیای رمزارزها است. با استفاده از این
+      امکان، کاربران می‌توانند تا سقف ۴۰۰ میلیون تومان اعتبار معاملاتی دریافت
+      کنند. اپلیکیشن معاملاتی والکس با ارائه اپلیکیشن ارز دیجیتال تلفن همراه
+      برای هر دو سیستم عامل اندروید و iOS، خرید و فروش ارزهای دیجیتال را آسان
+      کرده است. با دانلود اپلیکیشن ارز دیجیتال والکس و استفاده از آن شما در همه
+      جا می‌توانید به معاملات و کیف پول خود دسترسی داشته باشید و دارایی خود را
+      مدیریت کنید. پشتیبانی ۲۴/۷ فعالیت در دنیای رمزارزها با چالش‌های مختلفی
+      همراه است که یک پشتیبانی به‌موقع و دقیق، می‌تواند بخش زیادی از این
+      دغدغه‌ها را از بین ببرد. در والکس امکان پشتیبانی آنلاین و ۲۴ ساعته در ۷
+      روز هفته وجود دارد. تمامی پرسش‌های کاربران در مدت زمان بسیار کوتاهی توسط
+      تیم پشتیبانی مجموعه پاسخ داده می‌شوند و با خیال راحت می‌توانید در هر زمانی
+      از روز، از کارشناسان این بخش کمک بگیرید. امنیت بسیار بالا والکس به‌عنوان
+      بهترین صرافی ارز دیجیتال، حفظ امنیت سرمایه کاربران خود را بالاترین اولویت
+      خود می‌داند. استفاده از کیف پول سرد برای محافظت از سرمایه تریدرها و
+      سرمایه‌گذاران، استفاده از سیستم‌های امنیتی قوی، احراز هویت کامل و رمز عبور
+      دو مرحله‌ای، تنها بخشی از راهکارهای امنیتی والکس برای تامین امنیت
+      دارایی‌های شما هستند. کارمزد منصفانه با این‌که اخذ کارمزد در نگاه اول
+      چندان مهم به نظر نمی‌رسد، اما یکی از مهم‌ترین مشخصه‌ها برای انتخاب یک
+      صرافی رمز ارز معتبر محسوب می‌شود. والکس با اخذ کارمزد نسبتا کم و معقول به
+      نسبت دیگر صرافی‌های ایرانی ارز دیجیتال، سعی دارد تا هزینه قابل توجهی را به
+      کاربران خود تحمیل نکند. ابزارهای حرفه‌ای معامله امکان قرار دادن حد سود و
+      ضرر (Stop Loss) یک ویژگی کلیدی در خرید ارز دیجیتال و فروش آن است. با
+      استفاده از استاپ لاس در صرافی والکس می‌توانید حرفه‌ای‌تر از گذشته در بازار
+      کریپتوکارنسی سرمایه‌گذاری و معامله کنید. در کنار استاپ لاس، شما می‌توانید
+      با اعمال فیلتر روی لیست سفارش‌های خود بر اساس بازار مورد نظر، سوابق
+      تراکنش‌های خود را مشاهده و در صورت نیاز خروجی اکسل از آن‌ها دریافت کنید.
+      خدمات API والکس یک ویژگی مهم برای کاربران حرفه‌ای است. شما در والکس به دو
+      صورت عمومی و خصوصی می‌توانید به این مستندات دسترسی داشته باشید. صرافی ارز
+      دیجیتال والکس با ارائه امکانات تحلیلی روی چارت‌ها از جمله امکان قرار دادن
+      بازه‌های زمانی مختلف روی نمودار، استفاده از نمودار‌های خطی و ابزارهای
+      تحلیلی، یک امکان پیشرفته برای خرید و فروش ارزهای دیجیتال در اختیار تریدرها
+      قرار داده است. رابط کاربری آسان و قابل درک دیگر ویژگی والکس رابط کاربری
+      شفاف و ساده این پلتفرم است. تمام افراد با هر میزان دانش از دنیای رمزارزها،
+      به‌راحتی می‌توانند فعالیت خود را در این صرافی آغاز کنند. همه مراحل از لحظه
+      ثبت نام تا اولین فرآیند ترید، در بخش‌های مختلف این پلتفرم آموزش داده شده و
+      کاربران بدون داشتن هیچ‌گونه دانش اولیه، می‌توانند فعالیت خود را در این
+      صرافی شروع کنند. با وجود همه این مشخصه‌های بی‌نظیر، والکس محبوبیت بسیار
+      زیادی در بین تریدرها، سرمایه‌گذاران و هولدر‌های ایرانی دارد و می‌تواند
+      به‌عنوان بهترین صرافی ارز دیجیتال ایرانی شناخته می‌شود. ما در مجموعه والکس
+      پذیرای دیدگاه‌ها و پیشنهادهای شما برای بهبود خدمات خود هستیم. شما
+      می‌توانید از طریق حساب‌های رسمی والکس در شبکه‌های اجتماعی یا تماس با
+      پشتیبانی، نظرات خود را با ما به اشتراک بگذارید تا بیش از پیش بتوانیم
+      انتظارات کاربران از یک پلتفرم معاملاتی برتر را برآورده کنیم.
     </p>
     <div
       v-if="!showAll"

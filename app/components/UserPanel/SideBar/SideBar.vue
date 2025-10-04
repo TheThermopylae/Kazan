@@ -5,7 +5,7 @@
     <ul>
       <li>
         <NuxtLink
-          to="/myaccount/state"
+          to="/"
           class="flex items-center gap-3 p-3 border-r-4 border-white dark:border-maindark transition rounded-t"
           active-class="bg-[#E5F2FF] !border-primary dark:bg-[#0E2A4A]"
         >
@@ -33,7 +33,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/myaccount/wallet"
+          to="/app/wallet"
           class="flex items-center gap-3 p-3 rounded-b border-r-4 border-white dark:border-maindark transition"
           active-class="bg-[#E5F2FF] !border-primary dark:bg-[#0E2A4A]"
         >

@@ -1,28 +1,29 @@
 <template>
   <div class="border-b border-[#F0F0F0] dark:border-secdark px-3 pb-3 lg:px-4">
     <div class="text-xs">
-      <label for="email-phone" class="text-xs">نام</label>
+      <label for="first-name" class="text-xs">نام</label>
       <input
         type="text"
-        id="email-phone"
+        id="first-name"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="نام را وارد کنید"
       />
     </div>
     <div class="text-xs my-3">
-      <label for="email-phone" class="text-xs">نام خانوادگی</label>
+      <label for="last-name" class="text-xs">نام خانوادگی</label>
       <input
         type="text"
-        id="email-phone"
+        id="last-name"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="نام خانوادگی را وارد کنید"
       />
     </div>
     <div class="text-xs my-3">
-      <label for="email-phone" class="text-xs">کد ملی</label>
+      <label for="codemeli" class="text-xs">کد ملی</label>
       <input
+        inputmode="numeric"
         type="number"
-        id="email-phone"
+        id="codemeli"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3 border border-[#EFEFEF]"
         :class="{ 'border-red-500': validNationalId === false }"
         placeholder="کد ملی را وارد کنید"

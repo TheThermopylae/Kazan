@@ -1,17 +1,13 @@
 <template>
-  <div class="flex items-center gap-4 lg:gap-10">
+  <div class="flex items-center gap-4 xl:gap-10">
     <HeaderTheDrawer />
     <NuxtLink to="/" class="flex items-center gap-2 font-bold text-sm">
       <NuxtImg src="/logo.svg" class="size-[27px]"></NuxtImg>
       <h3>صرافی <span class="text-primary">کازان</span></h3>
     </NuxtLink>
-    <div class="hidden lg:flex gap-8 items-center">
+    <div class="hidden lg:flex gap-4 xl:gap-8 items-center">
       <div class="dropdown dropdown-hover">
-        <div
-          tabindex="0"
-          role="button"
-          class="cursor-pointer flex items-center gap-3 h-18"
-        >
+        <div role="button" class="cursor-pointer flex items-center gap-3 h-18">
           معامله
           <svg
             width="10"
@@ -27,7 +23,7 @@
           </svg>
         </div>
         <ul
-          tabindex="0"
+          onclick="document.activeElement.blur()"
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[300px] p-2 shadow-sm"
         >
           <li>
@@ -175,7 +171,7 @@
               </svg>
               <div>
                 تاریخچه معاملات
-                <p class="text-xs mt-1">مشاهده سفارش های باز  . معاملات و ...</p>
+                <p class="text-xs mt-1">مشاهده سفارش های باز . معاملات و ...</p>
               </div>
             </NuxtLink>
           </li>
@@ -202,7 +198,7 @@
           </svg>
         </div>
         <ul
-          tabindex="0"
+          onclick="document.activeElement.blur()"
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[880px] p-2 shadow-sm grid grid-cols-4 gap-2"
         >
           <li v-for="item in 15">
@@ -233,11 +229,7 @@
         </ul>
       </div>
       <div class="dropdown dropdown-hover">
-        <div
-          tabindex="0"
-          role="button"
-          class="cursor-pointer flex items-center gap-3 h-18"
-        >
+        <div class="cursor-pointer flex items-center gap-3 h-18">
           خرید ارز دیجیتال
           <svg
             width="10"
@@ -253,7 +245,7 @@
           </svg>
         </div>
         <ul
-          tabindex="0"
+          onclick="document.activeElement.blur()"
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[880px] p-2 shadow-sm grid grid-cols-4 gap-2"
         >
           <li v-for="item in 15">
@@ -284,11 +276,7 @@
         </ul>
       </div>
       <div class="dropdown dropdown-hover">
-        <div
-          tabindex="0"
-          role="button"
-          class="cursor-pointer flex items-center gap-3 h-18"
-        >
+        <div class="cursor-pointer flex items-center gap-3 h-18">
           قیمت ارز
           <svg
             width="10"
@@ -304,7 +292,7 @@
           </svg>
         </div>
         <ul
-          tabindex="0"
+          onclick="document.activeElement.blur()"
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[880px] p-2 shadow-sm grid grid-cols-4 gap-2"
         >
           <li v-for="item in 15">
@@ -356,7 +344,7 @@
           </svg>
         </div>
         <ul
-          tabindex="0"
+          onclick="document.activeElement.blur()"
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-52 p-2 shadow-sm"
         >
           <li>

@@ -59,6 +59,9 @@ body {
     --color-darkbg: #0E0E12;
     --color-textlight: #595959;
     --color-textdark: #C6C3D2;
+    --color-selected: #E5F2FF;
+    --color-stroke: #EFEFEF;
+    --color-bar: #0000069E;
 }
 
 @utility container {
@@ -96,6 +99,9 @@ body {
 
 h2 {
     @apply text-lables dark:text-white
+}
+button{
+    @apply cursor-pointer
 }
 
 .flex-center {

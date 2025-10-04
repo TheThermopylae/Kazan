@@ -1,19 +1,13 @@
 <template>
-  <div class="container">
-    <AppStepSection />
-    <AppMainLinks />
-    <AppSliderSection />
-    <div class="grid xl:grid-cols-3 gap-2.5 my-5">
-      <AppKazanLevel />
-      <AppWalletStats />
-    </div>
-    <AppBuyCrypto />
-    <AppTradingMarkets />
-  </div>
+  <NuxtPage></NuxtPage>
 </template>
 
 <script setup>
+// definePageMeta({
+//   layout: 'app-layout'
+// })
+
 useHead({
-  title: '| خانه'
+  // title: '| خانه'
 })
 </script>

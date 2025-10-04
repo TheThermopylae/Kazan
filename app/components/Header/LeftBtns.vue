@@ -78,7 +78,7 @@
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[275px] max-h-[80vh] overflow-auto flex-nowrap p-2 shadow-sm"
         >
           <li class="mt-1" v-for="item in 10">
-            <NuxtLink to="/" class="p-2 dark:hover:bg-secdark">
+            <NuxtLink to="/myaccount" class="p-2 dark:hover:bg-secdark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24px"
