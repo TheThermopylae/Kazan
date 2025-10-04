@@ -7,10 +7,10 @@
     </p>
     <div class="md:flex items-center justify-between">
       <NuxtImg
-        src="/main/questions.svg"
+        src="/main/questions.png"
         alt="questions"
         class="md:w-1/2 block m-auto mb-8 md:m-0 relative"
-        quality="80"
+        quality="50"
         format="webp"
       />
       <div class="flex-grow">
