@@ -5,6 +5,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: 'panel-layout'
+})
+
 useHead({
   title: '| خانه'
 })
