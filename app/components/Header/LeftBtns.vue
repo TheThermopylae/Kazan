@@ -45,40 +45,93 @@
       داشبورد
     </NuxtLink> -->
     <div class="flex">
-      <div class="dropdown dropdown-end">
+      <div class="dropdown dropdown-end dropdown-hover">
         <div class="w-10 h-18 flex justify-end items-center">
           <div class="size-[30px] flex-center">
-            <svg
-              tabindex="0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              class="cursor-pointer"
-            >
-              <g fill="none" stroke="currentColor" stroke-width="1.5">
-                <path
-                  d="M19 20H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2Z"
-                />
-                <path
-                  fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M16.5 14a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1"
-                />
-                <path
-                  d="M18 7V5.603a2 2 0 0 0-2.515-1.932l-11 2.933A2 2 0 0 0 3 8.537V9"
-                />
-              </g>
-            </svg>
+            <NuxtLink to="/app/wallet">
+              <svg
+                tabindex="0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" stroke="currentColor" stroke-width="1">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6 10h4"
+                  />
+                  <path
+                    stroke-width="1.5"
+                    d="M20.833 11h-2.602C16.446 11 15 12.343 15 14s1.447 3 3.23 3h2.603c.084 0 .125 0 .16-.002c.54-.033.97-.432 1.005-.933c.002-.032.002-.071.002-.148v-3.834c0-.077 0-.116-.002-.148c-.036-.501-.465-.9-1.005-.933c-.035-.002-.076-.002-.16-.002Z"
+                  />
+                  <path
+                    stroke-width="1.5"
+                    d="M20.965 11c-.078-1.872-.328-3.02-1.137-3.828C18.657 6 16.771 6 13 6h-3C6.229 6 4.343 6 3.172 7.172S2 10.229 2 14s0 5.657 1.172 6.828S6.229 22 10 22h3c3.771 0 5.657 0 6.828-1.172c.809-.808 1.06-1.956 1.137-3.828"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                    d="m6 6l3.735-2.477a3.24 3.24 0 0 1 3.53 0L17 6"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.991 14h.01"
+                  />
+                </g>
+              </svg>
+            </NuxtLink>
           </div>
         </div>
         <ul
           tabindex="0"
           class="dropdown-content menu bg-white dark:bg-darkbg rounded-box z-1 w-[275px] max-h-[80vh] overflow-auto flex-nowrap p-2 shadow-sm"
         >
-          <li class="mt-1" v-for="item in 10">
+          <li class="mt-1">
             <NuxtLink to="/app/wallet" class="p-2 dark:hover:bg-secdark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" stroke="currentColor" stroke-width="1">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6 10h4"
+                  />
+                  <path
+                    stroke-width="1.5"
+                    d="M20.833 11h-2.602C16.446 11 15 12.343 15 14s1.447 3 3.23 3h2.603c.084 0 .125 0 .16-.002c.54-.033.97-.432 1.005-.933c.002-.032.002-.071.002-.148v-3.834c0-.077 0-.116-.002-.148c-.036-.501-.465-.9-1.005-.933c-.035-.002-.076-.002-.16-.002Z"
+                  />
+                  <path
+                    stroke-width="1.5"
+                    d="M20.965 11c-.078-1.872-.328-3.02-1.137-3.828C18.657 6 16.771 6 13 6h-3C6.229 6 4.343 6 3.172 7.172S2 10.229 2 14s0 5.657 1.172 6.828S6.229 22 10 22h3c3.771 0 5.657 0 6.828-1.172c.809-.808 1.06-1.956 1.137-3.828"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                    d="m6 6l3.735-2.477a3.24 3.24 0 0 1 3.53 0L17 6"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.991 14h.01"
+                  />
+                </g>
+              </svg>
+              دارایی ها
+            </NuxtLink>
+          </li>
+          <li class="mt-1" v-for="item in 10">
+            <NuxtLink to="/" class="p-2 dark:hover:bg-secdark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24px"
@@ -95,23 +148,25 @@
           </li>
         </ul>
       </div>
-      <div class="dropdown dropdown-end">
+      <div class="dropdown dropdown-end dropdown-hover">
         <div class="w-10 h-18 flex justify-end items-center">
-          <div class="size-[30px] bg-blue-100 flex-center rounded-full">
-            <svg
-              tabindex="0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              class="cursor-pointer flex items-center gap-3 text-blue-900"
-            >
-              <path
-                fill="currentColor"
-                d="M12 7q-.633 0-1.066-.434Q10.5 6.133 10.5 5.5t.434-1.066Q11.367 4 12 4t1.066.434T13.5 5.5t-.434 1.066Q12.633 7 12 7m.002 13q-.416 0-.709-.292Q11 19.417 11 19v-8.23q0-.418.291-.709q.291-.292.707-.292t.709.292t.293.708V19q0 .417-.291.708q-.291.292-.707.292"
-              />
-            </svg>
-          </div>
+          <NuxtLink to="/app/my-account">
+            <div class="size-[30px] bg-blue-100 flex-center rounded-full">
+              <svg
+                tabindex="0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                class="flex items-center gap-3 text-blue-900"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 7q-.633 0-1.066-.434Q10.5 6.133 10.5 5.5t.434-1.066Q11.367 4 12 4t1.066.434T13.5 5.5t-.434 1.066Q12.633 7 12 7m.002 13q-.416 0-.709-.292Q11 19.417 11 19v-8.23q0-.418.291-.709q.291-.292.707-.292t.709.292t.293.708V19q0 .417-.291.708q-.291.292-.707.292"
+                />
+              </svg>
+            </div>
+          </NuxtLink>
         </div>
         <ul
           tabindex="0"
@@ -119,7 +174,7 @@
         >
           <li>
             <NuxtLink
-              to="/"
+              to="/app/my-account"
               class="font-bold flex justify-between items-center p-3"
             >
               <span style="direction: ltr">0990****180</span>
@@ -191,7 +246,7 @@
           </li>
         </ul>
       </div>
-      <div class="dropdown dropdown-end">
+      <div class="dropdown dropdown-end dropdown-hover">
         <div class="w-10 flex justify-end">
           <svg
             tabindex="0"

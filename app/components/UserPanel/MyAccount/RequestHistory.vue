@@ -1,6 +1,6 @@
 <template>
   <section
-    class="lg:bg-white p-4 rounded-10 mb-32"
+    class="lg:bg-white lg:dark:bg-maindark p-4 rounded-10 mb-32"
     v-if="route.query.type == 'history' || width >= 1024"
   >
     <h2 class="text-xl font-bold mb-5 hidden lg:block">

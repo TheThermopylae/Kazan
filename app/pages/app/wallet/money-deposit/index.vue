@@ -1,10 +1,16 @@
 <template>
-  <UserPanelWalletNavigatePages />
-  <h1 class="my-3 font-bold hidden lg:block">واریز تومان به کیف پول</h1>
-  <div class="grid lg:grid-cols-2 gap-6">
-    <UserPanelWalletDepositeTomanDepositForm />
-    <UserPanelWalletDepositeTomanQuestionsSection class="hidden lg:block" />
-    <Toast />
+  <div class="xl:w-3/4 m-auto">
+    <UserPanelWalletNavigatePages />
+    <h1 class="my-3 font-bold hidden lg:block">واریز تومان به کیف پول</h1>
+    <div class="grid lg:grid-cols-2 gap-6">
+      <UserPanelWalletDepositeTomanDepositForm />
+      <div class="hidden lg:block">
+        <UserPanelWalletDesSection />
+        <UserPanelWalletDepositeTomanQuestionsSection />
+        <UserPanelWalletWarnSection />
+      </div>
+      <Toast />
+    </div>
   </div>
 </template>
 
@@ -26,6 +32,6 @@ definePageMeta({
 })
 
 useHead({
-  title: '| واریز تومان'
+  title: 'واریز تومان |'
 })
 </script>

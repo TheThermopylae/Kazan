@@ -13,7 +13,7 @@ definePageMeta({
 })
 
 useHead({
-  title: '| حساب های بانکی'
+  title: 'حساب های بانکی |'
 })
 
 function updateWidth () {

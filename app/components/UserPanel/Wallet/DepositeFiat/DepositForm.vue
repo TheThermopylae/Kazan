@@ -1,7 +1,6 @@
 <template>
   <section>
-    <h1 class="my-3 font-bold hidden lg:block">واریز ارز بانکی به کیف پول</h1>
-    <p class="text-xs text-center mb-6 mt-10">
+    <p class="text-xs text-center my-6 lg:mt-0">
       بیش از 25هزار تراکنش واریز موفق تا این لحظه
     </p>
     <NuxtLink
@@ -47,7 +46,7 @@
         />
       </svg>
     </div>
-    <UserPanelWalletDepositeInternationOriginCard class="mb-6" />
+    <UserPanelWalletDepositeFiatOriginCard class="mb-6" />
     <label class="font-bold text-xs mb-2 block" id="price">مقدار واریز</label>
     <div class="relative">
       <InputNumber v-model="value" inputId="price" fluid />

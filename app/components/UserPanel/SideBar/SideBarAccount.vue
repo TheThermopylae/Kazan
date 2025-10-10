@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="w-2/8 xl:w-1/6 bg-white dark:bg-maindark rounded text-xs hidden lg:block sticky top-20"
+    class="w-1/5 xl:w-1/6 bg-white dark:bg-maindark rounded text-xs hidden lg:block sticky top-20"
   >
     <ul>
       <li>
@@ -47,7 +47,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/"
+          to="/app/my-account/security"
           class="flex items-center gap-3 p-3 border-b border-b-gray-100 border-r-4 border-white dark:border-maindark transition"
           active-class="bg-[#E5F2FF] !border-r-primary dark:bg-[#0E2A4A]"
         >
@@ -80,7 +80,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/"
+          to="/app/my-account/settings"
           class="flex items-center gap-3 p-3 border-b border-b-gray-100 border-r-4 border-white dark:border-maindark transition"
           active-class="bg-[#E5F2FF] !border-r-primary dark:bg-[#0E2A4A]"
         >
@@ -107,7 +107,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/"
+          to="/app/my-account/price-alert"
           class="flex items-center gap-3 p-3 border-b border-b-gray-100 border-r-4 border-white dark:border-maindark transition"
           active-class="bg-[#E5F2FF] !border-r-primary dark:bg-[#0E2A4A]"
         >

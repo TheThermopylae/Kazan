@@ -4,7 +4,7 @@
     @click="showTooltip = !showTooltip"
   >
     <div
-      class="flex justify-between items-center border border-[#EFEFEF] rounded-10 p-3 bg-white lg:bg-transparent"
+      class="flex justify-between items-center border border-[#EFEFEF] dark:border-textlight rounded-10 p-3 bg-white lg:bg-transparent"
     >
       <div class="flex items-center gap-3">
         <svg
@@ -33,7 +33,7 @@
         </svg>
         <div class="text-sm">
           6219 - 0000 - 0000 - 0000
-          <h4 class="text-secondary text-xs mt-0.5">بلو بانک</h4>
+          <h4 class="text-secondary dark:text-textdark text-xs mt-0.5">بلو بانک</h4>
         </div>
       </div>
       <div
@@ -71,7 +71,7 @@
       </div>
     </div>
     <ul
-      class="mt-3 lg:w-2/3 lg:max-w-[300px] bg-white lg:absolute transition-all z-10 right-0 -bottom-40 border border-[#EFEFEF] rounded-10 p-3 text-sm hidden group-hover:!block"
+      class="mt-3 lg:w-2/3 lg:max-w-[300px] bg-white dark:bg-maindark lg:absolute transition-all z-10 right-0 -bottom-40 border border-[#EFEFEF] dark:border-textlight rounded-10 p-3 text-sm hidden group-hover:!block"
       :class="{ '!block': showTooltip }"
     >
       <li class="mb-2">نام بانک : سامان</li>

@@ -52,7 +52,7 @@
               </svg>
               <div>
                 خرید و فروش آنی
-                <p class="text-xs mt-1">خرید و فروش آنی بیش از 30 ارز</p>
+                <p class="text-xs mt-1 text-secondary">خرید و فروش آنی بیش از 30 ارز</p>
               </div>
             </NuxtLink>
           </li>
@@ -104,10 +104,9 @@
                   stroke="#0057FF"
                 />
               </svg>
-
               <div>
                 ماشین حساب ارز دیجیتال و بین المللی
-                <p class="text-xs mt-1">
+                <p class="text-xs mt-1 text-secondary">
                   تخمین ارزش دارایی و تبدیل ارزها به یکدیگر
                 </p>
               </div>
@@ -141,7 +140,7 @@
               </svg>
               <div>
                 تبدیل
-                <p class="text-xs mt-1">راحت ترین راه تبدیل دارایی</p>
+                <p class="text-xs mt-1 text-secondary">راحت ترین راه تبدیل دارایی</p>
               </div>
             </NuxtLink>
           </li>
@@ -171,7 +170,7 @@
               </svg>
               <div>
                 تاریخچه معاملات
-                <p class="text-xs mt-1">مشاهده سفارش های باز . معاملات و ...</p>
+                <p class="text-xs mt-1 text-secondary">مشاهده سفارش های باز . معاملات و ...</p>
               </div>
             </NuxtLink>
           </li>
@@ -322,7 +321,6 @@
           </li>
         </ul>
       </div>
-      <NuxtLink to="/">راهنمای کامل</NuxtLink>
       <div class="dropdown dropdown-hover">
         <div
           tabindex="0"

@@ -53,9 +53,12 @@
         </div>
       </div>
       <div class="flex justify-center gap-8">
-        <NuxtLink to="/app/wallet/money-deposit" class="flex flex-col items-center gap-2 text-sm">
+        <NuxtLink
+          to="/app/wallet/money-deposit"
+          class="flex flex-col items-center gap-2 text-sm group"
+        >
           <div
-            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,9 +79,9 @@
           </div>
           واریز
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
           <div
-            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,9 +101,9 @@
           </div>
           برداشت
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
           <div
-            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               width="20"
@@ -141,9 +144,9 @@
           </div>
           معامله
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
           <div
-            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,9 +164,9 @@
           </div>
           تاریخچه
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
           <div
-            class="size-16 bg-[#F5F6F7] dark:bg-secdark rounded-full flex-center"
+            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

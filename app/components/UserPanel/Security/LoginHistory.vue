@@ -1,0 +1,39 @@
+<template>
+  <table class="min-w-[800px] w-full">
+    <thead class="p-5 border-b border-stroke dark:border-darkstroke">
+      <tr class="text-[#A5A5A5] text-sm">
+        <th class="text-right p-5">مدل دستگاه</th>
+        <th class="text-right">آخرین زمان اتصال</th>
+        <th class="text-left">IP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="group relative border-b last:border-none border-stroke dark:border-darkstroke text-sm text-[#5F5F5F] dark:text-textdark"
+        v-for="item in 3"
+      >
+        <td class="py-5">
+          <div class="flex items-center gap-4 pr-5 textsm">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 22H16M10 22V18M14 22V18M2 14H22M6.8 18H17.2C18.8802 18 19.7202 18 20.362 17.673C20.9265 17.3854 21.3854 16.9265 21.673 16.362C22 15.7202 22 14.8802 22 13.2V6.8C22 5.11984 22 4.27976 21.673 3.63803C21.3854 3.07354 20.9265 2.6146 20.362 2.32698C19.7202 2 18.8802 2 17.2 2H6.8C5.11984 2 4.27976 2 3.63803 2.32698C3.07354 2.6146 2.6146 3.07354 2.32698 3.63803C2 4.27976 2 5.11984 2 6.8V13.2C2 14.8802 2 15.7202 2.32698 16.362C2.6146 16.9265 3.07354 17.3854 3.63803 17.673C4.27976 18 5.11984 18 6.8 18Z"
+                stroke="#282930"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            desktop, Windows 10.0, Opera
+          </div>
+        </td>
+        <td class="py-5 ltr-dir text-right">1404/06/26 13:42:23</td>
+        <td class="py-5 text-left">185.209.191.239</td>
+      </tr>
+    </tbody>
+  </table>
+</template>

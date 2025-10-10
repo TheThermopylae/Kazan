@@ -34,7 +34,7 @@
 import Lenis from 'lenis'
 
 useHead({
-  titleTemplate: 'صرافی کازان %s'
+  titleTemplate: '%s کازان'
 })
 
 onMounted(() => {

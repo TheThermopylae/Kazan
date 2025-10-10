@@ -11,7 +11,7 @@
     <div class="flex-grow overflow-auto">
       <table class="min-w-[800px] w-full">
         <thead class="p-5">
-          <tr class="text-[#5F5F5F] text-sm !font-medium">
+          <tr class="text-[#5F5F5F] dark:text-gray-200 text-sm !font-medium">
             <th class="text-right p-5">نام کوین</th>
             <th class="text-right">موجودی کل</th>
             <th class="text-right">فریز شده</th>
@@ -32,7 +32,7 @@
                   class="size-7"
                 />
                 <div>
-                  <h4 class="text-sm mt-1 text-black">
+                  <h4 class="text-sm mt-1 text-black dark:text-white">
                     تومان
                     <span class="text-secondary dark:text-textdark">(TMN)</span>
                   </h4>
@@ -42,10 +42,10 @@
                 </div>
               </div>
             </td>
-            <td class="py-5 text-sm">100.00%</td>
-            <td class="py-5 text-sm">100.00%</td>
-            <td class="py-5 text-sm">9.999</td>
-            <td class="py-5">9.999</td>
+            <td class="py-5 dark:text-textdark text-sm">100.00%</td>
+            <td class="py-5 dark:text-textdark text-sm">100.00%</td>
+            <td class="py-5 dark:text-textdark text-sm">9.999</td>
+            <td class="py-5 dark:text-textdark text-sm">9.999</td>
           </tr>
         </tbody>
       </table>

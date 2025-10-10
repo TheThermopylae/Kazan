@@ -18,6 +18,6 @@ definePageMeta({
 })
 
 useHead({
-  title: '| خانه'
+  title: 'خانه |'
 })
 </script>

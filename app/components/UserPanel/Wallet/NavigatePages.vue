@@ -15,14 +15,14 @@
         ></div>
       </NuxtLink>
       <NuxtLink
-        to="/app/wallet/money-deposit/international"
+        to="/app/wallet/fiat-deposit"
         class="text-center w-[130px] block text-secondary"
         activeClass="!text-primary"
       >
         واریز ارز بین المللی
         <div
           class="h-[3px] w-full bg-primary rounded-t-[50px] mt-3"
-          v-if="route.path == '/app/wallet/money-deposit/international'"
+          v-if="route.path == '/app/wallet/fiat-deposit'"
         ></div>
       </NuxtLink>
       <NuxtLink

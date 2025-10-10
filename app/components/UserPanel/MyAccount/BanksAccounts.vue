@@ -1,11 +1,11 @@
 <template>
-  <section class="lg:bg-white rounded-10 lg:mb-6">
+  <section class="lg:bg-white lg:dark:bg-maindark rounded-10 lg:mb-6">
     <div>
       <h2 class="text-xl font-bold p-4 mb-1 hidden lg:block">
         کارت ها و حساب های بانکی
       </h2>
       <div
-        class="grid grid-cols-3 lg:flex text-xs lg:text-sm lg:gap-3 lg:mb-3 bg-white pt-3 border-b border-gray-200 lg:border-0 fixed z-20 w-full top-[48.5px] lg:relative lg:top-0"
+        class="grid grid-cols-3 lg:flex text-xs lg:text-sm lg:gap-3 lg:mb-3 bg-white dark:bg-maindark pt-3 border-b border-gray-200 lg:border-0 fixed z-20 w-full top-[48.5px] lg:relative lg:top-0"
       >
         <div
           class="lg:w-[140px] text-center cursor-pointer"
@@ -34,7 +34,7 @@
           ></div>
         </div>
         <div class="lg:flex text-center items-center gap-2">
-          <h3 class="text-secondary">پرداخت مستقیم</h3>
+          <h3 class="text-secondary dark:text-white">پرداخت مستقیم</h3>
           <span
             class="text-white bg-secondary rounded-md text-xs p-1 hidden lg:block"
             >غیرفعال</span
@@ -45,7 +45,7 @@
     <div class="p-4" v-if="!route.query.type || width >= 1024">
       <div class="grid md:grid-cols-2 gap-3">
         <article
-          class="flex justify-between items-center border border-[#EFEFEF] rounded-10 p-3 bg-white lg:bg-transparent"
+          class="flex justify-between items-center border border-[#EFEFEF] dark:border-textlight rounded-10 p-3 bg-white lg:bg-transparent"
           v-for="item in 4"
         >
           <div class="flex items-center gap-3">
@@ -75,7 +75,9 @@
             </svg>
             <div class="text-sm">
               6219 - 0000 - 0000 - 0000
-              <h4 class="text-secondary text-xs mt-0.5">بلو بانک</h4>
+              <h4 class="text-secondary dark:text-textdark text-xs mt-0.5">
+                بلو بانک
+              </h4>
             </div>
           </div>
           <div class="flex gap-2">

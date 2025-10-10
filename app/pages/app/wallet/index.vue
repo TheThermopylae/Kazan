@@ -6,10 +6,10 @@
 
 <script setup>
 definePageMeta({
-  layout: 'panel-layout'
+  layout: 'panel-side-layout'
 })
 
 useHead({
-  title: '| خانه'
+  title: 'کیف پول اصلی |'
 })
 </script>

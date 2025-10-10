@@ -19,6 +19,6 @@
 
 <script setup>
 useHead({
-  title: '| صفحه اصلی'
+  title: 'صفحه اصلی |'
 })
 </script>

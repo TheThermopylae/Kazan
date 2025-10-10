@@ -61,7 +61,11 @@ body {
     --color-textdark: #C6C3D2;
     --color-selected: #E5F2FF;
     --color-stroke: #EFEFEF;
+    --color-darkstroke: #525252;
     --color-bar: #0000069E;
+    --color-hover: #D2D2D2;
+    --color-failbg: #F8E5E5;
+    --color-fail: #F65555;
 }
 
 @utility container {
