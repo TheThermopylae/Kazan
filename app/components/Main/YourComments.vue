@@ -72,17 +72,17 @@ import 'swiper/css'
 }
 @media only screen and (min-width: 760px) {
   :deep(.swiper-slide-active) {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
   }
 }
 @media only screen and (min-width: 1024px) {
   :deep(.swiper-slide-active) {
-    transform: scale(1.2);
+    transform: scale(1.2) !important;
   }
 }
 @media only screen and (min-width: 1440px) {
   :deep(.swiper-slide-active) {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
   }
 }
 </style>
