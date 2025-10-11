@@ -55,7 +55,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
         >
           بیشتر
           <svg
@@ -135,7 +135,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
         >
           بیشتر
           <svg
@@ -227,7 +227,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
         >
           بیشتر
           <svg
@@ -294,7 +294,7 @@
         </p>
         <NuxtLink
           to="/"
-          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 hover:-translate-y-1 transition-all"
+          class="rounded-10 bg-[#EEF4FF] dark:bg-[#323232] text-[#0088FF] flex items-center gap-1.5 px-2.5 py-2 text-sm lg:opacity-0 group-hover:opacity-100 transition-all"
         >
           بیشتر
           <svg
