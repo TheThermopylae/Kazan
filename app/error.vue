@@ -8,12 +8,12 @@
       <p>آدرس این صفحه اشتباه است و یا دیگر وجود ندارد.</p>
       <p>می‌توانید از صفحه خانه شروع کنید.</p>
     </div>
-    <button
-      class="bg-[#171D26] w-3/5 rounded-lg text-white p-3 font-bold"
-      @click="clearError({ redirect: '/' })"
-    >
-      بازگشت به خانه
-    </button>
+    <Button
+      class="!bg-[#171D26] !w-3/5 !rounded-lg !p-3 !font-bold !border-none"
+      @click="handleError"
+      label="بازگشت به خانه"
+      :loading="loading"
+    />
   </main>
   <SupportButton />
 </template>
@@ -22,4 +22,11 @@
 useHead({
   title: '404 - صفحه مورد نظر یافت نشد | کازان'
 })
+
+let loading = ref(false)
+
+function handleError (params) {
+  loading.value = true
+  clearError({ redirect: '/' })
+}
 </script>

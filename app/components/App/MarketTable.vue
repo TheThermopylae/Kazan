@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-maindark rounded pb-0 overflow-hidden mb-5">
+  <section class="bg-white dark:bg-maindark rounded pb-0 overflow-hidden mbt-5">
     <div class="flex-grow overflow-auto">
       <table class="min-w-[800px] w-full">
         <thead class="p-5">

@@ -1,0 +1,64 @@
+<template>
+  <section
+    class="border-b border-gray-200 hidden lg:flex justify-between items-start pl-3"
+  >
+    <div class="flex gap-1 text-xs lg:text-sm">
+      <NuxtLink
+        to="/app/wallet/money-withdraw"
+        class="text-center w-[100px] block text-secondary"
+        activeClass="!text-primary"
+      >
+        برداشت تومان
+        <div
+          class="h-[3px] w-full bg-primary rounded-t-[50px] mt-3"
+          v-if="route.path == '/app/wallet/money-withdraw'"
+        ></div>
+      </NuxtLink>
+      <NuxtLink
+        to="/app/wallet/fiat-withdraw"
+        class="text-center w-[130px] block text-secondary"
+        activeClass="!text-primary"
+      >
+        برداشت ارز بین المللی
+        <div
+          class="h-[3px] w-full bg-primary rounded-t-[50px] mt-3"
+          v-if="route.path == '/app/wallet/fiat-withdraw'"
+        ></div>
+      </NuxtLink>
+      <NuxtLink
+        to="/app/wallet/crypto-withdraw"
+        class="text-center w-[130px] block text-secondary"
+        activeClass="!text-primary"
+      >
+        برداشت ارز دیجیتال
+        <div
+          class="h-[3px] w-full bg-primary rounded-t-[50px] mt-3"
+          v-if="route.path == '/app/wallet/crypto-withdraw'"
+        ></div>
+      </NuxtLink>
+    </div>
+    <NuxtLink
+      to="/"
+      class="flex items-center gap-2 text-sm p-1.5 rounded-md hover:bg-gray-200 transition"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20px"
+        height="20px"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M5.079 5.069c3.795-3.79 9.965-3.75 13.783.069c3.82 3.82 3.86 9.993.064 13.788s-9.968 3.756-13.788-.064a9.81 9.81 0 0 1-2.798-8.28a.75.75 0 1 1 1.487.203a8.31 8.31 0 0 0 2.371 7.017c3.245 3.244 8.468 3.263 11.668.064c3.199-3.2 3.18-8.423-.064-11.668c-3.243-3.242-8.463-3.263-11.663-.068l.748.003a.75.75 0 1 1-.007 1.5l-2.546-.012a.75.75 0 0 1-.746-.747L3.575 4.33a.75.75 0 1 1 1.5-.008zm6.92 2.18a.75.75 0 0 1 .75.75v3.69l2.281 2.28a.75.75 0 1 1-1.06 1.061l-2.72-2.72V8a.75.75 0 0 1 .75-.75"
+          clip-rule="evenodd"
+        />
+      </svg>
+      تاریخچه تراکنش ها
+    </NuxtLink>
+  </section>
+</template>
+
+<script setup>
+let route = useRoute()
+</script>

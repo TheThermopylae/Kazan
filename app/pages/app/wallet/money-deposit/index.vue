@@ -1,6 +1,6 @@
 <template>
   <div class="xl:w-3/4 m-auto">
-    <UserPanelWalletNavigatePages />
+    <UserPanelWalletNavigateDeposite />
     <h1 class="my-3 font-bold hidden lg:block">واریز تومان به کیف پول</h1>
     <div class="grid lg:grid-cols-2 gap-6">
       <UserPanelWalletDepositeTomanDepositForm />

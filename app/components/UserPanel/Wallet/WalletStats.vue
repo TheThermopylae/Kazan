@@ -79,7 +79,10 @@
           </div>
           واریز
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
+        <NuxtLink
+          to="/app/wallet/money-withdraw"
+          class="flex flex-col items-center gap-2 text-sm group"
+        >
           <div
             class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
