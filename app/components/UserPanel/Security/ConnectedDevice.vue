@@ -1,11 +1,11 @@
 <template>
-  <section class="mb-3 bg-white dark:bg-maindark rounded p-4">
-    <h2 class="mb-5">دستگاه های متصل</h2>
+  <section class="mb-3 bg-white dark:bg-maindark rounded p-5 lg:p-4">
+    <h2 class="mb-5" v-if="route.path !='/app/my-account/security/active-sessions'">دستگاه های متصل</h2>
     <div class="flex-grow overflow-auto">
       <table class="min-w-[800px] w-full">
-        <thead class="p-5 border-b border-stroke dark:border-darkstroke">
+        <thead class="p-5 pt-0 lg:pt-5 border-b border-stroke dark:border-darkstroke">
           <tr class="text-[#A5A5A5] text-sm">
-            <th class="text-right p-5">مدل دستگاه</th>
+            <th class="text-right pb-5 lg:p-5">مدل دستگاه</th>
             <th class="text-right">آخرین زمان اتصال</th>
             <th class="text-right">IP</th>
           </tr>
@@ -34,7 +34,9 @@
                 desktop, Windows 10.0, Opera
               </div>
             </td>
-            <td class="py-5 dark:text-textdark ltr-dir text-right">1404/06/26 13:42:23</td>
+            <td class="py-5 dark:text-textdark ltr-dir text-right">
+              1404/06/26 13:42:23
+            </td>
             <td class="py-5 dark:text-textdark">185.209.191.239</td>
             <td class="py-5 dark:text-textdark">
               <button
@@ -49,3 +51,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+let route = useRoute()
+</script>

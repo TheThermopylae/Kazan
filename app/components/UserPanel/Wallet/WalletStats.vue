@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-white dark:bg-maindark p-4 flex justify-between items-ceter rounded mb-7"
+    class="bg-white dark:bg-maindark p-4 md:flex justify-between items-ceter rounded mb-7 w-full"
   >
     <div
       class="w-3/5 border-l border-[#F5F6F7] dark:border-secdark pl-3 flex flex-col justify-between"
@@ -52,7 +52,7 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-center gap-8">
+      <div class="flex justify-center flex-wrap gap-5 xl:gap-8 mt-5 xl:mt-0">
         <NuxtLink
           to="/app/wallet/money-deposit"
           class="flex flex-col items-center gap-2 text-sm group"

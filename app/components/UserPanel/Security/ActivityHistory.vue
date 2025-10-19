@@ -1,7 +1,7 @@
 <template>
   <section class="mb-3 bg-white dark:bg-maindark rounded p-4">
     <div>
-      <h2 class="mb-5">تاریخچه فعالیت</h2>
+      <h2 class="mb-5" v-if="route.path != '/app/my-account/security/activity-history'">تاریخچه فعالیت</h2>
       <div class="flex gap-2">
         <button
           class="border border-stroke dark:border-darkstroke rounded-full py-1.5 px-2 text-sm text-secondary dark:text-textdark transition"
@@ -31,5 +31,6 @@
 </template>
 
 <script setup>
+let route = useRoute()
 let table = ref(0)
 </script>

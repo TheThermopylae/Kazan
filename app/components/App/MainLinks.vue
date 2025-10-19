@@ -1,8 +1,13 @@
 <template>
-  <section class="hidden lg:block bg-white dark:bg-maindark rounded p-5 px-10 my-5">
+  <section
+    class="hidden lg:block bg-white dark:bg-maindark rounded p-5 px-10 my-5"
+  >
     <ul class="flex justify-between">
       <li>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-2sm">
+        <NuxtLink
+          to="/app/wallet/money-deposit"
+          class="flex flex-col items-center gap-2 text-2sm"
+        >
           <svg
             width="41"
             height="40"
@@ -34,7 +39,10 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-2sm">
+        <NuxtLink
+          to="/app/wallet/money-withdraw"
+          class="flex flex-col items-center gap-2 text-2sm"
+        >
           <svg
             width="41"
             height="40"
@@ -100,7 +108,10 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-2sm">
+        <NuxtLink
+          to="/app/my-account/price-alert"
+          class="flex flex-col items-center gap-2 text-2sm"
+        >
           <svg
             width="40"
             height="40"

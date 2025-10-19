@@ -1,5 +1,7 @@
 <template>
-  <section class="lg:bg-white lg:dark:bg-maindark rounded-10 lg:mb-6">
+  <section
+    class="lg:bg-white lg:dark:bg-maindark rounded-10 mt-10 lg:mb-6 lg:mt-0"
+  >
     <div>
       <h2 class="text-xl font-bold p-4 mb-1 hidden lg:block">
         کارت ها و حساب های بانکی

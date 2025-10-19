@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex justify-between items-center lg:hidden p-3 bg-white fixed top-0 w-full border-b border-gray-200 z-20"
+    class="flex justify-between items-center lg:hidden p-4 bg-white fixed top-0 w-full border-b border-gray-200 z-20"
   >
     <div class="flex items-center gap-3">
       <svg
@@ -26,7 +26,8 @@
     <div
       class="flex gap-3"
       v-if="
-        route.path == '/app/wallet/money-deposit' || '/app/wallet/money-deposit'
+        route.path == '/app/wallet/money-deposit' ||
+        route.path == '/app/wallet/money-deposit'
       "
     >
       <NuxtLink to="/app/wallet/money-deposit/help">
@@ -75,6 +76,6 @@
 let route = useRoute()
 
 function goToMainPage () {
-  return navigateTo('/app/my-account')
+  history.back()
 }
 </script>

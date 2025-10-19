@@ -1,24 +1,22 @@
 <template>
-  <UserPanelMyAccountBanksAccounts />
-  <UserPanelMyAccountRequestHistory />
+  <UserPanelSecurityActivityHistory />
 </template>
 
 <script setup>
-let width = ref(0)
-let router = useRouter()
-
 definePageMeta({
-  layout: 'panel-layout',
-  title: 'حساب های بانکی'
+  layout: 'myaccount-layout',
+  title: 'دستگاه های متصل'
 })
 
 useHead({
-  title: 'حساب های بانکی |'
+  title: 'دستگاه های متصل |'
 })
+
+let width = ref(0)
 
 function updateWidth () {
   width.value = window.innerWidth
-  if (width.value >= 1024) router.push({ query: {} })
+  if (width.value >= 1024) return navigateTo('/app/my-account/security')
 }
 
 onMounted(() => {

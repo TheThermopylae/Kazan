@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="w-1/5 xl:w-1/6 bg-white dark:bg-maindark rounded text-xs hidden lg:block sticky top-20"
+    class="min-w-[175px] w-1/5 xl:w-1/6 bg-white dark:bg-maindark rounded text-xs hidden lg:block sticky top-20"
   >
     <ul>
       <li>

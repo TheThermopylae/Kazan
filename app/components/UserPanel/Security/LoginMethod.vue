@@ -3,8 +3,10 @@
     <div
       class="border-b border-stroke dark:border-darkstroke text-sm pb-3 mb-3"
     >
-      <p>تعیین شیوه ورود به حساب کاربری</p>
-      <p class="mt-3">
+      <p v-if="route.path != '/app/my-account/security/two-step'" class="mb-3">
+        تعیین شیوه ورود به حساب کاربری
+      </p>
+      <p>
         از چه طریقی مایل به دریافت کد ورود به حساب کاربری هستید؟
       </p>
     </div>
@@ -79,5 +81,7 @@
 </template>
 
 <script setup>
+let route = useRoute()
+
 let value = ref('sms')
 </script>

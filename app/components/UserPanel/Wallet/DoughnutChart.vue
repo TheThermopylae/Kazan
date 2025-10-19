@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/4 m-auto">
+  <div class="w-1/3 xl:w-1/4 m-auto">
     <h3 class="mb-3 text-center text-sm">نمودار ترکیب دارایی</h3>
     <div class="relative">
       <canvas ref="myChart"></canvas>

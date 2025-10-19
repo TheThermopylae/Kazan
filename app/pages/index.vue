@@ -1,7 +1,7 @@
 <template>
   <MainHeroTheHero />
+  <MainAbilitySection />
   <div class="container">
-    <MainAbilitySection />
     <MainOptionsSection />
   </div>
   <div class="container">

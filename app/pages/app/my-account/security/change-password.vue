@@ -1,24 +1,22 @@
 <template>
-  <UserPanelMyAccountBanksAccounts />
-  <UserPanelMyAccountRequestHistory />
+  <UserPanelSecurityLoginMethod />
 </template>
 
 <script setup>
-let width = ref(0)
-let router = useRouter()
-
 definePageMeta({
-  layout: 'panel-layout',
-  title: 'حساب های بانکی'
+  layout: 'myaccount-layout',
+  title: 'شیوه ورود به حساب کاربری'
 })
 
 useHead({
-  title: 'حساب های بانکی |'
+  title: 'تأیید صحت دو مرحله ای |'
 })
+
+let width = ref(0)
 
 function updateWidth () {
   width.value = window.innerWidth
-  if (width.value >= 1024) router.push({ query: {} })
+  if (width.value >= 1024) return navigateTo('/app/my-account/security')
 }
 
 onMounted(() => {

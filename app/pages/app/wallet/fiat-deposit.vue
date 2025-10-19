@@ -4,11 +4,10 @@
     <h1 class="my-3 font-bold hidden lg:block">واریز ارز بانکی به کیف پول</h1>
     <div class="grid lg:grid-cols-2 gap-6">
       <UserPanelWalletDepositeFiatDepositForm />
-      <UserPanelWalletDesSection />
       <div class="hidden lg:block">
+        <UserPanelWalletDesSection />
         <UserPanelWalletDepositeFiatQuestionsSection />
       </div>
-      <UserPanelWalletWarnSection />
     </div>
   </div>
 </template>

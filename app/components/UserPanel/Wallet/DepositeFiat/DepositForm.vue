@@ -117,7 +117,7 @@
 let value = ref(10000000)
 
 let btnValues = ref([10000000, 25000000, 50000000, 100000000])
-let openWhatsapp = ref(false)
+let openWhatsapp = ref(true)
 </script>
 
 <style scoped>

@@ -21,7 +21,7 @@
         </thead>
         <tbody>
           <tr
-            class="group relative border-b last:border-none border-[#EFEFEF] dark:border-secdark text-[#5F5F5F]"
+            class="group relative border-b last:border-none border-[#EFEFEF] dark:border-darkstroke text-[#5F5F5F]"
             v-for="item in 10"
           >
             <td class="py-5">
@@ -46,6 +46,64 @@
             <td class="py-5 dark:text-textdark text-sm">100.00%</td>
             <td class="py-5 dark:text-textdark text-sm">9.999</td>
             <td class="py-5 dark:text-textdark text-sm">9.999</td>
+            <td class="py-5 dark:text-textdark text-sm">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    class="cursor-pointer"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M7 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0m7 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m7 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content bg-base-100 dark:bg-secdark rounded-box z-1 w-[160px] p1 shadow-sm"
+                >
+                  <li class="p-1">
+                    <a
+                      class="cursor-pointer hover:bg-stroke dark:hover:bg-maindark block p-2 rounded-md transition"
+                    >
+                      معامله آنی
+                    </a>
+                  </li>
+                  <li class="p-1 border-b border-stroke dark:border-darkstroke">
+                    <a
+                      class="cursor-pointer hover:bg-stroke dark:hover:bg-maindark block p-2 rounded-md transition"
+                    >
+                      تبدیل
+                    </a>
+                  </li>
+                  <li class="p-1">
+                    <a
+                      class="cursor-pointer hover:bg-stroke dark:hover:bg-maindark block p-2 rounded-md transition"
+                    >
+                      واریز
+                    </a>
+                  </li>
+                  <li class="p-1 border-b border-stroke dark:border-darkstroke">
+                    <a
+                      class="cursor-pointer hover:bg-stroke dark:hover:bg-maindark block p-2 rounded-md transition"
+                    >
+                      برداشت
+                    </a>
+                  </li>
+                  <li class="p-1">
+                    <a
+                      class="cursor-pointer hover:bg-stroke dark:hover:bg-maindark block p-2 rounded-md transition"
+                    >
+                      معامله پیشرفته
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
