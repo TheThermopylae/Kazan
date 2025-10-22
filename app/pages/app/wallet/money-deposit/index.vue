@@ -1,13 +1,12 @@
 <template>
   <div class="xl:w-3/4 m-auto">
-    <UserPanelWalletNavigateDeposite />
-    <h1 class="my-3 font-bold hidden lg:block">واریز تومان به کیف پول</h1>
+    <UserPanelWalletNavigateDeposit />
+    <h1 class="mt-3 mb-6 font-bold hidden lg:block">واریز تومان به کیف پول</h1>
     <div class="grid lg:grid-cols-2 gap-6">
-      <UserPanelWalletDepositeTomanDepositForm />
+      <UserPanelWalletDepositTomanDepositForm />
       <div class="hidden lg:block">
         <UserPanelWalletDesSection />
-        <UserPanelWalletDepositeTomanQuestionsSection />
-        <UserPanelWalletWarnSection />
+        <UserPanelWalletDepositQuestionsSection />
       </div>
       <Toast />
     </div>

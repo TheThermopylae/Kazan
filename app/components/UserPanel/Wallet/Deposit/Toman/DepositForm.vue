@@ -1,6 +1,6 @@
 <template>
   <section>
-    <p class="text-xs text-center my-3">
+    <p class="text-xs text-center">
       بیش از 25هزار تراکنش واریز موفق تا این لحظه
     </p>
     <label class="font-bold text-xs mb-2 block" id="price">مبلغ واریز</label>
@@ -28,7 +28,7 @@
         class="border border-[#00000633] rounded-10 px-4 py-4 bg-gradient-to-l from-[#D3F2FF] to-white"
       >
         <NuxtLink
-          to="/app/wallet/money-deposit/toman"
+          to="/app/wallet/money-deposit/card-to-card"
           class="flex justify-between items-center"
         >
           <div class="flex items-center gap-3">

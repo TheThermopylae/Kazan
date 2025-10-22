@@ -1,5 +1,5 @@
 <template>
-  <UserPanelWalletDepositeTomanBackBtn />
+  <UserPanelWalletDepositTomanBackBtn />
   <div class="lg:w-1/2 m-auto mt-4">
     <section class="mb-10">
       <h2 class="font-bold text-sm">کارت به کارت</h2>
@@ -25,9 +25,8 @@
         </svg>
       </NuxtLink>
     </section>
-    <UserPanelWalletDepositeTomanSelectAccount />
-    <UserPanelWalletDepositeTomanDestinationAccount />
-    <UserPanelWalletDepositeTomanWarnsSection />
+    <UserPanelWalletDepositTomanSelectAccount />
+    <UserPanelWalletDepositTomanDestinationAccount />
   </div>
 </template>
 

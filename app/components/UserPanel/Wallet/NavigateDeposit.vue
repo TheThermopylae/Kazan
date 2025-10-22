@@ -26,14 +26,14 @@
         ></div>
       </NuxtLink>
       <NuxtLink
-        to="/"
+        to="/app/wallet/crypto-deposit"
         class="text-center w-[130px] block text-secondary"
         activeClass="!text-primary"
       >
         واریز ارز دیجیتال
         <div
           class="h-[3px] w-full bg-primary rounded-t-[50px] mt-3"
-          v-if="route.path == '/'"
+          v-if="route.path == '/app/wallet/crypto-deposit'"
         ></div>
       </NuxtLink>
     </div>
