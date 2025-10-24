@@ -283,7 +283,7 @@
           </li>
           <li class="mt-1">
             <NuxtLink
-              to="/app/my-account/bank-accounts"
+              to="/app/wallet/bank-accounts"
               class="p-2 dark:hover:bg-secdark"
             >
               <svg

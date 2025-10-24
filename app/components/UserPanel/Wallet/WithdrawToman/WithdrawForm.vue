@@ -41,7 +41,27 @@
         مقدار مجاز برداشت امروز برای این شماره کارت 100,000,000 تومان
       </div>
     </div>
-    <UserPanelWalletWithdrawTomanWithdrawValue />
-    <UserPanelWalletWithdrawTomanTypeWithdraw />
+    <UserPanelWalletWithdrawValue
+      :value="value"
+      :validate="validate"
+      :label="'مقدار برداشت'"
+    />
+      <UserPanelWalletWithdrawTypeWithdraw
+      :value="value"
+      :tax="'tet'"
+      @check-validate="updateValidateState"
+    />
   </section>
 </template>
+
+<script setup>
+let value = reactive({
+  price: null
+})
+
+let validate = ref(null)
+
+function updateValidateState (item) {
+  validate.value = item
+}
+</script>

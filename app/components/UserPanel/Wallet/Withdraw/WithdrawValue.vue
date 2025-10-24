@@ -2,39 +2,25 @@
   <div class="mb-5">
     <div class="flex text-sm justify-between items-center mb-2.5">
       <label class="font-bold">{{ props.label }}</label>
-      <h4 class="text-primary">موجودی در دسترس: 2.3</h4>
+      <h4 class="text-primary cursor-pointer" @click="props.value.price = 379">
+        حداکثر قابل برداشت
+      </h4>
     </div>
     <div class="relative">
-      <InputNumber v-model="value" fluid />
+      <InputNumber v-model="props.value.price" fluid />
       <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm"
         >تومان</span
       >
     </div>
-    <div
-      class="flex justify-between items-center mt-1.5 text-xs text-[#252525]"
-    >
-      <div class="flex gap-1">
-        <button
-          class="border border-stroke rounded-full py-1.5 px-3 transition"
-          :class="{ primary: value == item }"
-          v-for="item in btnValues"
-          :key="item"
-          @click="value = item"
-        >
-          {{ item.toLocaleString() }}%
-        </button>
-      </div>
-      <p class="text-fail">حداقل میزان برداشت 100تتر</p>
-    </div>
+    <p class="text-gray-700 text-xs mt-2" v-if="!props.validate">
+      کل موجودی شما: 379 تومان
+    </p>
+    <p class="text-fail text-xs mt-2" v-else>{{ props.validate }}</p>
   </div>
 </template>
 
 <script setup>
-let props = defineProps(['label'])
-
-let value = ref(10000000)
-
-let btnValues = ref([25, 50, 75, 100])
+let props = defineProps(['label', 'value', 'validate'])
 </script>
 
 <style scoped>

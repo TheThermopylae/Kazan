@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <p class="text-xs text-center my-6 lg:mt-0">
+  <section class="pt-6 lg:p-0">
+    <p class="text-xs text-center mb-2.5">
       بیش از 25هزار تراکنش واریز موفق تا این لحظه
     </p>
     <NuxtLink

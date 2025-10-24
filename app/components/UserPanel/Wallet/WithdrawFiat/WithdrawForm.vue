@@ -5,18 +5,29 @@
       <UserPanelWalletWithdrawFiatSelectCurrency />
     </div>
     <UserPanelWalletWithdrawSelectCard />
-    <UserPanelWalletWithdrawValue :label="'مقدار برداشت'" />
-    <UserPanelWalletWithdrawTypeWithdraw />
-    <div class="text-xs">
-      <div class="flex justify-between">
-        <h4>کارمزد برداشت:</h4>
-        0.6 روبل
-      </div>
-      <div class="flex justify-between my-4">
-        <h4>مقدار دریافتی شما:</h4>
-        0.6 روبل
-      </div>
-      <Button label="درخواست برداشت" pt:root="!w-full !rounded-lg !p-3" />
-    </div>
+    <UserPanelWalletWithdrawValue
+      :value="value"
+      :validate="validate"
+      :label="'مقدار برداشت'"
+    />
+    <UserPanelWalletWithdrawTypeWithdraw
+      :value="value"
+      :tax="'rub'"
+      @check-validate="updateValidateState"
+    />
   </section>
 </template>
+
+<script setup>
+let data = reactive({ coin: '' })
+
+let value = reactive({
+  price: null
+})
+
+let validate = ref(null)
+
+function updateValidateState (item) {
+  validate.value = item
+}
+</script>

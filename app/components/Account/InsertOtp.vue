@@ -11,6 +11,7 @@
       ویرایش شماره موبایل
     </button>
     <InputOtp
+      integerOnly="true"
       v-model="value"
       pt:root="!grid !grid-cols-6"
       :length="6"

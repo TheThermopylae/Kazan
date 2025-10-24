@@ -9,22 +9,29 @@
       <UserPanelWalletWithdrawCryptoNetworkType :data="data" />
     </div>
     <UserPanelWalletWithdrawCryptoWalletAddress />
-    <UserPanelWalletWithdrawValue :label="'مقدار برداشت'" />
-    <UserPanelWalletWithdrawTypeWithdraw />
-    <div class="text-xs">
-      <div class="flex justify-between">
-        <h4>کارمزد برداشت:</h4>
-        3.5 تتر
-      </div>
-      <div class="flex justify-between my-4">
-        <h4>مقدار دریافتی شما:</h4>
-        118.5 تتر
-      </div>
-      <Button label="درخواست برداشت" pt:root="!w-full !rounded-lg !p-3" />
-    </div>
+    <UserPanelWalletWithdrawValue
+      :value="value"
+      :validate="validate"
+      :label="'مقدار برداشت'"
+    />
+    <UserPanelWalletWithdrawTypeWithdraw
+      :value="value"
+      :tax="'tet'"
+      @check-validate="updateValidateState"
+    />
   </section>
 </template>
 
 <script setup>
 let data = reactive({ coin: '' })
+
+let value = reactive({
+  price: null
+})
+
+let validate = ref(null)
+
+function updateValidateState (item) {
+  validate.value = item
+}
 </script>

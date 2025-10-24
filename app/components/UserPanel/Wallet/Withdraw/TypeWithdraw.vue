@@ -101,10 +101,37 @@
         </button>
       </div>
     </div>
-  
+    <div class="text-xs">
+      <div class="flex justify-between">
+        <h4>کارمزد برداشت:</h4>
+        <span v-if="props.tax == 'tet'"> 3.5 تتر </span>
+        <span v-else> 0.6 روبل </span>
+      </div>
+      <div class="flex justify-between my-4">
+        <h4>مقدار دریافتی شما:</h4>
+        <span v-if="props.tax == 'tet'"> 118 تتر </span>
+        <span v-else> 200 روبل </span>
+      </div>
+      <Button
+        label="درخواست برداشت"
+        pt:root="!w-full !rounded-lg !p-3"
+        @click="validateFunc"
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
+let props = defineProps(['value', 'tax'])
+let emit = defineEmits(['checkValidate'])
+
 let type = ref(0)
+
+function validateFunc () {
+  if (!props.value.price)
+    emit('checkValidate', 'لطفا مقدار درخواستی خود را وارد کنید')
+  else if (props.value.price < 20_000)
+    emit('checkValidate', 'حداقل میزان برداشت 20,000 تومان است')
+  else emit('checkValidate', null)
+}
 </script>

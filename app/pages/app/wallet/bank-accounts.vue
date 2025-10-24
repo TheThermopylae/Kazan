@@ -8,7 +8,7 @@ let width = ref(0)
 let router = useRouter()
 
 definePageMeta({
-  layout: 'myaccount-layout',
+  layout: 'panel-layout',
   title: 'حساب های بانکی'
 })
 

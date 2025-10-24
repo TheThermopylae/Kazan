@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <p class="text-xs text-center">
+  <section class="pt-6 lg:p-0">
+    <p class="text-xs text-center mb-6">
       بیش از 25هزار تراکنش واریز موفق تا این لحظه
     </p>
     <label class="font-bold text-xs mb-2 block" id="price">مبلغ واریز</label>

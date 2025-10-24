@@ -8,6 +8,10 @@
           :pagination="{
             clickable: true
           }"
+          :autoplay="{
+            delay: 10000,
+            disableOnInteraction: false
+          }"
           :modules="modules"
           class="mySwiper !pb-12 !w-fll"
         >
@@ -97,6 +101,10 @@
           :pagination="{
             clickable: true
           }"
+          :autoplay="{
+            delay: 10000,
+            disableOnInteraction: false
+          }"
           :modules="modules"
           class="mySwiper !max-h-48 !m-0 !pr-14"
         >
@@ -181,9 +189,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 
 import 'swiper/css/pagination'
-import { Pagination } from 'swiper/modules'
+import { Pagination, Autoplay } from 'swiper/modules'
 
-let modules = [Pagination]
+let modules = [Pagination, Autoplay]
 </script>
 
 <style scoped>

@@ -15,12 +15,14 @@
     <AccountInsertData v-if="step == 1" @toStepTwo="step = 2" />
     <AccountInsertPass v-else-if="step == 2" @toStepThree="step = 3" />
     <AccountInsertOtp v-else-if="step == 3" @toStepOne="step = 1" />
-    <p
-      class="text-center text-[#00000666] dark:text-textdark text-2sm md:text-xs mb-4"
-      v-if="step != 3"
-    >
-      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-    </p>
+    <div v-if="step == 1">
+      <div class="flex items-center gap-2 text-secondary text-2sm mb-2">
+        <div class="flex-grow h-[1px] bg-stroke"></div>
+        <span>یا ادامه با</span>
+        <div class="flex-grow h-[1px] bg-stroke"></div>
+      </div>
+      <AccountSocialAccounts />
+    </div>
   </Dialog>
 </template>
 
