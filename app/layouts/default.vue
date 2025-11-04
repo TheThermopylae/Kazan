@@ -1,6 +1,6 @@
 <template>
   <HeaderTheHeader />
-  <main class="mt-16 lg:mt-16">
+  <main class="pt-14">
     <slot />
   </main>
   <FooterDesSection />

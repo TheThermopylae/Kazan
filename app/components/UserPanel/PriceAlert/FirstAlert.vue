@@ -1,17 +1,17 @@
 <template>
   <section
-    class="bg-white p-4 rounded-10 py-7 flex flex-col items-center justify-center"
+    class="bg-white p-4 rounded-10 py-7 flex flex-col items-center justify-center max-md:h-screen max-md:absolute max-md:top-0"
   >
     <div>
       <img src="/userpanel/alert/alert.svg" class="m-auto" />
       <h2 class="font-bold mt-2">گوش‌به‌زنگ‌ نوسانات بازار باشید.</h2>
     </div>
-    <p class="text-sm text-center w-1/2 xl:w-1/3 leading-6 my-5">
+    <p class="text-sm text-center md:w-2/3 lg:w-1/2 xl:w-1/3 leading-6 my-5">
       به جای اینکه هر لحظه، قیمت ارزها را چک کنید، با ساخت گوش‌به‌زنگ‌، از رسیدن
       قیمت آن ها به قیمت دلخواهتان در لحظه با خبر شوید.
     </p>
     <button
-      class="bg-[#171D26] p-2 rounded-lg flex-center gap-3 text-white w-1/2 xl:w-1/3"
+      class="bg-[#171D26] p-2 rounded-lg flex-center gap-3 text-white w-full md:w-2/3 lg:w-1/2 xl:w-1/3"
       @click="visible = true"
     >
       <svg

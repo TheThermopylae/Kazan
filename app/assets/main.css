@@ -6,32 +6,25 @@
 
 @font-face {
     font-family: 'iransans-medium';
-    src: url('../../public/fonts/woff/IRANSansX-Medium.woff');
+    src: url("../../public/fonts/Woff/IRANSansXFaNum-Medium.woff");
     font-display: swap;
 }
 
 @font-face {
     font-family: 'iransans-bold';
-    src: url('../../public/fonts/woff/IRANSansX-Bold.woff');
+    src: url("../../public/fonts/Woff/IRANSansXFaNum-Bold.woff");
     font-display: swap;
 }
 
-/* 
 @font-face {
     font-family: 'iransans-medium';
-    src: url('../../public/fonts/woff2/IRANSansX-Medium.woff2');
+    src: url("../../public/fonts/Woff2/IRANSansXFaNum-Medium.woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: 'iransans-bold';
-    src: url('../../public/fonts/woff2/IRANSansX-Bold.woff2');
-    font-display: swap;
-} */
-
-@font-face {
-    font-family: 'kalameh-bold';
-    src: url('../../public/fonts/woff/KalamehWeb-Bold.woff');
+    src: url("../../public/fonts/Woff2/IRANSansXFaNum-Bold.woff2");
     font-display: swap;
 }
 
@@ -46,8 +39,7 @@ body {
 
 @theme {
     --font-sans: 'iransans-medium';
-    --font-bold: 'iransans-bold';
-    --font-kalameh: 'kalameh-bold';
+    --font-kir: 'iransans-bold';
     --text-2sm: 10px;
 
     --radius-10: 10px;
@@ -67,6 +59,7 @@ body {
     --color-hover: #D2D2D2;
     --color-failbg: #F8E5E5;
     --color-fail: #F65555;
+    --color-success: #039874;
 }
 
 @utility container {

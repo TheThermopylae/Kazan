@@ -1,7 +1,9 @@
 <template>
   <section class="md:grid grid-cols-2 gap-5">
     <div>
-      <h2 class="mb-4">ارز بین المللی ندارید؟</h2>
+      <h2 class="max-md:text-sm mb-2 md:mb-4 md:mt-0">
+        ارز بین المللی ندارید؟
+      </h2>
       <NuxtLink
         to="/"
         class="flex justify-between items-center bg-white dark:bg-maindark p-4 rounded-xl mb-5 h-[90px]"
@@ -37,8 +39,10 @@
             />
           </svg>
           <div>
-            <h3>افزایش موجودی (واریز تومانی)</h3>
-            <p class="text-[#00000666] dark:text-textdark text-sm mt-1">
+            <h3 class="max-md:text-sm">افزایش موجودی (واریز تومانی)</h3>
+            <p
+              class="text-[#00000666] dark:text-textdark text-xs md:text-sm mt-1"
+            >
               برای انجام حواله، ابتدا کیف پول تومانی خود را از طریق کارت بانکی
               شارژ کنید.
             </p>
@@ -84,9 +88,9 @@
             />
           </svg>
           <div>
-            <h3>واریز ارز دیجیتال</h3>
+            <h3 class="max-md:text-sm">واریز ارز دیجیتال</h3>
             <p
-              class="text-[#00000666] dark:text-textdark text-sm mt-1 max-w-sm"
+              class="text-[#00000666] dark:text-textdark text-xs md:text-sm mt-1 max-w-sm"
             >
               موجودی ارز دیجیتال خود را از کیف پول‌های شخصی، به کیف پول‌تان در
               صرافی کازان واریز کنید.
@@ -107,7 +111,7 @@
       </NuxtLink>
     </div>
     <div>
-      <h2 class="mb-4">ارز بین المللی دارید؟</h2>
+      <h2 class="max-md:text-sm my-2 md:mb-4 md:mt-0">ارز بین المللی دارید؟</h2>
       <NuxtLink
         to="/"
         class="flex justify-between items-center bg-white dark:bg-maindark p-4 rounded-xl mb-5 h-[90px]"
@@ -141,9 +145,9 @@
             />
           </svg>
           <div>
-            <h3>واریز ارز بانکی</h3>
+            <h3 class="max-md:text-sm">واریز ارز بانکی</h3>
             <p
-              class="text-[#00000666] dark:text-textdark text-sm mt-1 max-w-sm"
+              class="text-[#00000666] dark:text-textdark text-xs md:text-sm mt-1 max-w-sm"
             >
               از طریق حساب بانکی شخصی یا اعضای درجه یک خانواده در خارج از کشور،
               ارز بانکی را به کیف پول خود منتقل کنید.

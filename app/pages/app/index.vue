@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container hidden lg:block">
     <AppStepSection />
     <AppMainLinks />
     <AppSliderSection />
@@ -9,6 +9,9 @@
     </div>
     <AppBuyCrypto />
     <AppTradingMarkets />
+  </div>
+  <div class="mt-5 container">
+    <AppThreeStepsMobile />
   </div>
 </template>
 

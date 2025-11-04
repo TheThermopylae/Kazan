@@ -2,7 +2,7 @@
   <Dialog
     v-model:visible="visible"
     modal
-    style="width: 375px"
+    style="width: 95%; max-width: 375px"
     pt:header="ltr-dir !p-3"
     pt:content="!p-3"
   >
@@ -97,6 +97,7 @@
         type="number"
         class="my-2 border border-stroke w-full rounded-lg py-2 px-3 text-sm placeholder:text-sm"
         placeholder="قیمت هدف"
+        v-model="price"
       />
       <p class="bg-[#F5F6F7] text-2sm py-1 px-2">
         قیمت فعلی 11.540.285.351 تومان
@@ -107,15 +108,15 @@
     >
       <button
         class="p-2 rounded-full cursor-pointer transition"
-        :class="{ 'bg-white dark:bg-maindark shadow': value == 0 }"
-        @click="value = 0"
+        :class="{ 'bg-white dark:bg-maindark shadow': alertTimes == 0 }"
+        @click="alertTimes = 0"
       >
         فقط یکبار اطلاع بده
       </button>
       <button
         class="p-2 rounded-full cursor-pointer transition"
-        :class="{ 'bg-white dark:bg-maindark shadow': value == 1 }"
-        @click="value = 1"
+        :class="{ 'bg-white dark:bg-maindark shadow': alertTimes == 1 }"
+        @click="alertTimes = 1"
       >
         هربار اطلاع بده
       </button>
@@ -134,12 +135,15 @@
         تلگرام
       </div>
     </div>
-    <Button label="فعال کردن گوش به زنگ" pt:root="!w-full" />
+    <Button label="فعال کردن گوش به زنگ" pt:root="!w-full" @click="addAlert" />
   </Dialog>
 </template>
 
 <script setup>
+let emit = defineEmits(['success', 'error'])
+
 const visible = inject('visible')
+const alerts = inject('alerts')
 
 const selectedFrom = ref({ name: 'RUB' })
 const crypto = ref([
@@ -149,9 +153,27 @@ const crypto = ref([
   { name: 'EURO' }
 ])
 
-let value = ref(0)
+let price = ref(null)
+let alertTimes = ref(0)
 
 let notif = ref(true)
 let email = ref(false)
 let telegram = ref(false)
+
+function addAlert () {
+  if (!price.value) emit('error')
+  else {
+    alerts.value.push({
+      network: selectedFrom.value,
+      price: price.value,
+      alertTimes: alertTimes.value
+    })
+
+    emit('success')
+    visible.value = false
+
+    price.value = null;
+    alertTimes.value = 0
+  }
+}
 </script>

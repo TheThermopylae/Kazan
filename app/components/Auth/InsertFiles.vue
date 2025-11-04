@@ -110,7 +110,9 @@
         </div>
       </div>
     </div>
-    <section class="bg-[#F2F8FF] dark:bg-secdark rounded-10 p-3 text-xs flex flex-col gap-3">
+    <section
+      class="bg-[#F2F8FF] dark:bg-secdark rounded-10 p-3 text-xs flex flex-col gap-3"
+    >
       <div
         class="flex gap-3 items-center text-primary font-bold"
         v-for="item in infos"
@@ -146,7 +148,9 @@
       </div>
     </section>
   </div>
-  <div class="px-3 py-3 lg:px-4 border-t border-[#F0F0F0] dark:border-secdark mt-3">
+  <div
+    class="px-3 py-3 lg:px-4 border-t border-[#F0F0F0] dark:border-secdark mt-3"
+  >
     <Button
       label="ثبت و ادامه"
       pt:root="!text-sm !w-full !text-white"

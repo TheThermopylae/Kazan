@@ -1,14 +1,14 @@
 <template>
   <section
-    class="xl:col-span-2 bg-white dark:bg-maindark p-4 md:flex justify-between items-ceter rounded mb-7 w-full"
+    class="xl:col-span-2 bg-white dark:bg-maindark p-4 flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-ceter rounded mb-7 w-full"
   >
     <div
-      class="w-3/5 border-l border-[#F5F6F7] dark:border-secdark pl-3 flex flex-col justify-between"
+      class="lg:w-3/5 md:border-l border-[#F5F6F7] dark:border-secdark md:pl-3 flex flex-col justify-between"
     >
       <div>
-        <div class="flex justify-between items-center mb-3">
-          <h3 class="flex items-center gap-3">
-            ارزش دارایی کیف پول اصلی
+        <div class="flex justify-between items-center md:mb-3">
+          <h3 class="flex items-center gap-1">
+            ارزش دارایی <span class="hidden md:block">کیف پول اصلی</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.24em"
@@ -52,13 +52,15 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-center flex-wrap gap-5 xl:gap-8 mt-5 xl:mt-0">
+      <div
+        class="flex justify-center flex-wrap gap-4 xl:gap-8 mt-5 xl:mt-0 text-xs md:text-sm"
+      >
         <NuxtLink
           to="/app/wallet/money-deposit"
-          class="flex flex-col items-center gap-2 text-sm group"
+          class="flex flex-col items-center gap-2 group"
         >
           <div
-            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
+            class="size-12 md:size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,10 +83,10 @@
         </NuxtLink>
         <NuxtLink
           to="/app/wallet/money-withdraw"
-          class="flex flex-col items-center gap-2 text-sm group"
+          class="flex flex-col items-center gap-2 group"
         >
           <div
-            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
+            class="size-12 md:size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,9 +106,9 @@
           </div>
           برداشت
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 group">
           <div
-            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
+            class="size-12 md:size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               width="20"
@@ -147,9 +149,9 @@
           </div>
           معامله
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 group">
           <div
-            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
+            class="size-12 md:size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -167,9 +169,9 @@
           </div>
           تاریخچه
         </NuxtLink>
-        <NuxtLink to="/" class="flex flex-col items-center gap-2 text-sm group">
+        <NuxtLink to="/" class="flex flex-col items-center gap-2 group">
           <div
-            class="size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
+            class="size-12 md:size-16 bg-[#F5F6F7] group-hover:bg-hover group-hover:dark:bg-secdark/50 dark:bg-secdark rounded-full flex-center transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -191,10 +193,35 @@
         </NuxtLink>
       </div>
     </div>
-    <UserPanelWalletDoughnutChart />
+    <UserPanelWalletDoughnutChart :class="{ 'hidden': !showChart }" />
+    <button
+      class="flex items-end justify-center gap-1 w-fit m-auto text-xs md:hidden"
+      @click="showChart = !showChart"
+    >
+      <span v-text="!showChart ? 'نمودار ترکیب دارایی' : 'بستن'"></span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16px"
+        height="16px"
+        viewBox="0 0 24 24"
+        :class="{ 'rotate-180': showChart }"
+        class="transition"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m7 10l5 5m0 0l5-5"
+        />
+      </svg>
+    </button>
   </section>
 </template>
 
 <script setup>
 let value = ref(0)
+
+let showChart = ref(false)
 </script>

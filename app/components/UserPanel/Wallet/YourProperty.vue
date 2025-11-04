@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-maindark rounded pb-0 overflow-hidden mt-5">
+  <section class="bg-white dark:bg-maindark rounded pb-0 overflow-hidden mt-5 hidden md:block">
     <div class="p-5">
       <h2 class="font-bold">دارایی های شما</h2>
       <button

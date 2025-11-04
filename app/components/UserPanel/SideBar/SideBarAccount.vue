@@ -139,7 +139,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/"
+          to="/app/my-account/referral"
           class="flex items-center gap-3 p-3 border-b border-b-gray-100 border-r-4 border-white dark:border-maindark transition"
           active-class="bg-[#E5F2FF] !border-r-primary dark:bg-[#0E2A4A]"
         >

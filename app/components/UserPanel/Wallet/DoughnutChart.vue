@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/3 xl:w-1/4 m-auto">
+  <div class="w-2/3 xl:w-1/4 m-auto md:!block">
     <h3 class="mb-3 text-center text-sm">نمودار ترکیب دارایی</h3>
     <div class="relative">
       <canvas ref="myChart"></canvas>
@@ -66,6 +66,9 @@ onMounted(() => {
       ]
     },
     options: {
+      animation: {
+        duration: 0
+      },
       cutout: '87%', // ضخامت داخلی (هرچی درصد بیشتر → دایره باریک‌تر میشه)
       plugins: {
         tooltip: {

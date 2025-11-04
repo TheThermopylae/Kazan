@@ -5,7 +5,12 @@
     </p>
     <label class="font-bold text-xs mb-2 block" id="price">مبلغ واریز</label>
     <div class="relative">
-      <InputNumber v-model="value" inputId="price" fluid />
+      <InputNumber
+        v-model="value"
+        inputId="price"
+        fluid
+        @input="value = $event.value"
+      />
       <span
         class="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-secondary"
         >تومان</span
@@ -24,12 +29,16 @@
     </div>
     <h2 class="font-bold text-xs mb-2">روش واریز</h2>
     <ul class="grid md:grid-cols-2 lg:grid-cols-1 gap-2.5">
-      <li
-        class="border border-[#00000633] rounded-10 px-4 py-4 bg-gradient-to-l from-[#D3F2FF] to-white"
-      >
+      <li>
         <NuxtLink
-          to="/app/wallet/money-deposit/card-to-card"
-          class="flex justify-between items-center"
+          :to="
+            '/app/wallet/money-deposit/card-to-card' ? value <= 10_000_000 : ''
+          "
+          class="flex justify-between items-center border border-[#00000633] rounded-10 px-4 py-4 h-[77px]"
+          :class="{
+            'bg-gradient-to-l from-[#D3F2FF] to-white': value <= 10_000_000,
+            'disable-link': value > 10_000_000
+          }"
         >
           <div class="flex items-center gap-3">
             <svg
@@ -59,7 +68,9 @@
             </svg>
             <div>
               <h3 class="text-sm">کارت به کارت</h3>
-              <span class="text-2sm text-primary">پیشنهاد کازان</span>
+              <span class="text-2sm text-primary" v-if="value <= 10_000_000"
+                >پیشنهاد کازان</span
+              >
             </div>
           </div>
           <div class="flex items-center gap-4 text-xs">
@@ -81,10 +92,14 @@
           </div>
         </NuxtLink>
       </li>
-      <li
-        class="border border-[#00000633] rounded-10 px-4 py-4 h-[77px] flex flex-col justify-center"
-      >
-        <NuxtLink to="/" class="flex justify-between items-center">
+      <li>
+        <NuxtLink
+          to="/app/wallet/money-deposit/card-to-card"
+          class="flex justify-between items-center border border-[#00000633] rounded-10 px-4 py-4 h-[77px]"
+          :class="{
+            'bg-gradient-to-l from-[#D3F2FF] to-white': value > 10_000_000
+          }"
+        >
           <div class="flex items-center gap-3">
             <svg
               width="24"
@@ -108,7 +123,12 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <h3 class="text-sm">پایا و ساتنا</h3>
+            <div>
+              <h3 class="text-sm">پایا و سانتا</h3>
+              <span class="text-2sm text-primary" v-if="value > 10_000_000"
+                >پیشنهاد کازان</span
+              >
+            </div>
           </div>
           <div class="flex items-center gap-4 text-xs">
             سیکل های پایا
@@ -129,10 +149,14 @@
           </div>
         </NuxtLink>
       </li>
-      <li
-        class="border border-[#00000633] rounded-10 px-4 py-4 h-[77px] flex flex-col justify-center"
-      >
-        <NuxtLink to="/" class="flex justify-between items-center">
+      <li>
+        <NuxtLink
+          to="/app/wallet/money-deposit/card-to-card"
+          class="flex justify-between items-center border border-[#00000633] rounded-10 px-4 py-4 h-[77px]"
+          :class="{
+            'bg-gradient-to-l from-[#D3F2FF] to-white': value > 10_000_000
+          }"
+        >
           <div class="flex items-center gap-3">
             <svg
               width="24"
@@ -236,9 +260,13 @@
 </template>
 
 <script setup>
-let value = ref(10000000)
+let value = ref(10_000_000)
 
 let btnValues = ref([10000000, 25000000, 50000000, 100000000])
+
+// watch(value, () => {
+//   console.log(value.value)
+// })
 </script>
 
 <style scoped>
@@ -252,5 +280,10 @@ let btnValues = ref([10000000, 25000000, 50000000, 100000000])
 
 :deep(.p-inputnumber-input:focus) {
   border: 1px solid #00000636;
+}
+
+.disable-link {
+  border-color: rgb(109, 109, 109) 00666 !important;
+  color: #00000666 !important;
 }
 </style>

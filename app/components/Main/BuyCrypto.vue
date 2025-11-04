@@ -1,6 +1,11 @@
 <template>
   <section class="mt-20 bg-white dark:bg-maindark rounded-10 p-4">
-    <h2 class="text-lg mb-4">خرید آنی ارزها</h2>
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-sm md:text-lg">خرید آنی ارزهای بین المللی</h2>
+      <nuxt-link to="/" class="text-primary text-xs md:text-sm"
+        >خرید ارز بین المللی</nuxt-link
+      >
+    </div>
     <swiper
       :spaceBetween="10"
       :breakpoints="{
@@ -32,11 +37,19 @@
         </article>
       </swiper-slide>
     </swiper>
+    <img :src="test" />
   </section>
 </template>
 
 <script setup>
+import { findFlagUrlByIso2Code } from 'country-flags-svg'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
+
+let test = ref('')
+
+onMounted(() => {
+  test.value = findFlagUrlByIso2Code('IR')
+})
 </script>

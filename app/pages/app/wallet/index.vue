@@ -2,6 +2,7 @@
   <UserPanelWalletStats />
   <UserPanelWalletGuideSection />
   <UserPanelWalletYourProperty />
+  <UserPanelWalletMobileYourProperty />
 </template>
 
 <script setup>

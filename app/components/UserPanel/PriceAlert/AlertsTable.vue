@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-maindark rounded pb-0 overflow-hidden mt-5">
+  <section class="bg-white dark:bg-maindark rounded pb-0 overflow-hidden mt-5 hidden lg:block">
     <div class="p-5 flex justify-between items-center">
       <h2 class="font-bold text-xl">دارایی های شما</h2>
       <button
@@ -36,15 +36,11 @@
         <tbody>
           <tr
             class="group relative border-b last:border-none border-[#EFEFEF] dark:border-secdark text-[#5F5F5F]"
-            v-for="item in 10"
+            v-for="item in alerts"
           >
             <td class="py-5">
               <div class="flex items-center gap-3 pr-5">
-                <NuxtImg
-                  src="/crypto/BTC.svg"
-                  alt="toman"
-                  class="size-7"
-                />
+                <NuxtImg src="/crypto/BTC.svg" alt="toman" class="size-7" />
 
                 <h4 class="text-sm mt-1 text-black dark:text-white">
                   BTC
@@ -53,13 +49,21 @@
               </div>
             </td>
             <td class="py-5 dark:text-textdark text-sm">
-              11.000.000.000
+              {{ item.price.toLocaleString() }}
               <span class="text-[#c9c9c9]">TMN</span>
             </td>
             <td class="py-5 dark:text-textdark text-sm ltr-dir text-right">
               1404/06/26 13:42:23
             </td>
-            <td class="py-5 dark:text-textdark text-sm">فقط یکبار اطلاع بده</td>
+            <td
+              class="py-5 dark:text-textdark text-sm"
+              v-if="item.alertTimes == 0"
+            >
+              فقط یکبار اطلاع بده
+            </td>
+            <td class="py-5 dark:text-textdark text-sm" v-else>
+              همیشه اطلاع بده
+            </td>
             <td class="py-5 dark:text-textdark text-sm">
               <div class="flex items-center gap-3">
                 <input
@@ -113,4 +117,5 @@
 
 <script setup>
 const visible = inject('visible')
+const alerts = inject('alerts')
 </script>
