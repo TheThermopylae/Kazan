@@ -1,11 +1,14 @@
 <template>
-  <section class="bg-white dark:bg-maindark rounded p-7 my-5">
+  <section class="lg:bg-white dark:bg-maindark rounded lg:p-7 my-5">
     <div class="flex justify-between items-center mb-6">
       <h2 class="font-bold">خرید و فروش آنی</h2>
-      <NuxtLink to="/" class="text-sm text-primary">همه</NuxtLink>
+      <NuxtLink to="/" class="text-sm text-primary hidden lg:block">همه</NuxtLink>
     </div>
     <swiper
+      :slidesPerView="3"
       :breakpoints="{
+        // 450: {
+        // },
         1024: {
           slidesPerView: 5
         },
@@ -21,7 +24,7 @@
     >
       <swiper-slide v-for="item in 12">
         <article
-          class="border border-[#F0F0F0] dark:border-secdark rounded-lg p-1 pb-3"
+          class="border border-[#F0F0F0] dark:border-secdark rounded-lg p-1 pb-3 bg-white"
         >
           <span
             class="bg-[#E1E1E1] text-[#00000666] rounded text-2sm p-0.5 block w-fit -mb-2"

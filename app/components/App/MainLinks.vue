@@ -1,8 +1,6 @@
 <template>
-  <section
-    class="hidden lg:block bg-white dark:bg-maindark rounded p-5 px-10 my-5"
-  >
-    <ul class="flex justify-between">
+  <section class="lg:bg-white dark:bg-maindark rounded lg:p-5 lg:px-10 my-5">
+    <ul class="grid grid-cols-4 gap-4 lg:flex justify-between">
       <li>
         <NuxtLink
           to="/app/wallet/money-deposit"

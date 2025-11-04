@@ -12,6 +12,13 @@
   </div>
   <div class="mt-5 container">
     <AppThreeStepsMobile />
+    <AppBuyCrypto />
+  </div>
+  <AppSliderSection />
+  <div class="container">
+    <AppMainLinks />
+    <AppReceiveCredit />
+    <AppCurrencySlider />
   </div>
 </template>
 
