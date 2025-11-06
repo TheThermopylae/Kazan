@@ -10,15 +10,19 @@
     <AppBuyCrypto />
     <AppTradingMarkets />
   </div>
-  <div class="mt-5 container">
-    <AppThreeStepsMobile />
-    <AppBuyCrypto />
-  </div>
-  <AppSliderSection />
-  <div class="container">
-    <AppMainLinks />
-    <AppReceiveCredit />
-    <AppCurrencySlider />
+  <div class="lg:hidden">
+    <div class="mt-5 container">
+      <AppThreeStepsMobile />
+      <AppBuyCrypto />
+    </div>
+    <AppSliderSection />
+    <div class="container">
+      <AppMainLinks />
+      <AppReceiveCredit />
+      <AppCurrencySlider />
+      <AppRubPrice />
+    </div>
+    <AppCryptoSectionMobile />
   </div>
 </template>
 
