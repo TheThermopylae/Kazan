@@ -39,7 +39,7 @@ body {
 
 @theme {
     --font-sans: 'iransans-medium';
-    --font-kir: 'iransans-bold';
+    --font-bold: 'iransans-bold';
     --text-2sm: 10px;
 
     --radius-10: 10px;
@@ -59,7 +59,7 @@ body {
     --color-hover: #D2D2D2;
     --color-failbg: #F8E5E5;
     --color-fail: #F65555;
-    --color-success: #039874;
+    --color-success-c: #039874;
 }
 
 @utility container {

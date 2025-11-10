@@ -208,7 +208,7 @@
         >
           <li v-for="item in 15">
             <NuxtLink
-              to="/"
+              to="/price"
               class="p-3 flex items-center dark:hover:bg-secdark"
             >
               <NuxtImg src="/crypto/RUB.svg" class="size-5" />
