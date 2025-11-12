@@ -1,6 +1,5 @@
 <template>
   <section class="col-span-2">
-
     <swiper :space-between="10" :slides-per-view="2.5" :pagination="true" :modules="modules" class="mySwiper !h-full">
       <SwiperSlide v-for="item in 10" :key="item">
         <PriceAnalysisCard />

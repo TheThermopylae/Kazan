@@ -60,5 +60,6 @@
       <PriceAiAnalysis />
       <PriceUserAnalysis />
     </div>
+    <PriceBtcNews />
   </div>
 </template>
