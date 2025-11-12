@@ -169,6 +169,10 @@ button {
     --p-progressspinner-color-four: black;
     --color-primary: #0057FF;
     --color-secondary: #00000666;
+    	
+    --p-select-border-color: #EFEFEF;
+    --p-select-hover-border-color: #EFEFEF;
+    --p-select-focus-border-color: #EFEFEF;
 }
 
 :root.dark {

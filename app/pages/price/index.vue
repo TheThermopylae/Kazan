@@ -61,5 +61,9 @@
       <PriceUserAnalysis />
     </div>
     <PriceBtcNews />
+    <PriceCommentsSection />
+    <PriceCryptoSliders />
+    <PriceHowBuy />
+    <PriceFaqSection />
   </div>
 </template>

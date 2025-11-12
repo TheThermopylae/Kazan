@@ -41,11 +41,13 @@ let modules = [Pagination];
   background: #d7dadf;
   opacity: 1 !important;
   border-radius: 0;
+  transition: all 150ms;
 }
 :deep(.swiper-pagination-bullet-active) {
   width: 24px;
   height: 2px;
   background: #000;
   opacity: 1 !important;
+  transition: all 150ms;
 }
 </style>
