@@ -25,8 +25,40 @@
       <PriceCurrencyPerformance />
     </div>
     <PriceChangeCurrencies />
-    <div class="grid md:grid-cols-3">
+    <div class="grid md:grid-cols-3 gap-3">
+      <h3 class="font-bold mb-5 h-[34px]">تحلیل هوش مصنوعی</h3>
+      <div class="flex justify-between items-center mb-5 h-[34px] col-span-2">
+        <h3 class="font-bold">تحلیل کاربران</h3>
+        <div class="flex text-sm gap-6">
+          <NuxtLink to="/" class="flex items-center gap-2 text-primary">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12H19M12 5V19"
+                stroke="#0057FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            اضافه کردن تحلیل
+          </NuxtLink>
+          <NuxtLink
+            to="/"
+            class="text-primary border border-primary px-6 py-1.5 rounded hover:bg-primary transition hover:text-white"
+          >
+            دیدن همه تحلیل های بیت کوین
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-3">
       <PriceAiAnalysis />
+      <PriceUserAnalysis />
     </div>
   </div>
 </template>
