@@ -4,8 +4,7 @@
       <h3 class="text-xl font-bold mb-2">سوالات متداول قیمت بیت کوین</h3>
       <p>اطلاعات مربوط به قیمت بیت کوین در این بخش جمع آوری شده</p>
     </div>
-
-    <PriceTheAccordion v-for="item in 5" />
+    <CoinPriceTheAccordion v-for="item in 5" />
   </section>
 </template>
 

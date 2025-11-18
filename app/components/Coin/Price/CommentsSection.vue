@@ -1,7 +1,7 @@
 <template>
   <section class="mt-20">
-    <div class="grid grid-cols-3">
-      <section class="md:col-span-2">
+    <div>
+      <section>
         <div class="flex justify-between items-center mb-5">
           <div>
             <h3 class="font-bold">دیدگاه ها</h3>
@@ -67,7 +67,7 @@
               </div>
             </div>
           </div>
-          <PriceCommentCard
+          <CoinPriceCommentCard
             v-for="item in comments"
             :key="item.name"
             :data="item"

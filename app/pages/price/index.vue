@@ -1,30 +1,30 @@
 <template>
   <div class="md:container mt-8">
-    <PriceTopLinks />
+    <CoinTopLinks />
   </div>
   <div class="container">
     <div class="lg:flex justify-between items-start gap-5">
       <div class="lg:w-[70%] xl:w-2/3">
-        <PriceBreadCrumbsLink />
-        <PriceLastPrice />
-        <PriceTheCalculator class="lg:hidden" />
-        <PriceChangesPrice />
-        <PriceTimeLine />
+        <CoinBreadCrumbsLink />
+        <CoinPriceLastPrice />
+        <CoinPriceTheCalculator class="lg:hidden" />
+        <CoinPriceChangesPrice />
+        <CoinPriceTimeLine />
       </div>
       <div class="sticky top-20 w-full lg:w-[30%] xl:w-1/3">
-        <PriceTheCalculator class="hidden lg:block" />
-        <PriceAlert />
+        <CoinPriceTheCalculator class="hidden lg:block" />
+        <CoinPriceAlert />
       </div>
     </div>
     <div class="my-8 flex flex-col-reverse md:flex-row gap-5 md:items-start">
-      <PriceCryptoAttrs />
-      <PriceRealTimePrice />
+      <CoinPriceCryptoAttrs />
+      <CoinPriceRealTimePrice />
     </div>
     <div class="grid lg:grid-cols-2 gap-2">
-      <PriceExchangePerformance />
-      <PriceCurrencyPerformance />
+      <CoinPriceExchangePerformance />
+      <CoinPriceCurrencyPerformance />
     </div>
-    <PriceChangeCurrencies />
+    <CoinPriceChangeCurrencies />
     <div class="grid md:grid-cols-3 gap-3">
       <h3 class="font-bold mb-5 h-[34px]">تحلیل هوش مصنوعی</h3>
       <div class="flex justify-between items-center mb-5 h-[34px] col-span-2">
@@ -56,14 +56,14 @@
         </div>
       </div>
     </div>
-    <div class="grid md:grid-cols-3 gap-3">
-      <PriceAiAnalysis />
-      <PriceUserAnalysis />
+    <div class="flex justify-between gap-3">
+      <CoinPriceAiAnalysis />
+      <CoinPriceUserAnalysis />
     </div>
-    <PriceBtcNews />
-    <PriceCommentsSection />
-    <PriceCryptoSliders />
-    <PriceHowBuy />
-    <PriceFaqSection />
+    <CoinPriceBtcNews />
+    <CoinPriceCommentsSection />
+    <CoinPriceCryptoSliders />
+    <CoinPriceHowBuy />
+    <CoinPriceFaqSection />
   </div>
 </template>

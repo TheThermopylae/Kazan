@@ -1,5 +1,5 @@
 <template>
-  <article class="p-4 bg-white rounded-10 h-full">
+  <article class="p-4 bg-white rounded-10">
     <h4 class="font-bold mb-5 text-sm">اصلاح سبک بیت‌ کوین قبل از ۱۱۵ هزار دلار؟</h4>
     <div class="flex items-center justify-between mb-4">
       <div class="flex items-center gap-2">

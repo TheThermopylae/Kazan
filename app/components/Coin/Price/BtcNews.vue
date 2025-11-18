@@ -24,6 +24,6 @@
         >دیدن همه خبر های بیت کوین</NuxtLink
       >
     </div>
-    <PriceBtcNewsSlider />
+    <CoinPriceBtcNewsSlider />
   </section>
 </template>
