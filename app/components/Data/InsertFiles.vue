@@ -10,8 +10,9 @@
           root: '!rounded-10 !border-none !bg-[#EFEFEF] !items-center !shadow-none dark:!bg-darkbg !h-10 !mt-2',
           label: '!py-3 !text-sm'
         }"
-        v-model="ownerCard"
+        v-model="cardForm.card_identity_type"
         :options="owners"
+        optionLabel="fa"
         placeholder="انتخاب کنید."
         class="w-full"
       >
@@ -26,17 +27,20 @@
         id="full-name"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full rounded-10 p-3"
         placeholder="علیرضا ......"
-        v-model="fullName"
+        v-model="cardForm.card_name"
       />
       <p
         class="text-2sm text-red-500 mt-2"
-        v-if="fullName.length > 0 && !isPersianName"
+        v-if="cardForm.card_name.length > 0 && !isPersianName"
       >
         نام و نام خانوادگی باید تمامی فارسی باشد!
       </p>
     </div>
-    <div v-if="ownerCard">
-      <div class="grid grid-cols-2 gap-3 mb-3.5 mt-3">
+    <div>
+      <div
+        class="grid grid-cols-2 gap-3 mt-3"
+        v-if="cardForm.card_identity_type?.en == 'family'"
+      >
         <div>
           <DataUploadCard @selectedFile="selectedCard" v-if="!showCard" />
           <div v-else class="relative text-sm text-black">
@@ -146,7 +150,7 @@
           </div>
         </div>
       </div>
-      <div class="text-xs mb-3">
+      <div class="text-xs mb-3 mt-3">
         <label for="full-name" class="text-xs mb-2 block"
           >شماره تماس متصل به کارت</label
         >
@@ -155,11 +159,14 @@
           id="full-name"
           class="bg-[#EFEFEF] dark:bg-secdark block w-full rounded-10 p-3"
           placeholder="+7"
-          v-model="fullName"
+          v-model="cardForm.phone"
           style="direction: ltr"
         />
       </div>
-      <section class="bg-[#F2F8FF] dark:bg-secdark rounded-10 p-3 text-xs">
+      <section
+        class="bg-[#F2F8FF] dark:bg-secdark rounded-10 p-3 text-xs"
+        v-if="cardForm.card_identity_type?.en == 'family'"
+      >
         <div class="flex gap-3 items-center text-primary font-bold">
           <svg
             width="20"
@@ -199,18 +206,24 @@
     <Button
       label="ثبت و ادامه"
       pt:root="!text-sm !w-full !text-white"
-      @click="$emit('toStepComplete')"
+      @click="submit"
+      :loading="loading"
     />
   </div>
 </template>
 <script setup>
 import { isPersian } from '@persian-tools/persian-tools'
 
-let emit = defineEmits(['toStepComplete'])
+let emit = defineEmits(['toStepComplete', 'warn'])
 
-const ownerCard = ref()
-const owners = ref(['کارت خودم', 'کارت خانواده درجه یک'])
-let fullName = ref('')
+let { cardForm } = cardFormComp()
+
+const owners = ref([
+  { fa: 'خودم', en: 'me' },
+  { fa: 'خانواده درجه یک', en: 'family' }
+])
+
+let loading = ref(false)
 
 let showCard = ref(null)
 let showPass = ref(null)
@@ -266,9 +279,57 @@ function reSelectFunc () {
   reSelectPass.value = true
 }
 
-watch(fullName, () => {
-  isPersianName.value = isPersian(fullName.value)
-})
+async function submit () {
+  if (
+    !cardForm.value.card_identity_type ||
+    !cardForm.value.phone ||
+    (cardForm.value.card_identity_type == 'family' &&
+      !cardForm.value.identity_image) ||
+    !cardForm.value.card_name
+  )
+    emit('warn')
+  else {
+    try {
+      loading.value = true
+      let formData = new FormData()
+      formData.append('card_number', cardForm.value.card_number)
+      formData.append('bank_logo_image', cardForm.value.bank_logo_image)
+      formData.append('identity_image', cardForm.value.identity_image)
+      formData.append('national_code', cardForm.value.national_code)
+      formData.append('bank_name', cardForm.value.bank_name)
+      formData.append('card_name', cardForm.value.card_name)
+      formData.append('sheba_account_n', cardForm.value.sheba_account_n)
+      formData.append('phone', cardForm.value.phone)
+      formData.append('card_type', cardForm.value.card_type)
+      formData.append(
+        'card_identity_type',
+        cardForm.value.card_identity_type.en
+      )
+
+      let data = await $fetch('/api/user/myAccount/cardBanks/create', {
+        credentials: 'include',
+        method: 'POST',
+        body: formData
+      })
+
+      emit('toStepComplete')
+    } catch (err) {
+      emit('warn')
+    } finally {
+      loading.value = false
+    }
+  }
+}
+
+watch(
+  () => cardForm.value.card_name,
+  newVal => {
+    // اینجا دیگه مطمئنیم که newVal همون تکست جدید هست
+    if (newVal) {
+      isPersianName.value = isPersian(newVal)
+    }
+  }
+)
 
 provide('reSelectCard', reSelectCard)
 provide('reSelectPass', reSelectPass)

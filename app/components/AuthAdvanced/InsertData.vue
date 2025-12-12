@@ -13,11 +13,11 @@
         نام خود را باید به شکل فارسی و بدون عدد وارد کنید
       </p>
     </div>
-    <div class="text-xs my-3">
-      <label for="last-name" class="text-xs">نام خانوادگی</label>
+    <div class="text-xs mt-3">
+      <label for="first-name" class="text-xs">نام خانوادگی</label>
       <input
         type="text"
-        id="last-name"
+        id="first-name"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="نام خانوادگی را وارد کنید"
         v-model="family"
@@ -30,17 +30,12 @@
       <label for="codemeli" class="text-xs">کد ملی</label>
       <input
         type="text"
-    
         id="codemeli"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3 border border-[#EFEFEF]"
         :class="{ 'border-red-500': validNationalId === false }"
         placeholder="کد ملی را وارد کنید"
         v-model="codeMeli"
       />
-    </div>
-    <div class="text-xs">
-      <label for="email-phone" class="text-xs mb-2 block">تاریخ تولد</label>
-      <date-picker-ir v-model="date" max="1404/12/29" simple />
     </div>
   </div>
   <div class="px-2 py-3 lg:px-4">
@@ -59,14 +54,13 @@ import {
 } from '@persian-tools/persian-tools'
 let emit = defineEmits(['toStepTwo'])
 
-let { authForm } = AuthLvlOne()
+let { authForm } = AuthLvlTwo()
 
 let { showToast } = useToastComp()
 
 let codeMeli = ref('')
 let name = ref('')
 let family = ref('')
-let date = ref('')
 
 let validNationalId = ref('')
 let validName = ref('')
@@ -76,11 +70,8 @@ function stepNextFunc () {
   if (
     !codeMeli.value ||
     !name.value ||
-    !family.value ||
-    !date.value ||
     !validNationalId.value ||
-    !validName.value ||
-    !validFamily.value
+    !validName.value
   )
     showToast(
       'warn',
@@ -91,7 +82,6 @@ function stepNextFunc () {
     authForm.value.name = name.value
     authForm.value.family = family.value
     authForm.value.national_code = codeMeli.value
-    authForm.value.date_of_birth = date.value
 
     emit('toStepTwo')
   }

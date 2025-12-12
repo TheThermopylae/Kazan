@@ -61,10 +61,10 @@
         </svg>
       </div>
     </div>
-    <!-- <AuthMobileCompleteAuth />
+    <AuthMobileCompleteAuth />
     <AuthMonitorCompleteAuth />
     <DataMobileData />
-    <DataMonitorData /> -->
+    <DataMonitorData />
   </section>
 </template>
 

@@ -115,6 +115,10 @@ button {
     @apply !w-[40px] !bg-primary !rounded-tr-10 !rounded-br-10
 }
 
+.p-dialog{
+    @apply w-[95%] max-w-[450px]
+}
+
 .vpd-header {
     background: #0057FF !important;
 }

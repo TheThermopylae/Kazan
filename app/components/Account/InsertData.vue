@@ -10,6 +10,7 @@
         id="email-phone"
         class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
         placeholder="شماره موبایل یا ایمیل خود را وارد کنید"
+        v-model="form.phone"
       />
     </div>
     <button
@@ -66,6 +67,7 @@
       label="ثبت و ادامه"
       pt:root="!text-sm !w-full !text-white"
       @click="nextStepFunc"
+      :loading="loading"
     />
   </div>
   <Toast />
@@ -73,16 +75,40 @@
 <script setup>
 let emit = defineEmits(['toStepTwo'])
 
+let { form } = loginFormData()
+
 let showCode = ref(false)
 let codeValue = ref('')
 
 let { showToast } = useToastComp()
 
-function nextStepFunc () {
-  if (showCode.value && !codeValue.value) {
-    showToast('warn', 'اخطار', 'کد دعوت را وارد نکردید!')
-  } else {
-    emit('toStepTwo')
+let config = useRuntimeConfig()
+
+let loading = ref(false)
+
+async function nextStepFunc () {
+  if (!form.value.phone)
+    showToast('warn', 'اخطار', 'باید شماره تلفن یا ایمیل خود را وارد کنید')
+  else {
+    try {
+      loading.value = true
+
+      let data = await $fetch(`${config.public.API_BASE_URL}/auth/`, {
+        method: 'POST',
+        body: {
+          phone: form.value.phone,
+          invite_code: form.value.invite_code
+        }
+      })
+
+      console.log(data)
+
+      emit('toStepTwo')
+    } catch (err) {
+      showToast('error', 'خطا', err.data.message)
+    } finally {
+      loading.value = true
+    }
   }
 }
 </script>

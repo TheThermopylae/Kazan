@@ -4,13 +4,14 @@
       رمز عبور خود را وارد کنید
     </p>
     <div class="text-xs">
-      <label for="email-phone" class="text-xs">رمز عبور</label>
+      <label for="password" class="text-xs">رمز عبور</label>
       <div class="relative">
         <input
           :type="showPass ? 'text' : 'password'"
-          id="email-phone"
+          id="password"
           class="bg-[#EFEFEF] dark:bg-secdark block w-full mt-2 rounded-10 p-3"
           placeholder="رمز عبور خود را وارد کنید"
+          v-model="form.password"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,12 +70,44 @@
     <Button
       label="ثبت و ادامه"
       pt:root="!text-sm !w-full !text-white"
-      @click="$emit('toStepThree')"
+      @click="toStepThreeFunc"
     />
   </div>
 </template>
 <script setup>
 let emit = defineEmits(['toStepThree', 'changePassword'])
 
+let { showToast } = useToastComp()
+
+let { form } = loginFormData()
+
 let showPass = ref(false)
+let config = useRuntimeConfig()
+
+let loading = ref(false)
+
+async function toStepThreeFunc () {
+  console.log(form.value)
+
+  if (!form.value.password)
+    showToast('warn', 'اخطار', 'باید پسورد خود را وارد کنید')
+  else {
+    try {
+      let data = await $fetch(
+        `${config.public.API_BASE_URL}/auth/password/set`,
+        {
+          method: 'POST',
+          body: {
+            email: form.value.email,
+            password: form.value.password
+          }
+        }
+      )
+
+      emit('toStepThree')
+    } catch (err) {
+      console.log(err)
+    }
+  }
+}
 </script>

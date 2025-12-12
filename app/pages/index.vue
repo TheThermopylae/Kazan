@@ -14,6 +14,7 @@
   <div class="container">
     <MainFirstStep />
     <MainBlogSection />
+    <Camera @videoRecorded="handleVideoFile" />
   </div>
 </template>
 
@@ -21,4 +22,10 @@
 useHead({
   title: 'صفحه اصلی |'
 })
+
+function handleVideoFile(file) {
+  // فایل رو میگیریم و میریزیم تو فرم
+  console.log('Video File Received:', file)
+  cardForm.value.identity_video = file
+}
 </script>

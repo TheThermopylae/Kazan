@@ -46,9 +46,12 @@
     </div>
     <div class="p-4" v-if="!route.query.type || width >= 1024">
       <div class="grid md:grid-cols-2 gap-3">
+        <p v-if="data.length <= 0">کارت بانکی ندارید</p>
         <article
+          v-else
           class="flex justify-between items-center border border-[#EFEFEF] dark:border-textlight rounded-10 p-3 bg-white lg:bg-transparent"
-          v-for="item in 4"
+          v-for="item in data"
+          :key="item._id"
         >
           <div class="flex items-center gap-3">
             <svg
@@ -135,6 +138,7 @@
         </article>
       </div>
       <button
+        @click="visible = true"
         class="flex items-center gap-2 primary rounded-lg p-3 text-sm mt-4"
       >
         <svg
@@ -154,6 +158,15 @@
         افزودن کارت بانکی
       </button>
     </div>
+    <Dialog v-model:visible="visible" modal header="افزودن کارت بانکی">
+      <div class="">
+        <label for="username" class="block mb-1">شماره بانک</label>
+        <InputMask id="basic" mask="9999-9999-9999-9999" pt:root="w-full !text-center" />
+      </div>
+      <div class="mt-4">
+        <Button type="button" label="ثبت شماره کارت" @click="" pt:root="w-full" />
+      </div>
+    </Dialog>
   </section>
 </template>
 
@@ -169,6 +182,12 @@ function changeQuery () {
     }
   })
 }
+
+let { data } = await useFetch('/api/user/myAccount/cardBanks/get', {
+  credentials: 'include'
+})
+
+let visible = ref(false)
 
 function updateWidth () {
   width.value = window.innerWidth

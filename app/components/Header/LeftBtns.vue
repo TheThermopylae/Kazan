@@ -3,8 +3,8 @@
     <button
       to="/"
       class="bg-primary rounded-lg px-3 py-2 text-white hidden lg:flex items-center gap-2 cursor-pointer text-sm"
-      @click="$emit('showFormFuncEmit')"
-      v-if="!userLogged"
+      @click="$emit('showLogForm')"
+      v-if="!userData"
     >
       ورود یا ثبت نام
       <svg
@@ -44,7 +44,7 @@
       </svg>
       داشبورد
     </NuxtLink> -->
-    <div class="flex gap-3">
+    <div class="flex gap-3" v-else>
       <div class="dropdown dropdown-end dropdown-hover">
         <div class="h-18 flex justify-end items-center cursor-pointer">
           <div class="size-[30px] flex-center">
@@ -308,22 +308,6 @@
               حساب های بانکی
             </NuxtLink>
           </li>
-          <!-- <li class="mt-1" v-for="item in 10">
-            <NuxtLink to="/" class="p-2 dark:hover:bg-secdark">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="m10.135 21l-.362-2.892q-.479-.145-1.035-.454q-.557-.31-.947-.664l-2.668 1.135l-1.865-3.25l2.306-1.739q-.045-.27-.073-.558q-.03-.288-.03-.559q0-.252.03-.53q.028-.278.073-.626L3.258 9.126l1.865-3.212L7.771 7.03q.448-.373.97-.673q.52-.3 1.013-.464L10.134 3h3.732l.361 2.912q.575.202 1.016.463t.909.654l2.725-1.115l1.865 3.211l-2.382 1.796q.082.31.092.569t.01.51q0 .233-.02.491q-.019.259-.088.626l2.344 1.758l-1.865 3.25l-2.681-1.154q-.467.393-.94.673t-.985.445L13.866 21zM11 20h1.956l.369-2.708q.756-.2 1.36-.549q.606-.349 1.232-.956l2.495 1.063l.994-1.7l-2.189-1.644q.125-.427.166-.786q.04-.358.04-.72q0-.38-.04-.72t-.166-.747l2.227-1.683l-.994-1.7l-2.552 1.07q-.454-.499-1.193-.935q-.74-.435-1.4-.577L13 4h-1.994l-.312 2.689q-.756.161-1.39.52q-.633.358-1.26.985L5.55 7.15l-.994 1.7l2.169 1.62q-.125.336-.175.73t-.05.82q0 .38.05.755t.156.73l-2.15 1.645l.994 1.7l2.475-1.05q.589.594 1.222.953q.634.359 1.428.559zm.973-5.5q1.046 0 1.773-.727T14.473 12t-.727-1.773t-1.773-.727q-1.052 0-1.776.727T9.473 12t.724 1.773t1.776.727M12 12"
-                />
-              </svg>
-              تنظیمات
-            </NuxtLink>
-          </li> -->
         </ul>
       </div>
       <div class="dropdown dropdown-end dropdown-hover">
@@ -384,7 +368,7 @@
             </NuxtLink>
           </li>
           <li class="border-b border-gray-200 dark:border-secdark pb-1">
-            <NuxtLink to="/" class="p-2 justify-between dark:hover:bg-secdark">
+            <button class="p-2 justify-between dark:hover:bg-secdark" @click="showAuthAdvance = true">
               <div class="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -403,7 +387,7 @@
                 class="py-1 px-1.5 rounded bg-[#0000000D] dark:bg-maindark text-2sm"
                 >احراز نشده</span
               >
-            </NuxtLink>
+            </button>
           </li>
           <li class="mt-1">
             <NuxtLink
@@ -553,6 +537,32 @@
               دعوت از دوستان
             </NuxtLink>
           </li>
+          <li class="mt-1">
+            <button class="p-2 dark:hover:bg-secdark" @click="visible = true">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 12L22 12M22 12L18.5 15M22 12L18.5 9"
+                  stroke="#0057FF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.998 17C14.986 19.175 14.889 20.353 14.121 21.121C13.242 22 11.828 22 9.00005 22H8.00005C5.17105 22 3.75705 22 2.87805 21.121C2.00005 20.243 2.00005 18.828 2.00005 16L2.00005 8C2.00005 5.172 2.00005 3.757 2.87805 2.879C3.64705 2.11 4.82505 2.014 7.00005 2.002M14.998 7C14.986 4.825 14.889 3.647 14.121 2.879C13.48 2.237 12.553 2.064 11 2.017"
+                  stroke="#252525"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              خروج
+            </button>
+          </li>
         </ul>
       </div>
       <div class="dropdown dropdown-end dropdown-hover">
@@ -630,18 +640,49 @@
       </div>
     </div>
     <HeaderSwitchTheme />
+    <Dialog v-model:visible="visible" modal header="خروج از حساب">
+      <span class="text-surface-500 dark:text-surface-400 block mb-8"
+        >میخواهید از حساب خود خارج شوید؟</span
+      >
+      <div class="grid grid-cols-2 gap-2">
+        <Button
+          type="button"
+          label="خیر"
+          severity="secondary"
+          @click="visible = false"
+        />
+        <Button
+          pt:root="!bg-red-500 !border-none"
+          type="button"
+          label="بله"
+          @click="logout"
+          :loading="loading"
+        />
+      </div>
+    </Dialog>
   </div>
+  <AuthAdvancedMobileCompleteAuth />
+  <AuthAdvancedMonitorCompleteAuth />
 </template>
 
 <script setup>
 let emit = defineEmits(['showLogForm'])
 
-let userLogged = ref(true)
+let { userData } = userAuth()
 let showAuth = ref(false)
+let showAuthAdvance = ref(false)
+
+let visible = ref(false)
+let loading = ref(false)
 
 provide('showAuth', showAuth)
+provide('showAuthAdvance', showAuthAdvance)
 
-// onMounted(() => {
-//   userLogged.value = JSON.parse(localStorage.getItem('auth'))
-// })
+function logout () {
+  loading.value = true
+  let data = $fetch('/api/auth/logout')
+  userData.value = null
+  visible.value = false
+  return navigateTo('/')
+}
 </script>

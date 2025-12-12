@@ -154,12 +154,17 @@
     <Button
       label="ثبت و ادامه"
       pt:root="!text-sm !w-full !text-white"
-      @click="$emit('toStepComplete')"
+      @click="submit"
+      :loading="loading"
     />
+    <Toast />
   </div>
 </template>
 <script setup>
 let emit = defineEmits(['toStepComplete'])
+
+let { authForm } = AuthLvlOne()
+let { showToast } = useToastComp()
 
 let showCard = ref(null)
 let showPass = ref(null)
@@ -169,6 +174,8 @@ let reSelectPass = ref(false)
 
 function selectedCard (item) {
   if (!item) return
+  authForm.value.identity_card = item
+
   if (item instanceof File) {
     const reader = new FileReader()
     reader.onload = e => {
@@ -192,6 +199,8 @@ function reSelectCardFunc () {
 
 function selectedPass (item) {
   if (!item) return
+  authForm.value.passport = item
+
   if (item instanceof File) {
     const reader = new FileReader()
     reader.onload = e => {
@@ -213,12 +222,44 @@ function reSelectFunc () {
   reSelectPass.value = true
 }
 
+let loading = ref(false)
+
 let infos = ref([
   'در صورت نداشتن کارت ملی، می‌توانید رسید آن را آپلود کنید',
   'شناسنامه جدید دارای عکس یا در صورت نبود، پاسپورت معتبر ایرانی را آپلود کنید.',
   'تصاویر  واضح و باکیفیت از مدارک اصل باشند؛ حجم فایل تا ۱۵ مگابایت مجاز است.',
   'کپی، اسکرین‌شات و PDF پذیرفته نمی‌شوند'
 ])
+
+async function submit () {
+  if (!authForm.value.identity_card || !authForm.value.passport)
+    showToast('warn', 'اخطار', 'باید مدارک مورد نیاز را آپلود کنید')
+  else {
+    try {
+      loading.value = true
+
+      let formData = new FormData()
+      formData.append('name', authForm.value.name)
+      formData.append('family', authForm.value.family)
+      formData.append('national_code', authForm.value.national_code)
+      formData.append('date_of_birth', '1995-06-21')
+      formData.append('identity_card', authForm.value.identity_card)
+      formData.append('passport', authForm.value.passport)
+
+      let data = await $fetch('/api/auth/authLvlOne', {
+        credentials: 'include',
+        method: 'POST',
+        body: formData
+      })
+
+      emit('toStepComplete')
+    } catch (err) {
+      console.log(err)
+    } finally {
+      loading.value = false
+    }
+  }
+}
 
 provide('reSelectCard', reSelectCard)
 provide('reSelectPass', reSelectPass)

@@ -38,6 +38,12 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  runtimeConfig: {
+    API_BASE_URL: process.env.API_BASE_URL || 'http://backend.kazanexchange.com',
+    public: {
+      API_BASE_URL: process.env.API_BASE_URL
+    },
+  },
   modules: ['@primevue/nuxt-module', '@nuxt/image'],
   primevue: {
     options: {
